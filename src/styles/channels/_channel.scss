@@ -61,6 +61,7 @@
 		#{cn(ChannelItem content)} {
 			&:before {
 				background: hsla(0, 0%, 100%, .1);
+				border-radius: 5px;
 			}
 			#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDefault)} & {
 				#{cn(ChannelItem icon)},
@@ -99,13 +100,14 @@
 	// SELECTED
 	&#{cn(ChannelItem modeSelected)} {
 		#{cn(ChannelItem content)} {
-			&:before {
-				background: hsla(0, 0%, 100%, .1);
-			}
+			// &:before {
+			// 	background: hsla(0, 0%, 100%, .1);
+			// }
 			&:after {
 				right: 0;
 				background: $main-color;
 				animation: cv-channel-select .3s ease-in-out;
+				border-radius: 5px;
 			}
 			#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDefault)} & {
 				#{cn(ChannelItem icon)},

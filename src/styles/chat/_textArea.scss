@@ -4,8 +4,12 @@
 /* CHAT CHANNEL TEXT AREA */
 %chatForm {
 	border-color: hsla(0, 0%, 100%, .07);
+	&:before {
+		display: none;
+	}
 }
 #{cn(ChannelEditorContainer channelTextArea)} {
+	background-color: transparent;
 	#{cn(ChannelEditorContainer scrollableContainer)} {
 		background: rgba(0, 0, 0, .4);
 		border: 2px solid hsla(0, 0%, 100%, .1);
@@ -20,6 +24,12 @@
 	#{cn(SlateChannelTextArea placeholder)},
 	#{cn(ChannelEditorContainer textArea)}::placeholder {
 		color: hsla(0, 0%, 100%, .2);
+
+	}
+
+	#{cn(SlateChannelTextArea slateTextArea)},
+	#{cn(SlateChannelTextArea placeholder)} {
+		padding-left: 10px;
 	}
 
 	// TODO: god damn anonymous memo

@@ -196,3 +196,29 @@
 		}
 	}
 }
+
+
+#{cn(FluxContainer(AppView) base)} {
+	#{cn(PeoplePage container)} {
+		background-color: transparent;
+	}
+}
+
+#{cn(PeoplePage container)} {
+	#{cn(PeoplePage tabBody)} {
+		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+		#{cn(PeoplePage nowPlayingColumn)} {
+			background-color: transparent;
+			#{cn(PeoplePage itemCard)} {
+				background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+				&:hover {
+					background-color: hsla(0, 0%, 100%, .1);
+				}
+				#{cn(PeoplePage inset)} {
+					border: 1px solid $main-color;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}

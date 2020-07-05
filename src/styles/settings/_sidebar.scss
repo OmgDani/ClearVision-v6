@@ -1,18 +1,18 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* SETTINGS SIDEBAR */
-%standardSidebarView {
-	%settingsSidebarRegion {
-		background: transparent;
-		%settingsSidebar {
+#{cn(StandardSidebarView standardSidebarView)} {
+	#{cn(StandardSidebarView sidebarRegion)} {
+		background:transparent;
+		#{cn(StandardSidebarView sidebar)} {
 			height: 100%;
 			padding: 0px 6px 0px 20px;
 		}
 	}
 }
-%settingsSidebarRegion {
-	%settingsSidebarScroller {
+
+#{cn(StandardSidebarView sidebarRegion)} {
+	#{cn(StandardSidebarView sidebarRegionScroller)} {
 		margin: 30px 8px 30px 0;
 		background: transparent;
 		-webkit-mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
@@ -22,18 +22,20 @@
 		}
 	}
 }
-%settingsSide {
+
+#{cn(TabBar side)} {
 	padding: 30px 0;
-	%tabBarHeader {
+	#{cn(TabBar header)} {
 		color: $main-color;
 		font-weight: 700;
 	}
-	%tabBarSeparator {
+	#{cn(TabBar separator)} {
 		background: hsla(0, 0%, 100%, .07);
 	}
 }
-%settingsSidebar {
-	%tabBarHeader {
+
+#{cn(StandardSidebarView sidebar)} {
+	#{cn(TabBar header)} {
 		padding-top: 20px;
 		display: flex;
 		align-items: center;
@@ -58,16 +60,17 @@
 			text-overflow: ellipsis;
 		}
 	}
-	[aria-label="USER_SETTINGS"] & %tabBarItem {
-		&:nth-child(9) + %tabBarSeparator {
+	[aria-label="USER_SETTINGS"] & #{cn(TabBar item)} {
+		&:nth-child(9) + #{cn(TabBar separator)} {
 			display: none;
 		}
-	}
+	}	
 }
-%layer {
-	%standardSidebarView {
-		%settingsSide {
-			%tabBarItem {
+
+#{cn(ConnectedLayers layer)} {
+	#{cn(StandardSidebarView standardSidebarView)} {
+		#{cn(TabBar side)} {
+			#{cn(TabBar item)} {
 				height: unset;
 				padding: 8px 0 8px 20px;
 				margin: 0;
@@ -79,14 +82,14 @@
 					background-color: hsla(0, 0%, 100%, .07);
 					color: hsla(0, 0%, 100%, .7);
 				}
-				&%tabBarItemSelected {
+				&#{cn(TabBar selected)} {
 					&,
 					&:hover {
 						background-color: $main-color;
 						color: #fff;
 					}
 				}
-				&%settingsRoleItem {
+				&#{cn(GuildRole role)} {
 					background-size: 0;
 					animation: none;
 				}
@@ -94,10 +97,11 @@
 		}
 	}
 }
-%standardSidebarView {
-	%settingsSidebar {
-		%settingsSide {
-			%tabBarItem {
+
+#{cn(StandardSidebarView standardSidebarView)} {
+	#{cn(StandardSidebarView sidebar)} {
+		#{cn(TabBar side)} {
+			#{cn(TabBar item)} {
 				position: relative;
 				background: transparent;
 				transition: all .15s ease-in-out;
@@ -135,7 +139,7 @@
 				}
 
 				// SELECTED
-				&%tabBarItemSelected,
+				&#{cn(TabBar selected)},
 				&[style*="color: rgb(255, 255, 255)"] {
 					&:before {
 						opacity: 1;
@@ -146,7 +150,7 @@
 						animation: cv-channel-select .3s ease-in-out;
 					}
 				}
-				&%tabBarItemSelected {
+				&#{cn(TabBar selected)} {
 					background: transparent !important;
 					color: #fff !important;
 					transition: all .15s ease-in-out, background .3s .2s;

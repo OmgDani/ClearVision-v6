@@ -21,7 +21,9 @@
 	}
 
 	// BASE
+	// fix change to message wrapper?
 	%chatBase {
+		margin-bottom: 20px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .02);
 		> h1 {
 			color: hsla(0, 0%, 100%, .3);

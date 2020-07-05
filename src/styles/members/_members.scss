@@ -1,19 +1,21 @@
-@use "cv" as *;
-@import "lib/legacy-selectors";
+@use "cv"as *;
 
 /* MEMBERS */
-%membersWrap {
+
+#{cn("FluxContainer(ChannelMembers)" membersWrap)} {
 	min-width: auto;
 	flex-basis: cv("members-width");
-	%members {
+
+	#{cn("FluxContainer(ChannelMembers)" members)} {
 		width: cv("members-width");
 		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
 	}
 }
-%members {
+
+#{cn("FluxContainer(ChannelMembers)" members)} {
 
 	// GROUP
-	%membersGroup {
+	#{cn("FluxContainer(ChannelMembers)" membersGroup)} {
 		padding-top: 20px;
 		display: flex;
 		align-items: center;
@@ -24,9 +26,11 @@
 		text-align: center;
 		transition: all .15s ease-in-out;
 		opacity: .85;
+
 		&[style*="color:"] {
 			opacity: 1;
 		}
+
 		&:before {
 			content: "";
 			height: 2px;
@@ -34,6 +38,7 @@
 			background: linear-gradient(to left, currentColor 50%, transparent);
 			margin-right: 5px;
 		}
+
 		&:after {
 			content: "";
 			height: 2px;
@@ -44,33 +49,39 @@
 	}
 
 	// MEMBER
-	%member {
+	#{cn(MemberListItem member)} {
 		background: transparent !important;
 		backface-visibility: hidden;
-		&%memberOffline {
-			%listItemAvatar {
+
+		&#{cn(MemberListItem offline)} {
+			#{cn(ListItem avatar)} {
 				filter: grayscale(100%) blur(1px);
 				transition: all .5s ease-in-out;
 			}
+
 			&:hover {
-				%listItemAvatar {
+				#{cn(ListItem avatar)} {
 					filter: none;
 				}
 			}
 		}
-		%listItemLayout {
+
+		#{cn(ListItem layout)} {
 			position: relative;
 			background: transparent;
 			transition: all .15s ease-in-out, transform .1s ease-in-out;
-			z-index: 1;	
+			z-index: 1;
+
 			&:active {
 				transform: scale(.9);
 			}
 		}
-		%listItemRoleColor {
+
+		#{cn(MemberListItem roleColor)} {
 			max-width: 100%;
 			overflow: visible;
 			transition: all .15s ease-in-out;
+
 			&:before {
 				content: "";
 				position: absolute;
@@ -82,6 +93,7 @@
 				z-index: -1;
 				pointer-events: none;
 			}
+
 			&:after {
 				content: "";
 				position: absolute;
@@ -93,28 +105,34 @@
 				z-index: -1;
 				pointer-events: none;
 			}
-			&[style*="color:"]{
+
+			&[style*="color:"] {
+
 				&:before,
 				&:after {
 					background: linear-gradient(to right, currentColor 90%, transparent);
 				}
 			}
-		}	
+		}
+
 		&:hover,
-		&%listItemSelected {
-			%listItemRoleColor {
+		&#{cn(ListItem selected)} {
+			#{cn(MemberListItem roleColor)} {
 				&:before {
 					opacity: 1;
 				}
+
 				&[style*="color:"]:before {
 					opacity: .07;
 				}
 			}
 		}
-		&%listItemSelected {
-			%listItemRoleColor {
+
+		&#{cn(ListItem selected)} {
+			#{cn(MemberListItem roleColor)} {
 				-webkit-text-fill-color: #fff;
 				text-shadow: 0 0 3px rgba(0, 0, 0, .7);
+
 				&:after {
 					right: 0;
 				}
@@ -123,43 +141,53 @@
 	}
 
 	// PLACEHOLDERS
-	%memberGroupPlaceholder {
+	#{cn("FluxContainer(ChannelMembers)" memberGroupsPlaceholder)} {
 		margin: 0 25%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-basis: 50%;
 		color: hsla(0, 0%, 100%, .3);
+
 		&:before,
 		&:after {
 			content: "";
 			height: 2px;
 			flex-grow: 1;
 		}
+
 		&:before {
 			background: linear-gradient(to left, currentColor 50%, transparent);
 			margin-right: calc(50% + 5px);
 			margin-left: -50%;
 		}
+
 		&:after {
 			background: linear-gradient(to right, currentColor 50%, transparent);
 			margin-right: -50%;
 			margin-left: calc(50% + 5px);
 		}
 	}
-	%memberGroupPlaceholder,
-	%memberPlaceholderAvatar,
-	%memberPlaceholderUsername,
-	%memberPlaceholderUsernameMultiple {
+
+	#{cn("FluxContainer(ChannelMembers)" memberGroupsPlaceholder)},
+	#{cn(PlaceholderAvatarWithMessage placeholderAvatar)},
+	#{cn(PlaceholderAvatarWithMessage placeholderUsername)},
+	#{cn(PlaceholderAvatarWithMessage mulitplePlaceholderUsername)} {
 		background: hsla(0, 0%, 100%, .3);
 	}
+
+	>div {
+		background: transparent;
+	}
 }
-%memberOwnerIcon {
+
+#{cn(MemberListItem ownerIcon)} {
 	background: url(https://clearvision.gitlab.io/icons/crown.svg) center/contain no-repeat;
 	opacity: .4;
 	transition: all .15s ease-in-out;
-	> path,
-	> g {
+
+	>path,
+	>g {
 		display: none;
 	}
 }
