@@ -18,3 +18,16 @@ jobs:
         with:
           name: test-${{github.sha}}
           path: test
+      - name: move to dir
+        run: cp -rf ./test/main.css ./main.css
+      - name: Commit files
+        run: |
+          git config --local user.name "OmgDani"
+          git add ./main.css
+          git commit -m "Upload main.css"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: refactor-1
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
