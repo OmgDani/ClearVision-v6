@@ -1,25 +1,29 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* MESSAGE */
-%messages {
-	%messageGroup {
+#{cn("FluxContainer(Messages)" messages)} {
+	#{cn(MessageContent message)} {
 		transition: background .3s ease-in-out;
-		&:active {
-			background: hsla(0, 0%, 100%, .1);
+
+		&:hover {
+			background: hsla(0, 0%, 100%, .1) !important;
 			transition-delay: .3s;
 		}
 	}
 }
-%messageGroup {
+
+#{cn(MessageContent message)} {
 	&%messageGroupLocalBot {
 		background: linear-gradient(to right, transparent, hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
 		box-shadow: none;
 		color: hsla(0, 0%, 100%, .3);
 	}
-	+ %messageGroup {
+
+	+%messageGroup {
 		margin-top: -1px;
 	}
+
 	%dividerEnabled {
 		margin-top: 0;
 		padding-top: 18px;
@@ -27,34 +31,40 @@
 	}
 
 	// HEADER
-	%avatarLarge {
+	#{cn(Message avatar)} {
 		transition: all .3s ease-in-out, transform .1s ease-in-out;
+
 		&:active {
 			transform: scale(.9);
-		}	
-	}
-	%messageUsername {
-		@include hover-shadow;
-	}
-	%messageTimestamp {
-		color: hsla(0, 0%, 100%, .3);
-		transition: all .3s ease-in-out;
-	}
-	&:hover %messageTimestampCozy,
-	%message:hover %messageTimestampCompact {
-		color: hsla(0, 0%, 100%, .7);
+		}
 	}
 
+	#{cn(Message username)} {
+		@include hover-shadow;
+	}
+
+	#{cn(Message timestamp)} {
+		color: hsla(0, 0%, 100%, .3);
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+
+
 	// CONTENT
-	%messageSystemContainer {
+	#{cn(SystemMessage container)} {
 		color: hsla(0, 0%, 100%, .5);
 	}
-	%markup {
+
+	#{cn(MessageContent 5757 markup)} {
 		color: hsla(0, 0%, 100%, .8);
 	}
 
 	// LINKS
-	%messageContent {
+	#{cn(Message content)} {
+
 		a,
 		%anchor {
 			color: $main-color;
@@ -63,72 +73,90 @@
 	}
 
 	// MENTIONED
-	%mentioned {
+	&#{cn(MessageContent mentioned)} {
 		background: hsla(0, 0%, 100%, .1);
-		&:after {
-			background: hsla(0, 0%, 100%, .1);
+
+		&:before {
+			background: transparent;
 			border-left: 4px solid $main-color;
 			border-radius: 2px 0 0 2px;
+		}
+
+		&:hover {
+			background: hsla(0, 0%, 100%, .12) !important;
 		}
 	}
 
 	// BLOCKQUOTE
-	%markup {
-		%blockquoteDivider {
+	#{cn(MessageContent 5757 markup)} {
+		#{cn(MessageContent 5757 blockquoteDivider)} {
 			background: hsla(0, 0%, 100%, .1);
 			border-radius: 0;
 		}
 	}
 
 	// BUTTONS
-	%messageButton {
+	#{cn(Message buttonContainer)} {
 		visibility: visible;
 		opacity: 0;
 		transition: all .15s ease-in-out;
 	}
-	%messageContent {
+
+	#{cn(Message message)} {
 		&:hover {
-			%messageButton {
+			#{cn(Message buttonContainer)} {
 				opacity: .3;
 			}
 		}
-		%messageButton {
-			&:hover,
-			&%messageButtonPopoutOpen {
+
+		#{cn(Message buttonContainer)} {
+			&:hover {
 				opacity: .7;
 			}
 		}
 	}
-	%messageReactionButton {
-		background: url(https://clearvision.gitlab.io/icons/emote.svg) center/100% no-repeat;
-		&:hover {
-			opacity: .7 !important;
+
+	#{cn(Message buttonWrapper)} {
+		&:first-child {
+			background: url(https://clearvision.gitlab.io/icons/emote.svg) center/100% no-repeat;
+
+			&:hover {
+				opacity: .7 !important;
+			}
 		}
 	}
-	%messageOptionsButton {
-		background: url(https://clearvision.gitlab.io/icons/settings.svg) center/100% no-repeat;
-		&:hover,
-		&%messageButtonPopoutOpen {
-			animation: cv-spin 2.5s linear infinite;
+
+	#{cn(Message buttonWrapper)} {
+		&:last-child {
+			background: url(https://clearvision.gitlab.io/icons/settings.svg) center/100% no-repeat;
+
+			&:hover {
+				animation: cv-spin 2.5s linear infinite;
+			}
 		}
 	}
-	%messageReactionButton,
-	%messageOptionsButton {
-		> svg {
-			display: none;
+
+	#{cn(Message buttonWrapper)} {
+
+		&:first-child,
+		&:last-child {
+			>svg { 
+				display: none;
+			}
 		}
 	}
 
 	// EDITING
-	%operations {
+	#{cn(MessageEditor operations)} {
 		color: hsla(0, 0%, 100%, .3);
 	}
 
 	// MESSAGE JUMP
-	> div[style^="border-radius: 2px;"] {
+	>div[style^="border-radius: 2px;"] {
 		&[style$="0);"] {
 			animation: none;
 		}
+
 		border-radius: 3px !important;
 		animation: cv-message-jump 2s ease-in-out;
 	}

@@ -305,15 +305,15 @@
 // DRAG INDICATORS
 #{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragBefore)},
 #{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragAfter)}
-#{#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDragBefore)}},
-#{#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDragAfter)}} {
+#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDragBefore)},
+#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDragAfter)} {
 	&:before,
 	&:after {
 		background: $main-color;
 		border-radius: 0;
 	}
 }
-#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerUserOver)} {
+#{cn("FluxContainer(DropTarget(DragSource(DropTarget(VoiceChannel))))" containerUserOver)} {
 	&:after {
 		background: $main-color;
 		border-color: transparent;

@@ -2,9 +2,9 @@
 @import "lib/legacy-selectors";
 
 /* MENTIONS */
-%headerBarTopic,
-%markup {
-	%mention,
+#{cn(ChannelTopic topic)},
+#{cn(MessageContent 5757 markup)} {
+	#{cn(Mention wrapper)},
 	%roleMention {
 		padding: 1px 4px;
 		border-radius: 5px;
@@ -14,7 +14,7 @@
 		transition: all .15s ease-in-out;
 		cursor: pointer;
 	}
-	%mention {
+	#{cn(Mention wrapper)} {
 		background: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
@@ -29,7 +29,7 @@
 		}
 	}
 }
-%mentioned %markup %roleMention {
+#{cn(MessageContent mentioned)} #{cn(MessageContent 5757 markup)} %roleMention {
 	padding: 0;
 	background: transparent !important;
 	color: $main-color;
