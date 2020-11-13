@@ -1916,113 +1916,102 @@ textarea,
   text-decoration: none !important;
 }
 
-/* MESSAGE */
-.messages-3amgkR .message-2qnXI6 {
+.messagesWrapper-1sRNjr .message-2qnXI6 {
   transition: background 0.3s ease-in-out;
 }
-.messages-3amgkR .message-2qnXI6:hover {
+.messagesWrapper-1sRNjr .message-2qnXI6:hover {
   background: rgba(255, 255, 255, 0.1) !important;
   transition-delay: 0.3s;
 }
-
-.message-2qnXI6.isLocalBot-38G0P0 {
+.messagesWrapper-1sRNjr.isLocalBot-38G0P0 {
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.04) 10%, rgba(255, 255, 255, 0.04) 90%, transparent);
   box-shadow: none;
   color: rgba(255, 255, 255, 0.3);
 }
-.message-2qnXI6 + .container-1YxwTf {
+.messagesWrapper-1sRNjr + .container-1ov-mD {
   margin-top: -1px;
 }
-.message-2qnXI6 .dividerEnabled-2TTlcf {
+.messagesWrapper-1sRNjr .dividerEnabled-2TTlcf {
   margin-top: 0;
   padding-top: 18px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
-.message-2qnXI6 .avatar-1BDn8e {
+.messagesWrapper-1sRNjr .avatar-17mtNa {
   transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
-.message-2qnXI6 .avatar-1BDn8e:active {
+.messagesWrapper-1sRNjr .avatar-17mtNa:active {
   transform: scale(0.9);
 }
-.message-2qnXI6 username-1A8OIy {
+.messagesWrapper-1sRNjr .username-1A8OIy {
   transition: all 0.1s ease-in-out;
 }
-.message-2qnXI6 username-1A8OIy:hover {
+.messagesWrapper-1sRNjr .username-1A8OIy:hover {
   text-shadow: 0 0 1px;
   text-decoration: none !important;
 }
-.message-2qnXI6 .timestamp-3ZCmNB {
+.messagesWrapper-1sRNjr .timestamp-3ZCmNB {
   color: rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
 }
-.message-2qnXI6 .timestamp-3ZCmNB:hover {
+.messagesWrapper-1sRNjr:hover .timestampCozy-2hLAPV, .messagesWrapper-1sRNjr:hover .timestampCompact-MHgFLv {
   color: rgba(255, 255, 255, 0.7);
 }
-.message-2qnXI6 .container-3-pyIM {
+.messagesWrapper-1sRNjr .container-3-pyIM {
   color: rgba(255, 255, 255, 0.5);
 }
-.message-2qnXI6 .markup-2BOw-j {
+.messagesWrapper-1sRNjr .markup-2BOw-j {
   color: rgba(255, 255, 255, 0.8);
 }
-.message-2qnXI6 .messageContent-2qWWxC a,
-.message-2qnXI6 .messageContent-2qWWxC .anchor-3Z-8Bb {
+.messagesWrapper-1sRNjr .messageContent-2qWWxC a,
+.messagesWrapper-1sRNjr .messageContent-2qWWxC .anchor-3Z-8Bb {
   color: var(--main-color);
   transition: all 0.1s ease-in-out;
 }
-.message-2qnXI6 .messageContent-2qWWxC a:hover,
-.message-2qnXI6 .messageContent-2qWWxC .anchor-3Z-8Bb:hover {
+.messagesWrapper-1sRNjr .messageContent-2qWWxC a:hover,
+.messagesWrapper-1sRNjr .messageContent-2qWWxC .anchor-3Z-8Bb:hover {
   text-shadow: 0 0 1px;
   text-decoration: none !important;
 }
-.message-2qnXI6.mentioned-xhSam7 {
+.messagesWrapper-1sRNjr.mentioned-xhSam7 {
   background: rgba(255, 255, 255, 0.1);
 }
-.message-2qnXI6.mentioned-xhSam7:before {
+.messagesWrapper-1sRNjr.mentioned-xhSam7:before {
   background: transparent;
   border-left: 4px solid var(--main-color);
   border-radius: 2px 0 0 2px;
 }
-.message-2qnXI6.mentioned-xhSam7:hover {
+.messagesWrapper-1sRNjr.mentioned-xhSam7:hover {
   background: rgba(255, 255, 255, 0.12) !important;
 }
-.message-2qnXI6 .markup-2BOw-j .blockquoteDivider-2hH8H6 {
+.messagesWrapper-1sRNjr .markup-2BOw-j .blockquoteDivider-2hH8H6 {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0;
 }
-.message-2qnXI6 .buttonContainer-DHceWr {
+.messagesWrapper-1sRNjr .button-1ZiXG9,
+.messagesWrapper-1sRNjr .reactionBtn-3N03Zj {
   visibility: visible;
   opacity: 0;
   transition: all 0.15s ease-in-out;
 }
-.message-2qnXI6 .message-2qnXI6:hover .buttonContainer-DHceWr {
+.messagesWrapper-1sRNjr .wrapper-2aW0bm {
+  background: transparent;
+}
+.messagesWrapper-1sRNjr .message-2qnXI6:hover .button-1ZiXG9,
+.messagesWrapper-1sRNjr .message-2qnXI6:hover .reactionBtn-3N03Zj {
   opacity: 0.3;
 }
-.message-2qnXI6 .message-2qnXI6 .buttonContainer-DHceWr:hover {
+.messagesWrapper-1sRNjr .message-2qnXI6 .button-1ZiXG9:hover,
+.messagesWrapper-1sRNjr .message-2qnXI6 .reactionBtn-3N03Zj:hover {
   opacity: 0.7;
 }
-.message-2qnXI6 .wrapper-2aW0bm:first-child {
-  background: url(https://clearvision.gitlab.io/icons/emote.svg) center/100% no-repeat;
-}
-.message-2qnXI6 .wrapper-2aW0bm:first-child:hover {
-  opacity: 0.7 !important;
-}
-.message-2qnXI6 .wrapper-2aW0bm:last-child {
-  background: url(https://clearvision.gitlab.io/icons/settings.svg) center/100% no-repeat;
-}
-.message-2qnXI6 .wrapper-2aW0bm:last-child:hover {
-  animation: cv-spin 2.5s linear infinite;
-}
-.message-2qnXI6 .wrapper-2aW0bm:first-child > svg, .message-2qnXI6 .wrapper-2aW0bm:last-child > svg {
-  display: none;
-}
-.message-2qnXI6 .operations-36ENbA {
+.messagesWrapper-1sRNjr .operations-36ENbA {
   color: rgba(255, 255, 255, 0.3);
 }
-.message-2qnXI6 > div[style^="border-radius: 2px;"] {
+.messagesWrapper-1sRNjr > div[style^="border-radius: 2px;"] {
   border-radius: 3px !important;
   animation: cv-message-jump 2s ease-in-out;
 }
-.message-2qnXI6 > div[style^="border-radius: 2px;"][style$="0);"] {
+.messagesWrapper-1sRNjr > div[style^="border-radius: 2px;"][style$="0);"] {
   animation: none;
 }
 
