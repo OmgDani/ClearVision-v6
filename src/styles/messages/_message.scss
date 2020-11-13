@@ -69,7 +69,7 @@
 	}
 
 	// MENTIONED
-	&#{cn(MessageContent mentioned)} {
+	#{cn(MessageContent mentioned)} {
 		background: hsla(0, 0%, 100%, .1);
 
 		&:before {
