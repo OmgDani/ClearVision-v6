@@ -1972,15 +1972,15 @@ textarea,
   text-shadow: 0 0 1px;
   text-decoration: none !important;
 }
-.messagesWrapper-1sRNjr.mentioned-xhSam7 {
+.messagesWrapper-1sRNjr .mentioned-xhSam7 {
   background: rgba(255, 255, 255, 0.1);
 }
-.messagesWrapper-1sRNjr.mentioned-xhSam7:before {
+.messagesWrapper-1sRNjr .mentioned-xhSam7:before {
   background: transparent;
   border-left: 4px solid var(--main-color);
   border-radius: 2px 0 0 2px;
 }
-.messagesWrapper-1sRNjr.mentioned-xhSam7:hover {
+.messagesWrapper-1sRNjr .mentioned-xhSam7:hover {
   background: rgba(255, 255, 255, 0.12) !important;
 }
 .messagesWrapper-1sRNjr .markup-2BOw-j .blockquoteDivider-2hH8H6 {
