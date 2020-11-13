@@ -26,7 +26,7 @@
 ## Installing
 Download the theme file and move it into your [BetterDiscord](https://betterdiscord.net) themes folder:
 
->[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
+>[ClearVision_v6.theme.css](https://omgdani.github.io/ClearVision-v6/dist/ClearVision_v6.theme.css)
 
 ## Building from source
 In order build the theme from source you'll need [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
