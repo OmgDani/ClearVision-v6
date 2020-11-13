@@ -1,9 +1,7 @@
 @use "cv"as *;
-@import "lib/legacy-selectors";
 
-/* MESSAGE */
-#{cn("FluxContainer(Messages)" messages)} {
-	#{cn(MessageContent message)} {
+#{cn("FluxContainer(Messages)" messagesWrapper)} {
+	#{cn(Message message)} {
 		transition: background .3s ease-in-out;
 
 		&:hover {
@@ -11,20 +9,17 @@
 			transition-delay: .3s;
 		}
 	}
-}
-
-#{cn(MessageContent message)} {
-	&%messageGroupLocalBot {
+	&#{cn(MessageGroup isLocalBot)} {
 		background: linear-gradient(to right, transparent, hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
 		box-shadow: none;
 		color: hsla(0, 0%, 100%, .3);
 	}
 
-	+%messageGroup {
+	+#{cn(MessageGroup container)} {
 		margin-top: -1px;
 	}
 
-	%dividerEnabled {
+	#{cn(MessageGroup dividerEnabled)} {
 		margin-top: 0;
 		padding-top: 18px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
@@ -46,10 +41,11 @@
 	#{cn(Message timestamp)} {
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .3s ease-in-out;
+	}
 
-		&:hover {
-			color: hsla(0, 0%, 100%, .7);
-		}
+	&:hover #{cn(Message timestampCozy)},
+	&:hover #{cn(Message timestampCompact)} {
+		color: hsla(0, 0%, 100%, .7);
 	}
 
 
@@ -66,7 +62,7 @@
 	#{cn(Message content)} {
 
 		a,
-		%anchor {
+		#{cn(Anchor anchor)} {
 			color: $main-color;
 			@include hover-shadow;
 		}
@@ -96,55 +92,34 @@
 	}
 
 	// BUTTONS
-	#{cn(Message buttonContainer)} {
+	#{cn(MessageOptionButton button)},
+	#{cn(Reactions reactionBtn)} {
 		visibility: visible;
 		opacity: 0;
 		transition: all .15s ease-in-out;
 	}
 
+	#{cn(Message buttonWrapper)} {
+		background: transparent;
+	}
+
+
 	#{cn(Message message)} {
 		&:hover {
-			#{cn(Message buttonContainer)} {
+			#{cn(MessageOptionButton button)},
+			#{cn(Reactions reactionBtn)} {
 				opacity: .3;
 			}
 		}
 
-		#{cn(Message buttonContainer)} {
+		#{cn(MessageOptionButton button)},
+		#{cn(Reactions reactionBtn)} {
 			&:hover {
 				opacity: .7;
 			}
 		}
 	}
 
-	#{cn(Message buttonWrapper)} {
-		&:first-child {
-			background: url(https://clearvision.gitlab.io/icons/emote.svg) center/100% no-repeat;
-
-			&:hover {
-				opacity: .7 !important;
-			}
-		}
-	}
-
-	#{cn(Message buttonWrapper)} {
-		&:last-child {
-			background: url(https://clearvision.gitlab.io/icons/settings.svg) center/100% no-repeat;
-
-			&:hover {
-				animation: cv-spin 2.5s linear infinite;
-			}
-		}
-	}
-
-	#{cn(Message buttonWrapper)} {
-
-		&:first-child,
-		&:last-child {
-			>svg { 
-				display: none;
-			}
-		}
-	}
 
 	// EDITING
 	#{cn(MessageEditor operations)} {
