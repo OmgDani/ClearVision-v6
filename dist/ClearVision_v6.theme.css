@@ -1,14 +1,14 @@
 /**
  * @name ClearVision
- * @author Zerthox
+ * @author Zerthox & Danielle
  * @version 6 BETA
- * @description Public BETA for ClearVision v6.
- * @source https://github.com/ClearVision/v6
- * @website https://clearvision.gitlab.io/join
+ * @description BETA for ClearVision Refactor.
+ * @source https://github.com/OmgDani/ClearVision-v6
+ * @website https://github.com/OmgDani/ClearVision-v6
  */
 
 /* IMPORT CSS */
-@import url(https://omgdani.github.io/ClearVision-v6/main.css);
+@import url(https://clearvision.gitlab.io/v6/main.css);
 
 /* SETTINGS */
 :root {
