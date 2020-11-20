@@ -25,12 +25,12 @@
 			display: none;
 		}
 	}
-	&:not(#{cn("Divider@7732" dividerRed)}) {
+	&:not(#{cn("Divider@7732" dividerUnread)}) {
 		#{cn("Divider@7732" dividerContent)} {
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	&#{cn("Divider@7732" dividerRed)} {
+	&#{cn("Divider@7732" dividerUnread)} {
 		&:before {
 			background: $main-color;
 			opacity: .8;

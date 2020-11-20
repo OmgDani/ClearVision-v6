@@ -1589,7 +1589,8 @@ $map: (
 	),
 	"Chat": (
 		"app": ".app-2rEoOp",
-		"layers": ".layers-3q14ss"
+		"layers": ".layers-3q14ss",
+		"chat": ".chat-3bRxxu"
 	),
 	"Checkbox": (
 		"alignCenter": ".alignCenter-MrlN6q",
@@ -2470,10 +2471,12 @@ $map: (
 		"barButtonIcon": ".barButtonIcon-3FGqPD",
 		"barButtonMain": ".barButtonMain-1giYuj.barButtonBase-3UKlW2",
 		"disableInteractions": ".disableInteractions-hjWoqU",
-		"divider": ".divider-3gKybi",
-		"dividerContent": ".dividerContent-2L12VI",
+		"divider": ".divider-3_HH5L",
+		"dividerUnread": ".isUnread-3Ef-o9",
+		"dividerContent": ".content-1o0f9g",
 		"dividerRed": ".dividerRed-MKoLlr",
 		"hasMore": ".hasMore-3e72_v",
+		"hasContent": ".hasContent-1_DUdQ",
 		"highBackgroundOpacity": ".highBackgroundOpacity-3jOag9",
 		"jumpToPresentBar": ".jumpToPresentBar-9P20AM.barBase-39XTcM",
 		"loadingMore": ".loadingMore-sPqUXZ",
@@ -4591,8 +4594,21 @@ $map: (
 		"unavailable": ".unavailable-1P8t7x",
 		"videoBackground": ".videoBackground-3-Y-dL",
 		"videoBackgroundWrapper": ".videoBackgroundWrapper-2dCt49",
+		"videoControls": ".videoControls-24w7Xp",
+		"topControls": ".topControls-KKImPZ",
+		"bottomControls": ".bottomControls-lIJyYL",
+		"controlSection": ".controlSection-2h3cS0",
 		"voice": ".voice-3G7r0P",
-		"wrapper": ".wrapper-29NfPK"
+		"wrapper": ".wrapper-2qzCYF",
+		"root": ".root-217Brm",
+		"voiceCallWrapper": ".voiceCallWrapper-3kPwHm",
+		"actionsWrapper": ".wrapper-3EGhDO",
+		"controlButton": ".controlButton-2MhVEL",
+		"centerButton": ".centerButton-3CaNcJ",
+		"contextMenuNub": ".contextMenuNub-3yOOYo",
+		"callAvatarMask": ".callAvatarMask-1SLlRi",
+		"border": ".border-Jn5IOt",
+		"speaking": ".speaking-B2MXPi"
 	),
 	"FluxContainer(PrivateChannelCallParticipants)": (
 		"alignBaseline": ".alignBaseline-LAQbso",

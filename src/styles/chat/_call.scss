@@ -1,24 +1,23 @@
-@use "cv" as *;
-@import "lib/legacy-selectors";
+@use "cv"as *;
 
 /* PRIVATE CALL */
-%chat {
-	%privateCall {
+#{cn(Chat chat)} {
+	#{cn("FluxContainer(PrivateChannelCall)" wrapper)} {
 		background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 		box-shadow: 0 0 10px rgba(0, 0, 0, calc(var(--background-shading) * .6));
-		margin-bottom: -48px;
-		%privateCallActions {
-			%privateCallActionsCenter {
+
+		#{cn("FluxContainer(PrivateChannelCall)" actionsWrapper)} {
+
+			#{cn("FluxContainer(PrivateChannelCall)" centerButton)},
+			#{cn("FluxContainer(PrivateChannelCall)" contextMenuNub)} {
 				background: rgba(0, 0, 0, .3);
+				border-radius: 50%;
 			}
 		}
-		%privateCallVideo {
-			background: transparent;
-			%privateCallActions {
-				%privateCallActionsCenter {
-					background: rgba(0, 0, 0, .3);
-					border-color: transparent;
-				}
+
+		#{cn("FluxContainer(PrivateChannelCall)" border)} {
+			&#{cn("FluxContainer(PrivateChannelCall)" speaking)} {
+				box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px var(--background-floating);
 			}
 		}
 	}
