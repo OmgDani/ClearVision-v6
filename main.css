@@ -1573,11 +1573,11 @@ textarea,
 }
 
 /* CHAT DIVIDER */
-.divider-3gKybi {
+.divider-3_HH5L {
   position: relative;
   margin: 10px 6px 10px 20px;
 }
-.divider-3gKybi:before {
+.divider-3_HH5L:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1588,7 +1588,7 @@ textarea,
   border-radius: 3px;
   z-index: -1;
 }
-.divider-3gKybi .dividerContent-2L12VI {
+.divider-3_HH5L .content-1o0f9g {
   padding: 5px 15px;
   display: block;
   font-size: 12px;
@@ -1597,20 +1597,20 @@ textarea,
   border-radius: 3px;
   opacity: 0.9;
 }
-.divider-3gKybi .dividerContent-2L12VI:before, .divider-3gKybi .dividerContent-2L12VI:after {
+.divider-3_HH5L .content-1o0f9g:before, .divider-3_HH5L .content-1o0f9g:after {
   display: none;
 }
-.divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI {
+.divider-3_HH5L:not(.isUnread-3Ef-o9) .content-1o0f9g {
   color: rgba(255, 255, 255, 0.7);
 }
-.divider-3gKybi.dividerRed-MKoLlr:before {
+.divider-3_HH5L.isUnread-3Ef-o9:before {
   background: var(--main-color);
   opacity: 0.8;
 }
-.divider-3gKybi.dividerRed-MKoLlr + .divider-3gKybi {
+.divider-3_HH5L.isUnread-3Ef-o9 + .divider-3_HH5L {
   margin-top: 40px;
 }
-.divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI {
+.divider-3_HH5L.isUnread-3Ef-o9 .content-1o0f9g {
   position: relative;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1866,20 +1866,17 @@ textarea,
 }
 
 /* PRIVATE CALL */
-.chat-3bRxxu .wrapper-29NfPK {
+.chat-3bRxxu .wrapper-2qzCYF {
   background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
   box-shadow: 0 0 10px rgba(0, 0, 0, calc(var(--background-shading) * .6));
-  margin-bottom: -48px;
 }
-.chat-3bRxxu .wrapper-29NfPK .actions-2vadYq .center-1Vp33r {
+.chat-3bRxxu .wrapper-2qzCYF .wrapper-3EGhDO .centerButton-3CaNcJ,
+.chat-3bRxxu .wrapper-2qzCYF .wrapper-3EGhDO .contextMenuNub-3yOOYo {
   background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
-.chat-3bRxxu .wrapper-29NfPK .video-1FfuMD {
-  background: transparent;
-}
-.chat-3bRxxu .wrapper-29NfPK .video-1FfuMD .actions-2vadYq .center-1Vp33r {
-  background: rgba(0, 0, 0, 0.3);
-  border-color: transparent;
+.chat-3bRxxu .wrapper-2qzCYF .border-Jn5IOt.speaking-B2MXPi {
+  box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-floating);
 }
 
 /* CHAT WELCOME MESSAGE */
