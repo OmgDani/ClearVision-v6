@@ -1,4 +1,4 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* SETTINGS SIDEBAR ICONS */
@@ -8,49 +8,49 @@
 	[aria-label="USER_SETTINGS"] & {
 
 		// ICON MAP
-		$icons: (
-			"My Account": "https://clearvision.gitlab.io/icons/person.svg",
-			"Privacy & Safety": "https://clearvision.gitlab.io/icons/security.svg",
-			"Authorized Apps": "https://clearvision.gitlab.io/icons/apps.svg",
-			"Connections": "https://clearvision.gitlab.io/icons/link.svg",
-			"Billing": "https://clearvision.gitlab.io/icons/payment.svg",
+		$icons: ("My Account": "https://clearvision.gitlab.io/icons/person.svg",
+				"Privacy & Safety": "https://clearvision.gitlab.io/icons/security.svg",
+				"Authorized Apps": "https://clearvision.gitlab.io/icons/apps.svg",
+				"Connections": "https://clearvision.gitlab.io/icons/link.svg",
 
-			"Discord Nitro": "https://clearvision.gitlab.io/icons/nitro.svg",
-			"Gift Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
-			"Server Boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
-			"HypeSquad": "https://clearvision.gitlab.io/icons/hypesquad.svg",
+				"Discord Nitro": "https://clearvision.gitlab.io/icons/nitro.svg",
+				"Library Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
+				"Nitro Server Boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
+				"Billing": "https://clearvision.gitlab.io/icons/payment.svg",
 
-			"Voice & Video": "https://clearvision.gitlab.io/icons/mic.svg",
-			"Overlay": "https://clearvision.gitlab.io/icons/aspect_ratio.svg",
-			"Notifications": "https://clearvision.gitlab.io/icons/notifications.svg",
-			"Keybinds": "https://clearvision.gitlab.io/icons/keyboard.svg",
-			"Game Activity": "https://clearvision.gitlab.io/icons/games.svg",
-			"Activity Feed": "https://clearvision.gitlab.io/icons/newspaper.svg",
-			"Game Library": "https://clearvision.gitlab.io/icons/view_carousel.svg",
-			"Text & Images": "https://clearvision.gitlab.io/icons/chat.svg",
-			"Appearance": "https://clearvision.gitlab.io/icons/camera.svg",
-			"Streamer Mode": "https://clearvision.gitlab.io/icons/videocam.svg",
-			"Language": "https://clearvision.gitlab.io/icons/language.svg",
-			"Windows Settings": "https://clearvision.gitlab.io/icons/windows.svg",
-			"Linux Settings": "https://clearvision.gitlab.io/icons/linux.svg",
+				"Appearance": "https://clearvision.gitlab.io/icons/camera.svg",
+				"Accessibility" : "https://omgdani.github.io/ClearVision-v6/icons/settings_accessibility.svg",
+				"Voice & Video": "https://clearvision.gitlab.io/icons/mic.svg",
+				"Text & Images": "https://clearvision.gitlab.io/icons/chat.svg",
+				"Notifications": "https://clearvision.gitlab.io/icons/notifications.svg",
+				"Keybinds": "https://clearvision.gitlab.io/icons/keyboard.svg",
+				"Language": "https://clearvision.gitlab.io/icons/language.svg",
+				"Windows": "https://clearvision.gitlab.io/icons/windows.svg",
+				"Linux": "https://clearvision.gitlab.io/icons/linux.svg",
+				"Streamer Mode": "https://clearvision.gitlab.io/icons/videocam.svg",
+				"Advanced": "https://clearvision.gitlab.io/icons/settings.svg",
 
-			"Change Log": "https://clearvision.gitlab.io/icons/history.svg",
-			"Experiments": "https://clearvision.gitlab.io/icons/flask.svg",
-			"Developer Options": "https://clearvision.gitlab.io/icons/bug.svg",
+				"Game Activity": "https://clearvision.gitlab.io/icons/games.svg",
+				"Overlay": "https://clearvision.gitlab.io/icons/aspect_ratio.svg",
 
-			"Log Out": "https://clearvision.gitlab.io/icons/exit.svg"
-		);
+				"changelog": "https://clearvision.gitlab.io/icons/history.svg",
+				"Hypesquad Online": "https://clearvision.gitlab.io/icons/hypesquad.svg",
+				"Experiments": "https://clearvision.gitlab.io/icons/flask.svg",
+				"Developer Options": "https://clearvision.gitlab.io/icons/bug.svg",
 
-		// SETTINGS LISTS
-		$general: cv("disc:settings.general");
-		$windows: cv("disc:settings.windows");
-		$osx: cv("disc:settings.osx");
-		$linux: cv("disc:settings.linux");
-		$web: cv("disc:settings.web");
+				"Settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
+				"Emotes": "https://clearvision.gitlab.io/icons/emote.svg",
+				"plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
+				"themes": "https://clearvision.gitlab.io/icons/palette.svg",
+				"customcss": "https://clearvision.gitlab.io/icons/code_braces.svg",
+
+				"logout": "https://clearvision.gitlab.io/icons/exit.svg"
+			);
 
 		// GENERAL STYLES
 		%tabBarItem {
 			padding-left: 50px !important;
+
 			&::before {
 				content: "";
 				position: absolute;
@@ -61,40 +61,11 @@
 			}
 		}
 
-		// ICON STYLES
-		@each $i, $u in $icons {
-			$id: unique-id();
-			%tabBarItem%#{$id}:before {
-				background-image: url(#{$u});
+		@each $tab,
+		$url in $icons {
+			%tabBarItem[aria-controls="#{$tab}-tab"]:before {
+				background-image:url(#{$url});
 			}
-			@if (index($general, $i)) {
-				:nth-child(#{index($general, $i) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($windows, $i)) {
-				%platformWin & :nth-child(#{index($windows, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($osx, $i)) {
-				%platformOSX & :nth-child(#{index($osx, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($linux, $i)) {
-				%platformLinux & :nth-child(#{index($linux, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($web, $i)) {
-				%platformWeb & :nth-child(#{index($web, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-		}
-		%tabBarItem:nth-last-child(4)::before {
-			background-image: url(#{map-get($icons, "Log Out")});
 		}
 	}
 }

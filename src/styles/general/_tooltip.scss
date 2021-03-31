@@ -7,7 +7,7 @@
 	border-radius: 3px;
 	font-size: 13px;
 	font-weight: 600;
-	#{cn(LayerContainer layerContainer)} & {
+	#{cn(LayerContainer layerContainer)}{
 		color: #fff;
 	}
 	&#{cn(Tooltip tooltipBlack)} {
