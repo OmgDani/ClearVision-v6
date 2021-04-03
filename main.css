@@ -79,7 +79,7 @@
   background: var(--background-overlay);
 }
 
-.app-2rEoOp {
+.app-2rEoOp, body {
   background: transparent;
 }
 
@@ -6853,6 +6853,49 @@ textarea::-webkit-scrollbar {
 }
 
 /* UNOFFICIAL SOURCES INDICATOR */
+.bd-settings-title .bd-button {
+  background-color: var(--main-color);
+}
+.bd-settings-title .bd-button:hover {
+  background-color: var(--hover-color);
+}
+
+.bd-addon-controls .bd-search-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.bd-addon-controls .selected.bd-button {
+  background-color: var(--main-color);
+}
+
+.bd-addon-list .bd-addon-card {
+  background: rgba(0, 0, 0, 0.4);
+}
+.bd-addon-list .bd-addon-card .bd-addon-header {
+  background: rgba(0, 0, 0, 0.4);
+}
+.bd-addon-list .bd-addon-card .bd-addon-header .bd-name {
+  color: var(--main-color);
+}
+.bd-addon-list .bd-addon-card .bd-addon-header .bd-switch {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.bd-addon-list .bd-addon-card .bd-addon-header .bd-switch-checked {
+  background-color: var(--main-color);
+}
+.bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button {
+  background-color: var(--main-color);
+}
+.bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button:hover {
+  background-color: var(--hover-color);
+}
+.bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button.bd-button-danger {
+  border: 1px solid var(--danger-color);
+  background-color: transparent;
+}
+.bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button.bd-button-danger:hover {
+  background-color: var(--danger-color);
+}
+
 #pluginNotice #outdatedPlugins span {
   color: #fff;
   transition: all 0.1s ease-in-out;
