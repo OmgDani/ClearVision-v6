@@ -193,6 +193,66 @@
 .ui-tab-bar-separator {
 	@extend %bdSettingsSidebarSeparator !optional;
 }
+.bd-addon-list {
+	@extend %bdAddonList !optional;
+}
+.bd-addon-controls {
+	@extend %bdAddonControls !optional;
+}
+.bd-settings-title {
+	@extend %bdSettingsTitle !optional;
+}
+.bd-search-wrapper {
+	@extend %bdSearchWrapper !optional;
+}
+.bd-controls-advanced {
+	@extend %bdControlsAdvanced !optional;
+}
+.bd-addon-card {
+	@extend %bdAddonCard !optional;
+}
+.bd-addon-header {
+	@extend %bdAddonHeader !optional;
+}
+.bd-title {
+	@extend %bdTitle !optional;
+}
+.bd-name {
+	@extend %bdName !optional;
+}
+.bd-meta {
+	@extend %bdmeta !optional;
+}
+.bd-switch {
+	@extend %bdSwitch !optional;
+}
+.bd-description-wrap {
+	@extend %bdDescriptionWrap !optional;
+}
+.bd-description {
+	@extend %bdDescription !optional;
+}
+.bd-footer {
+	@extend %bdFooter !optional;
+}
+.bd-links {
+	@extend %bdLinks !optional;
+}
+.bd-controls {
+	@extend %bdControls !optional;
+}
+.bd-addon-button {
+	@extend %bdAddonButton !optional;
+}
+.bd-button {
+	@extend %bdButton !optional;
+}
+.bd-button-danger {
+	@extend %bdButtonDanger !optional;
+}
+.bd-switch-checked {
+	@extend %bdSwitchChecked !optional;
+}
 .containerDefault-3GGEv_ {
 	@extend %categoryContainerDefault !optional;
 }

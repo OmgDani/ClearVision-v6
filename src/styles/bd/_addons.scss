@@ -1,0 +1,62 @@
+@use "cv"as *;
+@import "lib/legacy-selectors";
+
+%bdSettingsTitle {
+    %bdButton {
+        background-color: $main-color;
+        &:hover{
+            background-color: $hover-color;
+        }
+    }
+}
+
+%bdAddonControls {
+    %bdSearchWrapper {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    %bdButton.selected {
+        background-color: $main-color;
+    }
+}
+
+%bdAddonList {
+    %bdAddonCard {
+        background: rgba(0, 0, 0, 0.4);
+
+        %bdAddonHeader {
+            background: rgba(0, 0, 0, 0.4);
+
+            %bdName {
+                color: $main-color;
+            }
+
+            %bdSwitch {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            %bdSwitchChecked {
+                background-color: $main-color;
+            }
+        }
+
+        %bdFooter {
+            %bdControls {
+                %bdButton {
+                    background-color: $main-color;
+                    &:hover {
+                        background-color: $hover-color
+                    }
+
+                    &%bdButtonDanger {
+                        border: 1px solid cv("colors.danger");
+                        background-color: transparent;
+
+                        &:hover {
+                            background-color: cv("colors.danger");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
