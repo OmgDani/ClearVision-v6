@@ -226,6 +226,9 @@
 .bd-switch {
 	@extend %bdSwitch !optional;
 }
+.bd-switch-body {
+	@extend %bdSwitchBody !optional;
+}
 .bd-description-wrap {
 	@extend %bdDescriptionWrap !optional;
 }
@@ -4048,7 +4051,10 @@ pre {
 .userPopout-3XzG_A {
 	@extend %userPopout !optional;
 }
-.header-2BwW8b {
+.profileBanner-33-uE1 {
+	@extend %userPopoutProfileBanner !optional;
+}
+.headerNormal-1l1Znk {
 	@extend %userPopoutHeader !optional;
 }
 .headerPlaying-j0WQBV {
@@ -4066,11 +4072,17 @@ pre {
 .activityUserPopout-2yItg2 {
 	@extend %userPopoutActivity !optional;
 }
+.avatar-22FtUu {
+	@extend %userPopoutAvatar !optional;
+}
 .mobileIndicator-29f8Xh {
 	@extend %userPopoutMobileIndicator !optional;
 }
 .headerText-2sdzFM {
 	@extend %userPopoutHeaderText !optional;
+}
+.headerTop-2y3V6H {
+	@extend %userPopoutHeaderTop !optional;
 }
 .headerNameWrapper-3res2c {
 	@extend %userPopoutHeaderNameWrapper !optional;
@@ -4105,7 +4117,7 @@ pre {
 .footer-1fjuF6 {
 	@extend %userPopoutFooter !optional;
 }
-.quickMessage-1yeL4E {
+.input-2_SIlA {
 	@extend %userPopoutQuickMessage !optional;
 }
 .pro-1T8RK7 {

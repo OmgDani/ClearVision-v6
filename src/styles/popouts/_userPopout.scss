@@ -23,6 +23,11 @@
 		transform-origin: 100% 50%;
 	}
 
+	// BANNER
+	%userPopoutProfileBanner {
+		background-color: transparent !important;
+	}
+
 	// HEADER
 	%userPopoutHeader {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover;
@@ -47,6 +52,9 @@
 			}
 		}
 	}
+	%userPopoutHeaderTop {
+		background-color: transparent;
+	}
 	%userPopoutActivity {
 		background: rgba(0, 0, 0, .04);
 	}
@@ -63,6 +71,12 @@
 		}
 	}
 
+	// AVATAR
+
+	%userPopoutAvatar {
+		background: transparent;
+		border-color: transparent;
+	}
 	// BODY
 	%userPopoutBody {
 		background: rgba(0, 0, 0, .65);

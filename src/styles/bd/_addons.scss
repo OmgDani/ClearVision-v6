@@ -1,6 +1,7 @@
 @use "cv"as *;
 @import "lib/legacy-selectors";
 
+/* ADDON SETTINGS */
 %bdSettingsTitle {
     %bdButton {
         background-color: $main-color;
@@ -30,11 +31,11 @@
                 color: $main-color;
             }
 
-            %bdSwitch {
+            %bdSwitch %bdSwitchBody {
                 background-color: rgba(0, 0, 0, 0.4);
             }
 
-            %bdSwitchChecked {
+            %bdSwitchChecked %bdSwitchBody {
                 background-color: $main-color;
             }
         }
