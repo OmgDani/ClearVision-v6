@@ -1045,10 +1045,10 @@ textarea,
 .listDefault-3ir5aS .voiceUser-1K6Xox:hover .container-3w7J-x .username-3KYl0N, .listDefault-3ir5aS .voiceUser-1K6Xox:active .container-3w7J-x .username-3KYl0N, .listDefault-3ir5aS .voiceUser-1K6Xox.selected-3t3Csj .container-3w7J-x .username-3KYl0N {
   color: rgba(255, 255, 255, 0.7);
 }
-.voiceUser-1K6Xox .avatarSpeaking-2IGMRN {
+.voiceUser-1K6Xox .avatarSpeaking-2c8-9i {
   box-shadow: 0 0 0 2px var(--main-color), inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
-.voiceUser-1K6Xox .avatarSpeaking-2IGMRN:after {
+.voiceUser-1K6Xox .avatarSpeaking-2c8-9i:after {
   top: -2px;
   bottom: -2px;
   width: 100px;
@@ -1253,6 +1253,9 @@ textarea,
 .container-3baos1 .avatar-SmRMf2:hover foreignObject {
   opacity: 0.5;
 }
+.container-3baos1 .avatar-SmRMf2 .avatarSpeaking-2c8-9i {
+  box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-secondary);
+}
 .container-3baos1 .title-eS5yk3 {
   color: #fff;
 }
@@ -1277,6 +1280,10 @@ textarea,
 .container-1giJp5 .channel-1TmDQ6:hover {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+}
+
+.speaking-3dBKhR {
+  box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-secondary);
 }
 
 .activityPanel-28dQGo {
@@ -4881,7 +4888,10 @@ textarea::-webkit-scrollbar {
   margin-right: -16px;
   transform-origin: 100% 50%;
 }
-.userPopout-3XzG_A .header-2BwW8b {
+.userPopout-3XzG_A .profileBanner-33-uE1 {
+  background-color: transparent !important;
+}
+.userPopout-3XzG_A .headerNormal-1l1Znk {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)) center/cover;
 }
 .userPopout-3XzG_A .headerStreaming-2FjmGz {
@@ -4899,6 +4909,9 @@ textarea::-webkit-scrollbar {
 .userPopout-3XzG_A .headerXbox-3G-4PF .actionsUserPopout-2MrzCa > .button-38aScr:hover {
   background: rgba(16, 124, 16, 0.5);
 }
+.userPopout-3XzG_A .headerTop-2y3V6H {
+  background-color: transparent;
+}
 .userPopout-3XzG_A .activityUserPopout-2yItg2 {
   background: rgba(0, 0, 0, 0.04);
 }
@@ -4911,6 +4924,10 @@ textarea::-webkit-scrollbar {
 .userPopout-3XzG_A .actionsUserPopout-2MrzCa > .button-38aScr,
 .userPopout-3XzG_A .listeningActionsUserPopout-Ga2V_N > .button-38aScr {
   flex-grow: 1;
+}
+.userPopout-3XzG_A .avatar-22FtUu {
+  background: transparent;
+  border-color: transparent;
 }
 .userPopout-3XzG_A .body-3iLsc4 {
   background: rgba(0, 0, 0, 0.65);
@@ -4947,16 +4964,16 @@ textarea::-webkit-scrollbar {
   background: rgba(0, 0, 0, 0.65);
   border-color: rgba(255, 255, 255, 0.04);
 }
-.userPopout-3XzG_A .quickMessage-1yeL4E {
+.userPopout-3XzG_A .input-2_SIlA {
   background: rgba(0, 0, 0, 0.3);
   border-color: transparent;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.userPopout-3XzG_A .quickMessage-1yeL4E::placeholder {
+.userPopout-3XzG_A .input-2_SIlA::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.userPopout-3XzG_A .quickMessage-1yeL4E:focus {
+.userPopout-3XzG_A .input-2_SIlA:focus {
   border-color: var(--main-color);
   box-shadow: 0 0 1px var(--main-color);
 }
@@ -6853,6 +6870,278 @@ textarea::-webkit-scrollbar {
 }
 
 /* UNOFFICIAL SOURCES INDICATOR */
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href].anchor-3Z-8Bb.embedLink-1G1K1D,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href].anchor-3Z-8Bb.embedLink-1G1K1D {
+  color: var(--main-color) !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:after, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href].anchor-3Z-8Bb.embedLink-1G1K1D:before, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href].anchor-3Z-8Bb.embedLink-1G1K1D:after,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:after,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href].anchor-3Z-8Bb.embedLink-1G1K1D:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href].anchor-3Z-8Bb.embedLink-1G1K1D:after {
+  display: none !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D {
+  position: relative;
+  color: transparent !important;
+  cursor: not-allowed !important;
+  transition: all 0.3s ease-in-out;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  background: var(--danger-color) !important;
+  border: none !important;
+  border-radius: 3px !important;
+  color: #fff !important;
+  text-align: center !important;
+  text-shadow: none;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover {
+  color: var(--danger-color) !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover:before, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover:before {
+  opacity: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D {
+  position: relative;
+  color: transparent !important;
+  cursor: not-allowed !important;
+  transition: all 0.3s ease-in-out;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  background: var(--danger-color) !important;
+  border: none !important;
+  border-radius: 3px !important;
+  color: #fff !important;
+  text-align: center !important;
+  text-shadow: none;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover {
+  color: var(--danger-color) !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover:before, html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:hover:before,
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:hover:before {
+  opacity: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="betterdocs.us" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before {
+  content: "⚠ Unofficial source" !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .messageContent-2qWWxC.markup-2BOw-j [href*="discordsource.com" i].anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB:before {
+  content: "⚠ Unofficial source" !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="betterdocs.us" i].anchor-3Z-8Bb.embedLink-1G1K1D:before {
+  content: "⚠ Unofficial theme/plugin source" !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="discordsource.com" i].anchor-3Z-8Bb.embedLink-1G1K1D:before {
+  content: "⚠ Unofficial theme/plugin source" !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 .embedThumbnail-2Y84-K {
+  display: block !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="betterdocs.us" i].embedThumbnail-2Y84-K {
+  position: relative;
+  cursor: not-allowed;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="betterdocs.us" i].embedThumbnail-2Y84-K > img {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="betterdocs.us" i].embedThumbnail-2Y84-K:before {
+  content: "⚠";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--danger-color);
+  border-radius: inherit;
+  color: #fff;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="betterdocs.us" i].embedThumbnail-2Y84-K:hover > img {
+  opacity: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="betterdocs.us" i].embedThumbnail-2Y84-K:hover:before {
+  opacity: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="discordsource.com" i].embedThumbnail-2Y84-K {
+  position: relative;
+  cursor: not-allowed;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="discordsource.com" i].embedThumbnail-2Y84-K > img {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="discordsource.com" i].embedThumbnail-2Y84-K:before {
+  content: "⚠";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--danger-color);
+  border-radius: inherit;
+  color: #fff;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="discordsource.com" i].embedThumbnail-2Y84-K:hover > img {
+  opacity: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .embed-IeVjo6 [href*="discordsource.com" i].embedThumbnail-2Y84-K:hover:before {
+  opacity: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .guildIcon-lQ0uiM:after {
+  display: none !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 .guildIcon-lQ0uiM ~ .button-3To2tQ {
+  display: flex !important;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM {
+  background-size: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  background-size: 100% 100%;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM:after {
+  content: "⚠" !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: var(--danger-color) !important;
+  border: none !important;
+  border-radius: inherit !important;
+  color: #fff !important;
+  background: var(--danger-color);
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM:hover:before {
+  opacity: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM:hover:after {
+  opacity: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .guildInfo-1STtYi .guildName-2hvnt_ {
+  position: relative;
+  color: transparent;
+  cursor: not-allowed;
+  transition: all 0.3s ease-in-out;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .guildInfo-1STtYi .guildName-2hvnt_:before {
+  content: "⚠ Unofficial source";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--danger-color);
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-shadow: none;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .guildInfo-1STtYi .guildName-2hvnt_:hover {
+  color: var(--danger-color);
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .guildInfo-1STtYi .guildName-2hvnt_:hover:before {
+  opacity: 0;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .guildInfo-1STtYi .statusOnline-8PnF5L {
+  background: var(--danger-color);
+  color: var(--danger-color);
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .button-3To2tQ {
+  cursor: not-allowed;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .button-3To2tQ.lookFilled-1Gx00P.colorGreen-29iAKY {
+  border-color: var(--danger-color);
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .button-3To2tQ.lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+  background: var(--danger-color);
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .button-3To2tQ.lookFilled-1Gx00P.colorGreen-29iAKY .contents-18-Yxp:before {
+  content: "⚠";
+  margin-right: 5px;
+}
+html[lang] body #app-mount.appMount-3lHmkl .messagesWrapper-1sRNjr .message-2qnXI6 [style*="icons/153708594091655168/"].guildIcon-lQ0uiM ~ .button-3To2tQ.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+  background: var(--danger-color);
+}
+
+/* ADDON SETTINGS */
 .bd-settings-title .bd-button {
   background-color: var(--main-color);
 }
@@ -6876,10 +7165,10 @@ textarea::-webkit-scrollbar {
 .bd-addon-list .bd-addon-card .bd-addon-header .bd-name {
   color: var(--main-color);
 }
-.bd-addon-list .bd-addon-card .bd-addon-header .bd-switch {
+.bd-addon-list .bd-addon-card .bd-addon-header .bd-switch .bd-switch-body {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.bd-addon-list .bd-addon-card .bd-addon-header .bd-switch-checked {
+.bd-addon-list .bd-addon-card .bd-addon-header .bd-switch-checked .bd-switch-body {
   background-color: var(--main-color);
 }
 .bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button {
