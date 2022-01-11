@@ -1,4 +1,4 @@
-@use "cv" as *;
+@use "cv"as *;
 // @import "lib/legacy-selectors";
 
 /* BUTTON */
@@ -10,36 +10,46 @@
 // BUTTON FILLED
 #app-mount {
 	#{cn(ButtonLink lookFilled)} {
+
 		&#{cn(ButtonLink colorPrimary)},
 		&#{cn(ButtonLink colorBrand)},
 		&#{cn(ButtonLink colorGreen)} {
 			background: $main-color;
+
 			&:hover,
 			&#{cn(ButtonLink hasHover)}:hover {
 				background: $hover-color;
 			}
+
 			&:disabled {
 				background: $main-color !important;
 			}
 		}
 	}
 }
+
 #{cn(ButtonLink lookFilled)} {
+
 	&#{cn(ButtonLink colorWhite)},
 	&#{cn(ButtonLink colorGrey)} {
 		background: hsla(0, 0%, 100%, .1);
+
 		#{cn(ButtonLink contents)} {
 			color: hsla(0, 0%, 100%, .7);
 			transition: inherit;
 		}
+
 		&:hover {
 			background: hsla(0, 0%, 100%, .2) !important;
+
 			#{cn(ButtonLink contents)} {
 				color: #fff;
 			}
 		}
+
 		&:disabled {
 			background: hsla(0, 0%, 100%, .1) !important;
+
 			#{cn(ButtonLink contents)} {
 				color: hsla(0, 0%, 100%, .5);
 			}
@@ -49,11 +59,13 @@
 
 // BUTTON INVERTED
 #{cn(ButtonLink lookInverted)} {
+
 	&,
 	&#{cn(ButtonLink colorBrand)},
 	&#{cn(ButtonLink colorGreen)} {
 		background: hsla(0, 0%, 100%, .1);
 		color: hsla(0, 0%, 100%, .7);
+
 		&:hover {
 			background: hsla(0, 0%, 100%, .2);
 			color: #fff;
@@ -64,14 +76,23 @@
 // BUTTON OUTLINED
 #app-mount {
 	#{cn(ButtonLink lookOutlined)} {
+
 		&#{cn(ButtonLink colorPrimary)},
 		&#{cn(ButtonLink colorWhite)} {
 			background: hsla(0, 0%, 100%, .05);
 			border-color: transparent;
 			color: hsla(0, 0%, 100%, .7);
+
 			&:hover {
 				background: hsla(0, 0%, 100%, .1);
 				border-color: transparent;
+				color: #fff;
+			}
+		}
+
+		&#{cn(ButtonLink colorRed)} {
+			&:hover {
+				background-color: cv("colors.danger");
 				color: #fff;
 			}
 		}
@@ -82,9 +103,11 @@
 #{cn(ButtonLink lookLink)} {
 	&#{cn(ButtonLink colorWhite)} {
 		color: #fff;
+
 		&:hover {
 			text-shadow: 0 0 3px;
-			> #{cn(ButtonLink contents)} {
+
+			>#{cn(ButtonLink contents)} {
 				background-image: none;
 			}
 		}
