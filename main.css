@@ -659,20 +659,20 @@ textarea,
   height: 10px !important;
 }
 
-.wrapper-3Njo_c .expandedFolderBackground-1cujaW {
+.wrapper-28eC3z .expandedFolderBackground-1kSAf6 {
   background: rgba(255, 255, 255, 0.04);
   border-radius: 16px 16px 24px 24px;
   transition: background-color 0.3s ease-in-out;
 }
-.wrapper-3Njo_c .expandedFolderBackground-1cujaW.collapsed-2ZrjoL {
+.wrapper-28eC3z .expandedFolderBackground-1kSAf6.collapsed-2ZrjoL {
   background: transparent;
 }
 
-.folder-1hbNCn {
+.folder-241Joy {
   background: rgba(255, 255, 255, 0.07);
   transition: all 0.3s ease-in-out;
 }
-.folder-1hbNCn.hover-qTxTR_ {
+.folder-241Joy.hover-3m7-WT {
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -4467,63 +4467,67 @@ code {
   transition: all 0.3s ease-in-out;
 }
 
-#app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6, #app-mount .lookFilled-1Gx00P.colorBrand-3pXr91, #app-mount .lookFilled-1Gx00P.colorGreen-29iAKY {
+#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo, #app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ, #app-mount .lookFilled-yCfaCM.colorGreen-3y-Z79 {
   background: var(--main-color);
 }
-#app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover, #app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6.hasHover-3X1-zV:hover, #app-mount .lookFilled-1Gx00P.colorBrand-3pXr91:hover, #app-mount .lookFilled-1Gx00P.colorBrand-3pXr91.hasHover-3X1-zV:hover, #app-mount .lookFilled-1Gx00P.colorGreen-29iAKY:hover, #app-mount .lookFilled-1Gx00P.colorGreen-29iAKY.hasHover-3X1-zV:hover {
+#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover, #app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo.hasHover-26V98q:hover, #app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover, #app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ.hasHover-26V98q:hover, #app-mount .lookFilled-yCfaCM.colorGreen-3y-Z79:hover, #app-mount .lookFilled-yCfaCM.colorGreen-3y-Z79.hasHover-26V98q:hover {
   background: var(--hover-color);
 }
-#app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled, #app-mount .lookFilled-1Gx00P.colorBrand-3pXr91:disabled, #app-mount .lookFilled-1Gx00P.colorGreen-29iAKY:disabled {
+#app-mount .lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled, #app-mount .lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled, #app-mount .lookFilled-yCfaCM.colorGreen-3y-Z79:disabled {
   background: var(--main-color) !important;
 }
 
-.lookFilled-1Gx00P.colorWhite-rEQuAQ, .lookFilled-1Gx00P.colorGrey-2DXtkV {
+.lookFilled-yCfaCM.colorWhite-1H92hK, .lookFilled-yCfaCM.colorGrey-2iAG-B {
   background: rgba(255, 255, 255, 0.1);
 }
-.lookFilled-1Gx00P.colorWhite-rEQuAQ .contents-3ca1mk, .lookFilled-1Gx00P.colorGrey-2DXtkV .contents-3ca1mk {
+.lookFilled-yCfaCM.colorWhite-1H92hK .contents-3ca1mk, .lookFilled-yCfaCM.colorGrey-2iAG-B .contents-3ca1mk {
   color: rgba(255, 255, 255, 0.7);
   transition: inherit;
 }
-.lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+.lookFilled-yCfaCM.colorWhite-1H92hK:hover, .lookFilled-yCfaCM.colorGrey-2iAG-B:hover {
   background: rgba(255, 255, 255, 0.2) !important;
 }
-.lookFilled-1Gx00P.colorWhite-rEQuAQ:hover .contents-3ca1mk, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover .contents-3ca1mk {
+.lookFilled-yCfaCM.colorWhite-1H92hK:hover .contents-3ca1mk, .lookFilled-yCfaCM.colorGrey-2iAG-B:hover .contents-3ca1mk {
   color: #fff;
 }
-.lookFilled-1Gx00P.colorWhite-rEQuAQ:disabled, .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+.lookFilled-yCfaCM.colorWhite-1H92hK:disabled, .lookFilled-yCfaCM.colorGrey-2iAG-B:disabled {
   background: rgba(255, 255, 255, 0.1) !important;
 }
-.lookFilled-1Gx00P.colorWhite-rEQuAQ:disabled .contents-3ca1mk, .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled .contents-3ca1mk {
+.lookFilled-yCfaCM.colorWhite-1H92hK:disabled .contents-3ca1mk, .lookFilled-yCfaCM.colorGrey-2iAG-B:disabled .contents-3ca1mk {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.lookInverted-2D7oAl, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookInverted-2D7oAl.colorGreen-29iAKY {
+.lookInverted-2mDUMi, .lookInverted-2mDUMi.colorBrand-I6CyqQ, .lookInverted-2mDUMi.colorGreen-3y-Z79 {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
 }
-.lookInverted-2D7oAl:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .lookInverted-2D7oAl.colorGreen-29iAKY:hover {
+.lookInverted-2mDUMi:hover, .lookInverted-2mDUMi.colorBrand-I6CyqQ:hover, .lookInverted-2mDUMi.colorGreen-3y-Z79:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
-#app-mount .lookOutlined-3sRXeN.colorPrimary-3b3xI6, #app-mount .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+#app-mount .lookOutlined-3yKVGo.colorPrimary-2AuQVo, #app-mount .lookOutlined-3yKVGo.colorWhite-1H92hK {
   background: rgba(255, 255, 255, 0.05);
   border-color: transparent;
   color: rgba(255, 255, 255, 0.7);
 }
-#app-mount .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover, #app-mount .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover {
+#app-mount .lookOutlined-3yKVGo.colorPrimary-2AuQVo:hover, #app-mount .lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: transparent;
   color: #fff;
 }
-
-.lookLink-9FtZy-.colorWhite-rEQuAQ {
+#app-mount .lookOutlined-3yKVGo.colorRed-rQXKgM:hover {
+  background-color: var(--danger-color);
   color: #fff;
 }
-.lookLink-9FtZy-.colorWhite-rEQuAQ:hover {
+
+.lookLink-15mFoz.colorWhite-1H92hK {
+  color: #fff;
+}
+.lookLink-15mFoz.colorWhite-1H92hK:hover {
   text-shadow: 0 0 3px;
 }
-.lookLink-9FtZy-.colorWhite-rEQuAQ:hover > .contents-3ca1mk {
+.lookLink-15mFoz.colorWhite-1H92hK:hover > .contents-3ca1mk {
   background-image: none;
 }
 
@@ -5962,12 +5966,6 @@ textarea::-webkit-scrollbar {
 .root-8LYsGj .profileBanner-1owKI5 {
   background: transparent !important;
 }
-.root-8LYsGj .actionButton-iarQTd {
-  background-color: var(--main-color);
-}
-.root-8LYsGj .actionButton-iarQTd:hover {
-  background-color: var(--hover-color);
-}
 
 .additionalActionsIcon-3Cy8UU {
   width: 24px;
@@ -6412,6 +6410,10 @@ textarea::-webkit-scrollbar {
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG[style*="color: rgb(240, 71, 71)"]:hover:after {
   opacity: 0.7;
 }
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG .premiumLabel-V52REm > svg,
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG .background-3iPORX {
+  display: none;
+}
 
 /* SETTINGS SIDEBAR ICONS */
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN .item-3XjbnG {
@@ -6426,6 +6428,9 @@ textarea::-webkit-scrollbar {
   margin-top: -2px;
 }
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=my-account-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/manage_accounts.svg);
+}
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=profile-customization-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/person.svg);
 }
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="privacy-&-safety-tab"].item-3XjbnG:before {
@@ -6440,11 +6445,14 @@ textarea::-webkit-scrollbar {
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=discord-nitro-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/nitro.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=library-inventory-tab].item-3XjbnG:before {
-  background-image: url(https://clearvision.gitlab.io/icons/gift.svg);
-}
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=nitro-server-boost-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/server_boost.svg);
+}
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=subscriptions-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/autorenew.svg);
+}
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=library-inventory-tab].item-3XjbnG:before {
+  background-image: url(https://clearvision.gitlab.io/icons/gift.svg);
 }
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=billing-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/payment.svg);
