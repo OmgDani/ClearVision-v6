@@ -82,7 +82,7 @@
 // NO CHANNEL
 %base {
 	%noChannel {
-		background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
 }
 %noChannel {

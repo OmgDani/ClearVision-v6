@@ -54,6 +54,7 @@
 			}
 			&%searchTabSelected {
 				color: #fff;
+				background-color: transparent;
 				&:after {
 					top: 0;
 					animation: cv-slide-top .2s ease-in-out;
@@ -68,11 +69,11 @@
 	}
 
 	// SEPARATOR
-	%searchChannelSeparator {
+	%searchResultGroup {
 		&:before {
 			display: none;
 		}
-		> %searchChannelName {
+		%searchChannelName {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -113,6 +114,7 @@
 
 	// RESULT
 	%searchResult {
+		background-color: transparent;
 		margin-bottom: 0;
 		padding-bottom: 10px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
@@ -174,7 +176,7 @@
 	%searchResultActionButtons {
 		background-color: transparent;
 		box-shadow: none;
-		opacity: 0;
+		// opacity: 0;
 		transition: all .15s ease-in-out;
 	}
 	%searchResultMessageHit {
@@ -183,9 +185,9 @@
 				-webkit-mask-image: linear-gradient(to right, #000 245px, transparent 260px);
 				mask-image: linear-gradient(to right, #000 245px, transparent 260px);
 			}
-			> %searchResultActionButtons {
-				opacity: 1;
-			}
+			// > %searchResultActionButtons {
+			// 	opacity: 1;
+			// }
 		}
 	}
 	%searchResult {

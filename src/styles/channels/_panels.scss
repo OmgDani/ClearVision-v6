@@ -28,6 +28,10 @@
 		border-radius: 0 15px 15px 0;
 	}
 
+	&:only-child {
+		border-radius: 15px;
+	}
+
 	&:nth-child(n + 2) {
 		position: relative;
 		margin-left: -1px;
@@ -208,7 +212,7 @@
 				opacity: .5;
 			}
 		}
-		#{cn(VoiceUser avatarSpeaking)} {
+		#{cn(AccountConnected avatarSpeaking)} {
 			box-shadow: inset 0 0 0 2px var(--main-color),inset 0 0 0 3px var(--background-secondary);
 		}
 	}

@@ -217,8 +217,8 @@
 }
 
 // USER LIMIT
-%channelUserLimitUsers,
-%channelUserLimitTotal {
+#{cn(ChannelItem userLimitUsers)},
+#{cn(ChannelItem userLimitTotal)} {
 	width: 24px;
 	color: hsla(0, 0%, 100%, .3);
 	font-weight: 600;
@@ -226,12 +226,12 @@
 	transition: all .15s ease-in-out;
 }
 
-%channelUserLimitUsers {
+#{cn(ChannelItem userLimitUsers)} {
 	padding: 0 4px 0 6px;
 	background: rgba(0, 0, 0, .15);
 }
 
-%channelUserLimitTotal {
+#{cn(ChannelItem userLimitTotal)} {
 	padding: 0 6px 0 4px;
 	background: hsla(0, 0%, 100%, .04);
 	box-shadow: inset 1px 0 hsla(0, 0%, 100%, .07);

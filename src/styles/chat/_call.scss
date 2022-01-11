@@ -6,6 +6,10 @@
 		background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 		box-shadow: 0 0 10px rgba(0, 0, 0, calc(var(--background-shading) * .6));
 
+		#{cn("FluxContainer(PrivateChannelCall)" container)} {
+			background: transparent;
+		}
+
 		#{cn("FluxContainer(PrivateChannelCall)" actionsWrapper)} {
 
 			#{cn("FluxContainer(PrivateChannelCall)" centerButton)},
@@ -19,6 +23,11 @@
 			&#{cn("FluxContainer(PrivateChannelCall)" speaking)} {
 				box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px var(--background-floating);
 			}
+		}
+	}
+	#{cn("FluxContainer(PrivateChannelCall)" borderSharing)} {
+		&#{cn("FluxContainer(PrivateChannelCall)" speakingSharing)} {
+			box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px var(--background-floating);	
 		}
 	}
 }

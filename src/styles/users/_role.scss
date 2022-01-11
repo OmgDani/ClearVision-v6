@@ -9,6 +9,7 @@
 	border-radius: 3px;
 	transition: all .1s ease-in-out;
 	cursor: default;
+	background: transparent;
 	&[style] {
 		&:not(:hover) {
 			border-color: transparent !important;

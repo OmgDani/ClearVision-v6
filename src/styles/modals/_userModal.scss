@@ -1,11 +1,12 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* USER PROFILE MODAl */
 %userModal {
 	max-height: 100vh;
 	background: transparent;
-	box-shadow: 0 0 30px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 0 30px 5px rgba(0, 0, 0, .3) !important;
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -15,43 +16,68 @@
 		@include filters(cv("bg.modal"));
 		z-index: -1;
 	}
-	> %userModalTopSection {
+
+	>%userModalTopSection {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover;
 	}
-	> %userModalTopSectionStreaming {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) calc(95% - 55px), transparent calc(110% - 55px));
+
+	// > %userModalTopSectionStreaming {
+	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
+	// 		linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) calc(95% - 55px), transparent calc(110% - 55px));
+	// }
+	// > %userModalTopSectionSpotify {
+	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
+	// 	linear-gradient(to bottom, rgba(cv("const:colors.spotify-green"), .4) calc(95% - 55px), transparent calc(110% - 55px));
+	// }
+	// > %userModalTopSectionXbox {
+	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
+	// 		linear-gradient(to bottom, rgba(cv("const:colors.xbox-green"), .4) calc(95% - 55px), transparent calc(110% - 55px));
+	// }
+
+	%userModalAvatar {
+		border: transparent;
+		background: transparent;
 	}
-	> %userModalTopSectionSpotify {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
-		linear-gradient(to bottom, rgba(cv("const:colors.spotify-green"), .4) calc(95% - 55px), transparent calc(110% - 55px));
+
+	%userModalProfileBanner {
+		background: transparent !important;
+		// height: 90px;
 	}
-	> %userModalTopSectionXbox {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.xbox-green"), .4) calc(95% - 55px), transparent calc(110% - 55px));
+
+	%userModalActionButton {
+		background-color: $main-color;
+		&:hover {
+			background-color: $hover-color;
+		}
 	}
 }
+
 %userModalAdditionalActionsIcon {
 	width: 24px;
 	height: 24px;
 	background: url(https://clearvision.gitlab.io/icons/expand_more.svg) center/36px no-repeat;
 	opacity: .3;
 	transition: all .15s ease-in-out;
+
 	&:hover {
 		opacity: .7;
 	}
-	> g {
+
+	>g {
 		display: none;
 	}
 }
+
 %userModalHeaderFill {
 	background: rgba(0, 0, 0, .04);
-	> %userModalActivity {
+
+	>%userModalActivity {
 		%activityHeaderText {
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
 }
+
 %userModalNameTag {
 	display: flex;
 	flex-direction: row;
@@ -63,61 +89,79 @@
 	opacity: .7;
 	transition: all .15s ease-in-out;
 	filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
+
 	&:hover {
 		opacity: 1;
 	}
 }
+
 *,
-%userModalTopSectionNormal * {
+%userModalTopSection * {
 	&%profileBadgeStaff {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeStaff.svg);
 	}
+
 	&%profileBadgePartner {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
 	}
+
 	&%profileBadgeHypeSquad {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquad.svg);
 	}
+
 	&%profileBadgeHypeSquadHouse1 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBravery.svg);
 	}
+
 	&%profileBadgeHypeSquadHouse2 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrilliance.svg);
 	}
+
 	&%profileBadgeHypeSquadHouse3 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalance.svg);
 	}
+
 	&%profileBadgeHypeSquadHouse1Winner {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBraveryWinner.svg);
 	}
+
 	&%profileBadgeHypeSquadHouse2Winner {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrillianceWinner.svg);
 	}
+
 	&%profileBadgeHypeSquadHouse3Winner {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalanceWinner.svg);
 	}
+
 	&%profileBadgeEarlySupporter {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeEarlySupporter.svg);
 	}
+
 	&%profileBadgePremium {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeNitro.svg);
 	}
+
 	&%profileBadgeBugHunter {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeBugHunter.svg);
 	}
+
 	&%profileBadgeGuildSubscriber1 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber1.svg);
 	}
+
 	&%profileBadgeGuildSubscriber2 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber2.svg);
 	}
+
 	&%profileBadgeGuildSubscriber3 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber3.svg);
 	}
+
 	&%profileBadgeGuildSubscriber4 {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber4.svg);
 	}
 }
+
 %userModalTopSectionPlaying {
 	%profileBadgePartner {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
@@ -131,8 +175,9 @@
 		border-color: hsla(0, 0%, 100%, .04);
 	}
 }
+
 %userModalTabBar {
-	> %tabBarItem {
+	>%tabBarItem {
 		position: relative;
 		margin: 10px 0 0;
 		padding: 0 10px;
@@ -140,9 +185,11 @@
 		color: hsla(0, 0%, 100%, .5) !important;
 		transition: color .15s ease-in-out;
 		z-index: 1;
-		+ %tabBarItem {
+
+		+%tabBarItem {
 			margin-left: 20px;
 		}
+
 		&:before {
 			content: "";
 			position: absolute;
@@ -153,6 +200,7 @@
 			transition: all .15s ease-in-out, bottom .2s ease-in-out;
 			z-index: -1;
 		}
+
 		&:after {
 			content: "";
 			position: absolute;
@@ -162,22 +210,27 @@
 			transition: all .2s ease-in-out;
 			z-index: -1;
 		}
+
 		&:hover,
 		&[style*="color: rgb(255, 255, 255)"] {
 			&:before {
 				opacity: 1;
 			}
 		}
+
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
 		}
+
 		&%tabBarItemSelected,
 		&[style*="color: rgb(255, 255, 255)"] {
 			color: #fff !important;
+
 			&:after {
 				top: 0;
 				animation: cv-slide-top .2s ease-in-out;
 			}
+
 			&:before {
 				bottom: 100%;
 				animation: cv-slide-bottom .2s ease-in-out reverse;
@@ -185,6 +238,7 @@
 		}
 	}
 }
+
 %userModalHeaderFill {
 	%tabBarItem {
 		&:after {
@@ -195,76 +249,92 @@
 
 // BODY
 %userModal {
-	> %userModalBody {
+	>%userModalBody {
 		height: 306px;
 		background: rgba(0, 0, 0, .7);
 	}
 }
+
 %userModalBody {
 	%userModalInfoSection {
-		+ %userModalInfoSection {
+		+%userModalInfoSection {
 			border-color: hsla(0, 0%, 100%, .04);
 		}
-		> %userModalInfoSectionHeader {
+
+		>%userModalInfoSectionHeader {
 			color: hsla(0, 0%, 100%, .7);
 		}
-		> %userModalNote {
-			> textarea {
+
+		>%userModalNote {
+			>textarea {
 				background: transparent;
 				color: hsla(0, 0%, 100%, .8);
+
 				&:focus {
 					background: transparent;
 				}
-				&::placeholder {	
+
+				&::placeholder {
 					color: hsla(0, 0%, 100%, .5);
 				}
 			}
 		}
 	}
 }
+
 %userModalConnectedAccounts {
-	> %userModalConnectedAccount {
+	>%userModalConnectedAccount {
 		position: relative;
 		background: hsla(0, 0%, 100%, .04);
 		border-color: transparent;
 		border-radius: 5px;
 		transition: all .15s ease-in-out;
+
 		&:hover {
 			background: hsla(0, 0%, 100%, .07);
+
 			%userModalConnectedAccountOpenIcon {
 				opacity: .7;
 			}
 		}
+
 		&:active {
 			transform: scale(.95);
 		}
 	}
 }
+
 %userModalConnectedAccountVerifiedIcon {
 	background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
 	opacity: .5;
 	z-index: 1;
+
 	%flowerStar {
 		opacity: 0;
 	}
+
 	%flowerStarChild {
 		display: none;
 	}
 }
+
 %userModalConnectedAccountOpenIcon {
 	background: url(https://clearvision.gitlab.io/icons/popout.svg) center/18px no-repeat;
 	opacity: .3;
 	transition: all .15s ease-in-out;
+
 	&:after {
 		content: "";
 		position: absolute;
 		@include stretch;
 	}
 }
+
 %userModalEmptyIcon {
 	filter: grayscale(1) brightness(2);
 	opacity: .3;
 }
+
 %userModalEmptyText {
 	color: hsla(0, 0%, 100%, .3);
 }
@@ -276,27 +346,32 @@
 		color: hsla(0, 0%, 100%, .5);
 		transition: all .15s ease-in-out;
 		z-index: 1;
+
 		&:after {
 			content: "";
 			position: absolute;
 			@include stretch;
-			background: linear-gradient(to right, transparent ,hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
+			background: linear-gradient(to right, transparent, hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
 			opacity: 0;
 			transition: inherit;
 			z-index: -1;
 		}
+
 		&:hover {
 			background: transparent;
 			color: hsla(0, 0%, 100%, .7);
+
 			&:after {
 				opacity: 1;
 			}
 		}
+
 		&:active {
 			transform: scale(.97);
 		}
 	}
 }
+
 %userModalListAvatar {
 	background-color: rgba(0, 0, 0, .2);
 }

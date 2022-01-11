@@ -1,11 +1,10 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* MENTIONS */
 #{cn(ChannelTopic topic)},
 #{cn(MessageContent 5757 markup)} {
-	#{cn(Mention wrapper)},
-	%roleMention {
+	[class^="mention #{str-slice(#{cn(Mention wrapper)}, 2)} mention"] {
 		padding: 1px 4px;
 		border-radius: 5px;
 		line-height: 22px;
@@ -14,26 +13,32 @@
 		transition: all .15s ease-in-out;
 		cursor: pointer;
 	}
+
 	#{cn(Mention wrapper)} {
 		background: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
+
 		&:hover {
 			background: $main-color;
 			color: #fff;
 		}
 	}
+
 	strong {
-		> %mention,
-		> %roleMention {
+
+		>%mention,
+		>%roleMention {
 			font-weight: 600;
 		}
 	}
 }
+
 #{cn(MessageContent mentioned)} #{cn(MessageContent 5757 markup)} %roleMention {
 	padding: 0;
 	background: transparent !important;
 	color: $main-color;
 	@include hover-shadow;
+
 	&:hover {
 		color: $main-color;
 	}

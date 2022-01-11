@@ -3,6 +3,7 @@
 
 /* USER POPOUT */
 %userPopout {
+	background: transparent;
 	position: relative;
 	max-height: calc(100vh - 40px);
 	border-radius: 5px;
@@ -24,39 +25,44 @@
 	}
 
 	// BANNER
-	%userPopoutProfileBanner {
+	%userPopoutProfileBanner, %userPopoutBodyInnerWrapper {
 		background-color: transparent !important;
 	}
 
 	// HEADER
 	%userPopoutHeader {
+		background: rgba(0, 0, 0, .3);
+	}
+
+	%userPopoutHeaderTop {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover;
 	}
-	%userPopoutHeaderStreaming {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) 93%, transparent 100%);
-	}
-	%userPopoutHeaderSpotify {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.spotify-green"), .4) 93%, transparent 100%);
-	}
-	%userPopoutHeaderXbox {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.xbox-green"), .4) 93%, transparent 100%);
-		%userPopoutActions {
-			> %button {
-				background: rgba(cv("const:colors.xbox-green"), .3);
-				&:hover {
-					background: rgba(cv("const:colors.xbox-green"), .5);
-				}
-			}
-		}
-	}
-	%userPopoutHeaderTop {
+	// %userPopoutHeaderStreaming {
+	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
+	// 		linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) 93%, transparent 100%);
+	// }
+	// %userPopoutHeaderSpotify {
+	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
+	// 		linear-gradient(to bottom, rgba(cv("const:colors.spotify-green"), .4) 93%, transparent 100%);
+	// }
+	// %userPopoutHeaderXbox {
+	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
+	// 		linear-gradient(to bottom, rgba(cv("const:colors.xbox-green"), .4) 93%, transparent 100%);
+	// 	%userPopoutActions {
+	// 		> %button {
+	// 			background: rgba(cv("const:colors.xbox-green"), .3);
+	// 			&:hover {
+	// 				background: rgba(cv("const:colors.xbox-green"), .5);
+	// 			}
+	// 		}
+	// 	}
+	// }
+	%userPopoutAboutMe {
 		background-color: transparent;
 	}
 	%userPopoutActivity {
 		background: rgba(0, 0, 0, .04);
+		padding: 16px 16px;
 	}
 	%userPopoutMobileIndicator {
 		color: hsla(0, 0%, 100%, .4);
@@ -80,6 +86,9 @@
 	// BODY
 	%userPopoutBody {
 		background: rgba(0, 0, 0, .65);
+	}
+	%userPopoutCustomStatus {
+		padding: 12px 12px 12px 16px;
 	}
 	%userPopoutBodyInner {
 		background: transparent;

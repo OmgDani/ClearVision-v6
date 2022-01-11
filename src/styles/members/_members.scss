@@ -2,13 +2,17 @@
 
 /* MEMBERS */
 
-#{cn("FluxContainer(ChannelMembers)" membersWrap)} {
-	min-width: auto;
-	flex-basis: cv("members-width");
 
-	#{cn("FluxContainer(ChannelMembers)" members)} {
-		width: cv("members-width");
-		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
+#{cn("FluxContainer(ChannelMembers)" container)} {
+	background: transparent;
+	#{cn("FluxContainer(ChannelMembers)" membersWrap)} {
+		min-width: auto;
+		flex-basis: cv("members-width");
+
+		#{cn("FluxContainer(ChannelMembers)" members)} {
+			width: cv("members-width");
+			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
+		}
 	}
 }
 

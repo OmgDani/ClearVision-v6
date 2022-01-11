@@ -6,6 +6,9 @@
 	background-color: transparent;
 	width: calc(#{cv("server-columns")} * 72px);
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+	#{cn(Guilds tree)} {
+		outline: none;
+	}
 }
 #{cn(Guilds scrollerWrap)} {
 	width: auto;
@@ -94,10 +97,10 @@
 
 // PILL
 // TODO: anonymous ref...
-.wrapper-sa6paO {
+.wrapper-z5ab_q {
 	overflow: visible;
 }
-.item-2hkk8m {
+.item-2LIpTv {
 	width: 12px;
 	margin-left: -6px;
 	border-radius: 20px;
