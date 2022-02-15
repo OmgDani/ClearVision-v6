@@ -1,8 +1,9 @@
-@use "cv" as *;
+@use "cv"as *;
 
 /* PRIVATE CHANNELS */
 #{cn(PrivateChannelsConnected privateChannels)} {
 	background: transparent;
+
 	#{cn("FluxContainer(PrivateChannelsList)" scroller)} {
 		background: transparent;
 		overflow-x: hidden;
@@ -18,6 +19,7 @@
 		font-weight: 700;
 		text-align: center;
 		opacity: .85;
+
 		&:before {
 			content: "";
 			height: 2px;
@@ -26,6 +28,7 @@
 			background: linear-gradient(to left, $main-color 50%, transparent);
 			margin-right: 5px;
 		}
+
 		&:after {
 			content: "";
 			height: 2px;
@@ -39,9 +42,11 @@
 	// PRIVATE CHANNEL
 	#{cn(PrivateChannel channel)} {
 		max-width: none;
-		#{cn(ListItem layout)} {
+
+		#{cn(PrivateChannel interactive)} {
 			position: relative;
 			z-index: 1;
+
 			&:before {
 				content: "";
 				position: absolute;
@@ -51,6 +56,7 @@
 				z-index: -1;
 				pointer-events: none;
 			}
+
 			&:after {
 				content: "";
 				position: absolute;
@@ -61,13 +67,27 @@
 				z-index: -1;
 				pointer-events: none;
 			}
+
+			&#{cn(ListItem selected)} {
+
+				&:focus-within,
+				&:hover {
+					color: #fff
+				}
+			}
 		}
+
 		#{cn(PrivateChannel closeButton)} {
 			display: block;
 			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
 			opacity: 0;
 			transition: all .15s ease-in-out;
+
+			path {
+				display: none;
+			}
 		}
+
 		#{cn(PrivateChannel linkButtonIcon)} {
 			color: hsla(0, 0%, 100%, .3);
 			transition: all .15s ease-in-out;
@@ -77,34 +97,41 @@
 		&:hover {
 			#{cn(ListItem layout)} {
 				background: transparent;
+
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
 				}
 			}
+
 			#{cn(PrivateChannel closeButton)} {
 				opacity: .3;
+
 				&:hover {
 					opacity: .7;
 				}
 			}
+
 			#{cn(PrivateChannel linkButtonIcon)} {
 				color: hsla(0, 0%, 100%, .7);
 			}
 		}
 
 		// SELECTED
-		&#{cn(ListItem selected)} {
-			#{cn(ListItem layout)} {
-				background: transparent;
-				&:before {
-					background: hsla(0, 0%, 100%, .1);
-				}
-				&:after {
-					right: 0;
-					background: $main-color;
-					animation: cv-channel-select .3s ease-in-out;
-				}
+		#{cn(ListItem selected)} {
+			// #{cn(ListItem layout)} {
+			background: transparent;
+
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
 			}
+
+			&:after {
+				right: 0;
+				background: $main-color;
+				animation: cv-channel-select .3s ease-in-out;
+			}
+
+			// }
 			#{cn(PrivateChannel linkButtonIcon)} {
 				color: #fff;
 			}
@@ -116,6 +143,7 @@
 #{cn(PrivateChannelsConnected searchBar)} {
 	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 	box-shadow: 0 2px 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+
 	#{cn(PrivateChannelsConnected searchBarComponent)} {
 		background: hsla(0, 0%, 100%, .1);
 		color: hsla(0, 0%, 100%, .3);

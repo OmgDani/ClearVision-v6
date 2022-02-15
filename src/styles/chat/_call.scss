@@ -16,7 +16,22 @@
 			#{cn("FluxContainer(PrivateChannelCall)" contextMenuNub)} {
 				background: rgba(0, 0, 0, .3);
 				border-radius: 50%;
+				color: hsla(0, 0%, 100%, .6);
+
+				#{cn("FluxContainer(PrivateChannelCall)" controlIcon)} {
+					color: hsla(0, 0%, 100%, .6)
+				}
+
+				&:hover {
+					background: rgba(0, 0, 0, .5);
+					color: hsla(0, 0%, 100%, .9);
+					#{cn("FluxContainer(PrivateChannelCall)" controlIcon)} {
+					color: hsla(0, 0%, 100%, .9);
+				}}
 			}
+
+
+
 		}
 
 		#{cn("FluxContainer(PrivateChannelCall)" border)} {
@@ -25,9 +40,10 @@
 			}
 		}
 	}
+
 	#{cn("FluxContainer(PrivateChannelCall)" borderSharing)} {
 		&#{cn("FluxContainer(PrivateChannelCall)" speakingSharing)} {
-			box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px var(--background-floating);	
+			box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px var(--background-floating);
 		}
 	}
 }

@@ -84,7 +84,7 @@
 		}
 		
 		// SELECTED
-		&%searchPopoutOptionSelected {
+		&[aria-selected=true] {
 			background-color: hsla(0, 0%, 100%, .1);
 			%searchPopoutPlusIcon {
 				opacity: .3;
@@ -114,7 +114,7 @@
 				color: hsla(0, 0%, 100%, .3);
 				transition: all .15s ease-in-out;
 			}
-			&%searchPopoutOptionSelected {
+			&[aria-selected=true] {
 				%searchPopoutDisplayedNick {
 					color: hsla(0, 0%, 100%, .7);
 				}
@@ -139,7 +139,7 @@
 				opacity: .7;
 			}
 		}
-		&%searchPopoutOptionSelected {
+		&[aria-selected=true] {
 			> %searchPopoutChannel {
 				> strong {
 					color: #fff;
@@ -154,7 +154,7 @@
 
 	// SEARCH OPTION
 	%searchPopoutSearchOption {
-		&%searchPopoutOptionSelected {
+		&[aria-selected=true] {
 			%searchPopoutFilter {
 				color: hsla(0, 0%, 100%, .7);
 			}
@@ -232,7 +232,7 @@
 }
 
 // DATEPICKER
-%searchPopoutDatePicker > %searchPopoutCalendarPicker {
+%searchPopoutDatePicker > %searchPopoutCalendarPicker div {
 	> %datepicker,
 	%datepickerHeader {
 		background-color: transparent;

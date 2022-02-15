@@ -1,46 +1,98 @@
-@use "cv" as *;
+@use "cv"as *;
 
 /* CHAT DIVIDER */
+// #{cn("Divider@7732" divider)} {
+// 	position: relative;
+// 	margin: 10px 6px 10px 20px;
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		@include stretch;
+// 		background: hsla(0, 0%, 100%, .07);
+// 		border-radius: 3px;
+// 		z-index: -1;
+// 	}
+// 	#{cn("Divider@7732" dividerContent)} {
+// 		padding: 5px 15px;
+// 		display: block;
+// 		font-size: 12px;
+// 		text-transform: uppercase;
+// 		text-align: center;
+// 		border-radius: 3px;
+// 		opacity: .9;
+// 		&:before,
+// 		&:after {
+// 			display: none;
+// 		}
+// 	}
+// 	&:not(#{cn("Divider@7732" dividerUnread)}) {
+// 		#{cn("Divider@7732" dividerContent)} {
+// 			color: hsla(0, 0%, 100%, .7);
+// 		}
+// 	}
+// 	&#{cn("Divider@7732" dividerUnread)} {
+// 		&:before {
+// 			background: $main-color;
+// 			opacity: .8;
+// 		}
+// 		+ #{cn("Divider@7732" divider)} {
+// 			margin-top: 40px;
+// 		}
+// 		#{cn("Divider@7732" dividerContent)} {
+// 			position: relative;
+// 			color: hsla(0, 0%, 100%, .8);
+// 		}
+// 	}
+// }
+
+
 #{cn("Divider@7732" divider)} {
-	position: relative;
-	margin: 10px 6px 10px 20px;
-	&:before {
-		content: "";
-		position: absolute;
-		@include stretch;
-		background: hsla(0, 0%, 100%, .07);
-		border-radius: 3px;
-		z-index: -1;
-	}
-	#{cn("Divider@7732" dividerContent)} {
-		padding: 5px 15px;
-		display: block;
-		font-size: 12px;
-		text-transform: uppercase;
-		text-align: center;
-		border-radius: 3px;
-		opacity: .9;
-		&:before,
-		&:after {
-			display: none;
+	border-color: $main-color;
+
+
+	// UNREAD DIVIDER
+	#{cn("Divider@7732" unreadPill)} {
+		background-color: $main-color;
+
+		#{cn("Divider@7732" unreadPillCapStroke)} {
+			color: $main-color;
+			fill: $main-color;
 		}
 	}
+
+	// DATE DIVIDER
 	&:not(#{cn("Divider@7732" dividerUnread)}) {
-		#{cn("Divider@7732" dividerContent)} {
-			color: hsla(0, 0%, 100%, .7);
-		}
-	}
-	&#{cn("Divider@7732" dividerUnread)} {
+		border: none;
+
 		&:before {
-			background: $main-color;
-			opacity: .8;
+			content: "";
+			height: 2px;
+			flex-grow: 1;
+			transition: all .3s ease-in-out;
+			background: linear-gradient(to left, $main-color 50%, transparent);
+			margin-right: 5px;
 		}
-		+ #{cn("Divider@7732" divider)} {
-			margin-top: 40px;
+
+		&:after {
+			content: "";
+			height: 2px;
+			flex-grow: 1;
+			transition: all .3s ease-in-out;
+			background: linear-gradient(to right, $main-color 50%, transparent);
+			margin-left: 5px;
 		}
+
 		#{cn("Divider@7732" dividerContent)} {
-			position: relative;
-			color: hsla(0, 0%, 100%, .8);
+			padding: 5px 15px;
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+			text-align: center;
+			border-radius: 3px;
+			opacity: .9;
+			color: hsla(0, 0%, 100%, .7);
+			background: rgba(0, 0, 0, 0.4);
+
 		}
 	}
 }

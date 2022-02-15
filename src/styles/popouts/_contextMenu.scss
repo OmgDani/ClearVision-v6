@@ -9,12 +9,12 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 		animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1);
 		transform-origin: 50% 0;
-		z-index: 3003;
+		// z-index: 3003;
 	}
 }
 %contextMenu {
-	%contextMenuItemGroup {
-		border-top-color: hsla(0, 0%, 100%, .04);
+	%contextMenuSeparator {
+		border-bottom-color: hsla(0, 0%, 100%, .04);
 	}
 	%contextMenuItem {
 		background-color: transparent;
@@ -22,7 +22,7 @@
 		border-radius: 3px;
 		transition: all .15s ease-in-out;
 		&:hover {
-			background-color: rgba(0, 0, 0, .7);
+			background-color: $main-color;
 			color: #fff;
 		}
 		&%contextMenuItemBrand {
@@ -43,6 +43,7 @@
 				@include stretch;
 				background: cv("colors.danger");
 				opacity: .5;
+				border-radius: 3px;
 				transition: inherit;
 				z-index: -1;
 			}
@@ -55,9 +56,9 @@
 		}
 	}
 }
-%subContextMenu {
-	margin: 0 -5px;
-	%contextMenu {
-		transform-origin: 50% 50%;
-	}
-}
+// %subContextMenu {
+// 	margin: 0 -5px;
+// 	%contextMenu {
+// 		transform-origin: 50% 50%;
+// 	}
+// }

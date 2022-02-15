@@ -1173,7 +1173,9 @@ $map: (
 		"sizeXlarge": ".sizeXlarge-2TyITf",
 		"spinner": ".spinner-3lTjTx",
 		"spinnerItem": ".spinnerItem-3dCJpG",
-		"submitting": ".submitting-3uDn4C"
+		"submitting": ".submitting-3uDn4C",
+		"colorable": ".colorable-3rVGna",
+		"green": ".green-3wkLbx"
 	),
 	"ButtonWithSpinningBorder": (
 		"6212": (
@@ -1446,7 +1448,10 @@ $map: (
 		"textAreaDisabled": ".textAreaDisabled-10ObTX.textArea-2CLwUE",
 		"textAreaHeight": "44px",
 		"textAreaSlate": ".textAreaSlate-9-y-k2",
-		"webkit": ".webkit-QgSAqd"
+		"webkit": ".webkit-QgSAqd",
+		"uploadInput": ".uploadInput-YH_iku",
+		"attachWrapper": ".attachWrapper-3slhXI",
+		"attachButton": ".attachButton-_ACFSu"
 	),
 	"ChannelFollowingPublishBump": (
 		"bumpBox": ".bumpBox-1Pp4td",
@@ -2483,7 +2488,10 @@ $map: (
 		"revealed": ".revealed-1_RKsf",
 		"span": ".span-3ncFWM",
 		"spinner": ".spinner-qO2DFZ",
-		"spinnerItem": ".spinnerItem-2r0Owh"
+		"spinnerItem": ".spinnerItem-2r0Owh",
+		"unreadPill": ".unreadPill-3nEWYM",
+		"unreadPillCap": ".unreadPillCap-2-iI4h",
+		"unreadPillCapStroke": ".unreadPillCapStroke-1nE1Q8"
 	),
 	"Download": (
 		"marginBottom20": ".marginBottom20-315RVT",
@@ -4600,6 +4608,7 @@ $map: (
 		"voiceCallWrapper": ".voiceCallWrapper-3UtDiC",
 		"actionsWrapper": ".wrapper-3t3Yqv",
 		"controlButton": ".controlButton-2PMNom",
+		"controlIcon": ".controlIcon-10O-4h",
 		"centerButton": ".centerButton-1IShs7",
 		"contextMenuNub": ".contextMenuNub-NuTZ_U",
 		"callAvatarMask": ".callAvatarMask-fiNMWy",
@@ -4736,10 +4745,10 @@ $map: (
 	),
 	"FluxContainer(Search)": (
 		"focused": ".focused-8aNhVB",
-		"icon": ".icon-1nNws_",
-		"open": ".open-3y3yI_",
-		"search": ".search-1FM8Qc",
-		"searchBar": ".searchBar-zdmu7v"
+		"icon": ".icon-tZMHgY",
+		"open": ".open-1F8u2c",
+		"search": ".search-2Mwzzq",
+		"searchBar": ".searchBar-jGtisZ"
 	),
 	"FluxContainer(SearchResults)": (
 		"actionButtons": ".actionButtons-14P9IC",
@@ -6477,7 +6486,7 @@ $map: (
 		"hover": ".hover-3m7-WT",
 		"listItemWidth": "72px",
 		"miniPlaceholder": ".miniPlaceholder-3m7-WT",
-		"wrapper": ".wrapper-28eC3z",
+		"wrapper": ".wrapper-38slSD",
 		"blobContainer": ".blobContainer-ikKyFs",
 		"pill": ".pill-2RsI5Q",
 		"sorting": ".sorting-GEyVNe",
@@ -7722,11 +7731,11 @@ $map: (
 		"clickable": ".clickable-28SzVr",
 		"container": ".container-1oeRFJ",
 		"content": ".content-1U25dZ",
-		"layout": ".layout-1qmrhw",
+		"layout": ".layout-1LjVue",
 		"muted": ".muted-14PyqW",
 		"name": ".name-3Vmqxm",
 		"nameAndDecorators": ".nameAndDecorators-3ERwy2",
-		"selected": ".selected-1-Z6gm",
+		"selected": ".selected-3veCBZ",
 		"subText": ".subText-OGOWMj"
 	),
 	"ListItemTooltip": (
@@ -9902,7 +9911,8 @@ $map: (
 		"closeIcon": ".closeIcon-1NwtbI",
 		"decorator": ".decorator-2iy36Y",
 		"linkButtonIcon": ".linkButtonIcon-7rsZcu",
-		"subtext": ".subtext-14b69p"
+		"subtext": ".subtext-14b69p",
+		"interactive": ".interactive-iyXY_x"
 	),
 	"PrivateChannelEmptyMessage": (
 		"container": ".container-2OH5nX",
@@ -9978,7 +9988,7 @@ $map: (
 	),
 	"PrivateChannelsConnected": (
 		"downloadProgressCircle": ".downloadProgressCircle-2GOovI",
-		"header": ".container-q97qHp",
+		"header": ".privateChannelsHeaderContainer-1UWASm",
 		"headerText": ".headerText-1qIDDT",
 		"hideGameUpdateProgressIndicator": ".hideGameUpdateProgressIndicator-gNdoqQ",
 		"privateChannelRecipientsInviteButtonIcon": ".privateChannelRecipientsInviteButtonIcon-cXLJ7f",
@@ -10657,7 +10667,7 @@ $map: (
 		"hintValue": ".hintValue-1x-flY",
 		"linkSource": ".linkSource-PFPPMp",
 		"nonText": ".nonText-3_4gtu",
-		"option": ".option-2KkUJO",
+		"option": ".option-ayUoaq",
 		"plusIcon": ".plusIcon-2V7coV",
 		"resultChannel": ".resultChannel-1ZxSuE",
 		"resultsGroup": ".resultsGroup-1BPR25",
@@ -11544,7 +11554,8 @@ $map: (
 		"tooltipRed": ".tooltipRed-2z14Wl",
 		"tooltipRight": ".tooltipRight-2TSb42",
 		"tooltipTop": ".tooltipTop-1wv5UJ",
-		"tooltipYellow": ".tooltipYellow-3a3Cmr"
+		"tooltipYellow": ".tooltipYellow-3a3Cmr",
+		"tooltipPrimary": ".tooltipPrimary-3qLMbS"
 	),
 	"TooltipContainer": (
 		"tooltip": ".tooltip-14MtrL",
@@ -11558,7 +11569,8 @@ $map: (
 		"tooltipRed": ".tooltipRed-2z14Wl",
 		"tooltipRight": ".tooltipRight-2TSb42",
 		"tooltipTop": ".tooltipTop-1wv5UJ",
-		"tooltipYellow": ".tooltipYellow-3a3Cmr"
+		"tooltipYellow": ".tooltipYellow-3a3Cmr",
+		"tooltipPrimary": ".tooltipPrimary-3qLMbS"
 	),
 	"TooltipLayer": (
 		"tooltip": ".tooltip-14MtrL",
@@ -11572,7 +11584,8 @@ $map: (
 		"tooltipRed": ".tooltipRed-2z14Wl",
 		"tooltipRight": ".tooltipRight-2TSb42",
 		"tooltipTop": ".tooltipTop-1wv5UJ",
-		"tooltipYellow": ".tooltipYellow-3a3Cmr"
+		"tooltipYellow": ".tooltipYellow-3a3Cmr",
+		"tooltipPrimary": ".tooltipPrimary-3qLMbS"
 	),
 	"TransferOwnership": (
 		"from": ".from-1-zmLY",

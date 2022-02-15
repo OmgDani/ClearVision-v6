@@ -26,6 +26,16 @@
 			}
 		}
 	}
+
+	#{cn(ButtonLink colorable)} {
+		&#{cn(ButtonLink green)} {
+			background: $main-color;
+
+			&:hover {
+				background: $hover-color;
+			}
+		}
+	}
 }
 
 #{cn(ButtonLink lookFilled)} {

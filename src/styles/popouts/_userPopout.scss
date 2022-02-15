@@ -1,4 +1,4 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* USER POPOUT */
@@ -10,6 +10,7 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	animation: cv-menu-fold-x .2s cubic-bezier(.2, .6, .5, 1.1);
 	transform-origin: 0 50%;
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -19,13 +20,15 @@
 		@include filters(cv("bg.popout"));
 		z-index: -1;
 	}
-	%popoutAnimatorLeft > & {
+
+	%popoutAnimatorLeft>& {
 		margin-right: -16px;
 		transform-origin: 100% 50%;
 	}
 
 	// BANNER
-	%userPopoutProfileBanner, %userPopoutBodyInnerWrapper {
+	%userPopoutProfileBanner,
+	%userPopoutBodyInnerWrapper {
 		background-color: transparent !important;
 	}
 
@@ -37,6 +40,7 @@
 	%userPopoutHeaderTop {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover;
 	}
+
 	// %userPopoutHeaderStreaming {
 	// 	background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
 	// 		linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) 93%, transparent 100%);
@@ -57,22 +61,30 @@
 	// 		}
 	// 	}
 	// }
+	%userPopoutDivider {
+		height: 0;
+	}
+
 	%userPopoutAboutMe {
 		background-color: transparent;
 	}
+
 	%userPopoutActivity {
 		background: rgba(0, 0, 0, .04);
 		padding: 16px 16px;
 	}
+
 	%userPopoutMobileIndicator {
 		color: hsla(0, 0%, 100%, .4);
 	}
+
 	%userPopoutNameTag {
 		overflow: visible;
 	}
+
 	%userPopoutActions,
 	%userPopoutActionsListening {
-		> %button {
+		>%button {
 			flex-grow: 1;
 		}
 	}
@@ -83,62 +95,77 @@
 		background: transparent;
 		border-color: transparent;
 	}
+
 	// BODY
 	%userPopoutBody {
 		background: rgba(0, 0, 0, .65);
 	}
+
 	%userPopoutCustomStatus {
 		padding: 12px 12px 12px 16px;
 	}
+
 	%userPopoutBodyInner {
 		background: transparent;
 	}
+
 	%userPopoutBodyTitle {
 		color: hsla(0, 0%, 100%, .7);
 		flex-shrink: 0;
 	}
+
 	%userPopoutRolesList {
 		margin-top: 0;
 	}
+
 	#permissions-popout {
 		display: flex;
 		flex-direction: column;
 		flex-shrink: 1;
-		> %userPopoutRolesList {
+
+		>%userPopoutRolesList {
 			max-height: unset;
 		}
 	}
+
 	%userPopoutNote {
-		> textarea {
+		>textarea {
 			background: transparent;
 			color: hsla(0, 0%, 100%, .8);
+
 			&:focus {
 				background: transparent;
 			}
-			&::placeholder {	
+
+			&::placeholder {
 				color: hsla(0, 0%, 100%, .5);
 			}
 		}
 	}
-	
+
 	// FOOTER
 	%userPopoutFooter {
 		background: rgba(0, 0, 0, .65);
 		border-color: hsla(0, 0%, 100%, .04);
+		margin: 0;
 	}
+
 	%userPopoutQuickMessage {
 		background: rgba(0, 0, 0, .3);
 		border-color: transparent;
 		color: #fff;
 		transition: all .3s ease-in-out;
-		&::placeholder {	
+
+		&::placeholder {
 			color: hsla(0, 0%, 100%, .5);
 		}
+
 		&:focus {
 			border-color: $main-color;
 			box-shadow: 0 0 1px $main-color;
 		}
 	}
+
 	%userPopoutTip {
 		color: hsla(0, 0%, 100%, .5);
 		opacity: 1;

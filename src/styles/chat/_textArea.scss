@@ -1,26 +1,31 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* CHAT CHANNEL TEXT AREA */
 %chatForm {
 	border-color: hsla(0, 0%, 100%, .07);
+
 	&:before {
 		display: none;
 	}
 }
+
 #{cn(ChannelEditorContainer channelTextArea)} {
 	background-color: transparent;
+
 	#{cn(ChannelEditorContainer scrollableContainer)} {
 		background: rgba(0, 0, 0, .4);
 		border: 2px solid hsla(0, 0%, 100%, .1);
 		border-radius: 5px;
 		box-shadow: 0 0 3px;
 		transition: all .15s ease-in-out;
+
 		&:focus-within {
 			border-color: $main-color;
 			color: $main-color;
 		}
 	}
+
 	#{cn(SlateChannelTextArea placeholder)},
 	#{cn(ChannelEditorContainer textArea)}::placeholder {
 		color: hsla(0, 0%, 100%, .2);
@@ -33,25 +38,44 @@
 	}
 
 	// TODO: god damn anonymous memo
-	%channelTextAreaAttachWrapper {
-		border-right: 1px solid hsla(0, 0%, 100%, .07);
-	}
+	// %channelTextAreaAttachWrapper {
+	// 	border-right: 1px solid hsla(0, 0%, 100%, .07);
+	// }
 
 	// BUTTONS
 	#{cn(ButtonLink button)} {
 		opacity: .3;
 		transition: all .15s ease-in-out;
+
 		&:hover {
 			opacity: .7;
+		}
+	}
+
+	#{cn(ChannelEditorContainer attachWrapper)} {
+		#{cn(ChannelEditorContainer attachButton)} {
+			padding: 10px;
+		}
+
+		&:after {
+			content: "";
+			border-right: 1px solid hsla(0, 0%, 100%, .07);
+			position: absolute;
+			top: 50%;
+			height: 65%;
+			right: 0;
+			transform: translateY(-50%);
 		}
 	}
 
 	// TYPING
 	#{cn("FluxContainer(TypingUsers)" typing)} {
 		background: transparent;
+
 		#{cn("FluxContainer(TypingUsers)" text)} {
 			color: hsla(0, 0%, 100%, .5);
-			> strong {
+
+			>strong {
 				color: hsla(0, 0%, 100%, .7);
 				font-weight: 700;
 			}
@@ -63,6 +87,7 @@
 		background: hsla(0, 0%, 100%, .07);
 		border-radius: 5px;
 		color: hsla(0, 0%, 100%, .7);
+
 		%channelInfoImage {
 			filter: grayscale(1);
 			opacity: .5;
