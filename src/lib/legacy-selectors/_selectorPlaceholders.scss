@@ -2698,8 +2698,17 @@
 .attachment-1PZZB2 {
 	@extend %attachment !optional;
 }
-.embedWrapper-3AbfJJ {
+.messageAttachment-CZp8Iv {
+	@extend %messageAttachment !optional;
+}
+.embedWrapper-1MtIDg {
 	@extend %attachmentEmbedWrapper !optional;
+}
+.footer-GXWBBp {
+	@extend %attachmentFooter !optional;
+}
+.textContainer-36wgKK {
+	@extend %textContainer !optional;
 }
 .icon-1KCy88 {
 	@extend %attachmentIcon !optional;
@@ -2718,6 +2727,9 @@
 }
 .downloadButton-2HLFWN {
 	@extend %attachmentDownloadButton !optional;
+}
+.downloadSection-20OayS {
+	@extend %attachmentDownloadSection !optional;
 }
 .filenameWrapper-11iVyW {
 	@extend %fileNameWrapper !optional;
@@ -3037,7 +3049,7 @@ pre {
 .timestampCozy-2hLAPV, .timestampCompact-MHgFLv, .timestamp-2qj4__ {
 	@extend %messageTimestamp !optional;
 }
-.content-3dzVd8 {
+.messageContent-2t3eCI {
 	@extend %messageContent !optional;
 }
 .container-x059i8 {

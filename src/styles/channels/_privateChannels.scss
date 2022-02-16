@@ -68,7 +68,16 @@
 				pointer-events: none;
 			}
 
-			&#{cn(ListItem selected)} {
+			&:focus-within,
+			&:hover {
+				background: transparent;
+
+				&:before {
+					background: hsla(0, 0%, 100%, .1);
+				}
+			}
+
+			&#{cn(PrivateChannel selected)} {
 
 				&:focus-within,
 				&:hover {
@@ -95,14 +104,6 @@
 
 		// HOVER
 		&:hover {
-			#{cn(ListItem layout)} {
-				background: transparent;
-
-				&:before {
-					background: hsla(0, 0%, 100%, .1);
-				}
-			}
-
 			#{cn(PrivateChannel closeButton)} {
 				opacity: .3;
 
@@ -111,14 +112,17 @@
 				}
 			}
 
-			#{cn(PrivateChannel linkButtonIcon)} {
+			#{cn(PrivateChannel linkButtonIcon)},
+			#{cn(PrivateChannel activityText)} {
 				color: hsla(0, 0%, 100%, .7);
+			}
+			#{cn(PrivateChannel name)} {
+				color: #fff;
 			}
 		}
 
 		// SELECTED
-		#{cn(ListItem selected)} {
-			// #{cn(ListItem layout)} {
+		#{cn(PrivateChannel selected)} {
 			background: transparent;
 
 			&:before {
@@ -131,7 +135,6 @@
 				animation: cv-channel-select .3s ease-in-out;
 			}
 
-			// }
 			#{cn(PrivateChannel linkButtonIcon)} {
 				color: #fff;
 			}

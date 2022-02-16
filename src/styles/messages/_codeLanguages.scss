@@ -200,7 +200,7 @@ $languages: (
 );
 
 // OUTPUT
-%appMount #{cn(MessageContent 5757 markup)} .hljs {
+%appMount #{cn(Message message)} %codeHLJS {
 	&:before {
 		display: block;
 		float: right;

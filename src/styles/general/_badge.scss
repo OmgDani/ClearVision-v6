@@ -35,6 +35,9 @@
 	font-size: 12px;
 	line-height: 12px;
 }
+#{cn(IconBadge iconBadge)} {
+	background-color: transparent;
+}
 #{cn(IconBadge icon)} {
 	padding: 1px;
 	color: $main-color;

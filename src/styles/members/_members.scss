@@ -54,7 +54,6 @@
 
 	// MEMBER
 	#{cn(MemberListItem member)} {
-		background: transparent !important;
 		backface-visibility: hidden;
 
 		&#{cn(MemberListItem offline)} {
