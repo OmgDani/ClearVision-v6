@@ -590,7 +590,7 @@ textarea,
   padding-right: 18px;
   background: transparent;
 }
-.scroller-3X7KbA > :not(.listItem-2P_4kh):nth-child(2) {
+.scroller-3X7KbA > :not(.listItem-1d8GP4):nth-child(2) {
   height: auto !important;
   display: flex;
   flex-flow: row wrap;
@@ -598,7 +598,7 @@ textarea,
   align-items: center;
   justify-content: center;
 }
-.scroller-3X7KbA > :not(.listItem-2P_4kh):nth-child(2) + .listItem-2P_4kh {
+.scroller-3X7KbA > :not(.listItem-1d8GP4):nth-child(2) + .listItem-1d8GP4 {
   margin-right: auto;
   margin-left: auto;
   grid-column: 1/span var(--server-columns);
@@ -644,7 +644,7 @@ textarea,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.wrapper-z5ab_q {
+.pill-2RsI5Q {
   overflow: visible;
 }
 
@@ -676,41 +676,41 @@ textarea,
   background: rgba(255, 255, 255, 0.1);
 }
 
-.expandedGuilds-1JMD4M > .listItem-2P_4kh {
+.expandedGuilds-1JMD4M > .listItem-1d8GP4 {
   animation: cv-fade-in 0.3s ease-in-out;
 }
 
-.dragInner-_SHftW {
+.dragInner-189QA3 {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.iconBadge-1D5-9X {
+.iconBadge-2wWu5e {
   background: rgba(255, 255, 255, 0.07);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
 }
 
-.circleIconButton-1QV--U {
+.circleIconButton-1VxDrg {
   background: rgba(0, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
 }
-.circleIconButton-1QV--U:hover, .circleIconButton-1QV--U.selected-ugP_am {
+.circleIconButton-1VxDrg:hover, .circleIconButton-1VxDrg.selected-2tb4pB {
   background: var(--main-color);
   color: #fff;
 }
 
-.guildsError-b7zR5H {
+.guildsError-YJjW3A {
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid var(--danger-color);
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.guildsError-b7zR5H:hover {
+.guildsError-YJjW3A:hover {
   background: var(--danger-color);
   border-color: var(--danger-color);
 }
 
-.guildSeparator-3s64Iy {
+.guildSeparator-2ULOMe {
   background: rgba(255, 255, 255, 0.1);
   align-self: center;
 }
@@ -1150,6 +1150,9 @@ textarea,
   opacity: 0.3;
   transition: all 0.1s ease-in-out;
 }
+.button-12Fmur:hover > .contents-3ca1mk > svg {
+  opacity: 0.7;
+}
 .button-12Fmur.disabled-GROwTe > .contents-3ca1mk > svg {
   opacity: 0.1;
 }
@@ -1400,6 +1403,12 @@ textarea,
   z-index: -1;
   pointer-events: none;
 }
+.privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x:focus-within, .privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x:hover {
+  background: transparent;
+}
+.privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x:focus-within:before, .privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x:hover:before {
+  background: rgba(255, 255, 255, 0.1);
+}
 .privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x.selected-3veCBZ:focus-within, .privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x.selected-3veCBZ:hover {
   color: #fff;
 }
@@ -1416,20 +1425,18 @@ textarea,
   color: rgba(255, 255, 255, 0.3);
   transition: all 0.15s ease-in-out;
 }
-.privateChannels-oVe7HL .channel-1Shao0:hover .layout-1LjVue {
-  background: transparent;
-}
-.privateChannels-oVe7HL .channel-1Shao0:hover .layout-1LjVue:before {
-  background: rgba(255, 255, 255, 0.1);
-}
 .privateChannels-oVe7HL .channel-1Shao0:hover .closeButton-mupH76 {
   opacity: 0.3;
 }
 .privateChannels-oVe7HL .channel-1Shao0:hover .closeButton-mupH76:hover {
   opacity: 0.7;
 }
-.privateChannels-oVe7HL .channel-1Shao0:hover .linkButtonIcon-7rsZcu {
+.privateChannels-oVe7HL .channel-1Shao0:hover .linkButtonIcon-7rsZcu,
+.privateChannels-oVe7HL .channel-1Shao0:hover .activityText-ev7Z1T {
   color: rgba(255, 255, 255, 0.7);
+}
+.privateChannels-oVe7HL .channel-1Shao0:hover .name-2m3Cms {
+  color: #fff;
 }
 .privateChannels-oVe7HL .channel-1Shao0 .selected-3veCBZ {
   background: transparent;
@@ -2234,7 +2241,7 @@ textarea,
 }
 
 /* EMBED MEDIA PLAYER */
-.content-3dzVd8 .wrapper-1FP9YQ {
+.messageAttachment-CZp8Iv .wrapper-1FP9YQ {
   background: rgba(0, 0, 0, 0.2);
   border-color: transparent;
 }
@@ -2369,7 +2376,7 @@ textarea,
 }
 
 /* CODEBLOCK */
-.content-3dzVd8 .markup-eYLPri code.inline {
+.markup-eYLPri.messageContent-2t3eCI code.inline {
   padding: 3.5px 7.5px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
@@ -2377,17 +2384,17 @@ textarea,
   font-family: var(--code-font);
   line-height: 22px;
 }
-.content-3dzVd8 .markup-eYLPri code.inline + pre {
+.markup-eYLPri.messageContent-2t3eCI code.inline + pre {
   margin-top: -1px;
 }
-.content-3dzVd8 .markup-eYLPri pre {
+.markup-eYLPri.messageContent-2t3eCI pre {
   max-width: 93%;
   padding: 0;
   background: transparent;
   border: 2px solid transparent;
   font-family: var(--code-font);
 }
-.content-3dzVd8 .markup-eYLPri pre > .hljs {
+.markup-eYLPri.messageContent-2t3eCI pre > .hljs {
   position: relative;
   padding: 6px;
   background: rgba(0, 0, 0, 0.42);
@@ -2395,7 +2402,7 @@ textarea,
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
-.content-3dzVd8 .markup-eYLPri pre > .hljs:before {
+.markup-eYLPri.messageContent-2t3eCI pre > .hljs:before {
   height: 10px;
   color: rgba(255, 255, 255, 0.3);
   line-height: 10px;
@@ -2407,7 +2414,7 @@ code {
 }
 
 /* CODEBLOCK LANGUAGES */
-.appMount-2yBXZl .markup-eYLPri .hljs:before {
+.appMount-2yBXZl .message-2CShn3 .hljs:before {
   display: block;
   float: right;
   text-align: right;
@@ -2415,583 +2422,583 @@ code {
   opacity: 0.5;
   pointer-events: none;
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~="1c" i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~="1c" i]:before {
   content: "1C:Enterprise";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=abnf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=abnf i]:before {
   content: "ABNF";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=accesslog i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=accesslog i]:before {
   content: "Access Log";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=as i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=actionscript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=as i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=actionscript i]:before {
   content: "ActionScript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ada i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ada i]:before {
   content: "Ada";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=apacheconf i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=apache i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=apacheconf i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=apache i]:before {
   content: "Apache";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=osascript i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=applescript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=osascript i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=applescript i]:before {
   content: "Applescript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=arduino i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=arduino i]:before {
   content: "Arduino";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=arm i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=armasm i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=arm i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=armasm i]:before {
   content: "ARM Assembly";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=adoc i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=asciidoc i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=adoc i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=asciidoc i]:before {
   content: "AsciiDoc";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=aspectj i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=aspectj i]:before {
   content: "AspectJ";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=atom i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=atom i]:before {
   content: "Atom Feed (XML)";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=autohotkey i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=autohotkey i]:before {
   content: "AutoHotkey";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=autoit i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=autoit i]:before {
   content: "AutoIt";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=avrasm i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=avrasm i]:before {
   content: "AVR Assembler";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=awk i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=awk i]:before {
   content: "awk";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=axapta i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=axapta i]:before {
   content: "Axapta";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=zsh i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=sh i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=bash i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=zsh i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=sh i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=bash i]:before {
   content: "Bash";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=basic i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=basic i]:before {
   content: "Basic";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=cmd i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=bat i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=dos i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=cmd i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=bat i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=dos i]:before {
   content: "Batch";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=bf i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=bnf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=bf i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=bnf i]:before {
   content: "BNF";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=brainfuck i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=brainfuck i]:before {
   content: "Brainfuck";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=h i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=c i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=h i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=c i]:before {
   content: "C/C++";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=hpp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=cpp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=cc i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=hpp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=cpp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=cc i]:before {
   content: "C++";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=csharp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=cs i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=csharp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=cs i]:before {
   content: "C#";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=cal i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=cal i]:before {
   content: "C/AL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=capnp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=capnproto i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=capnp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=capnproto i]:before {
   content: "Cap'n Proto";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ceylon i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ceylon i]:before {
   content: "Ceylon";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=dcl i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=icl i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=clean i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=dcl i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=icl i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=clean i]:before {
   content: "Clean";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=clj i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=clojure i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=clj i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=clojure i]:before {
   content: "Clojure";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=clojure-repl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=clojure-repl i]:before {
   content: "Clojure REPL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=cmake i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=cmake i]:before {
   content: "CMake";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=iced i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=cson i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=coffee i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=coffeescript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=iced i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=cson i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=coffee i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=coffeescript i]:before {
   content: "CoffeeScript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=coq i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=coq i]:before {
   content: "Coq";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=cls i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=cos i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=cls i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=cos i]:before {
   content: "Caché Object Script";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=podspec i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=podspec i]:before {
   content: "CocoaPod";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=pcmk i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=crm i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=crmsh i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=pcmk i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=crm i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=crmsh i]:before {
   content: "crmsh";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=cr i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=crystal i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=cr i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=crystal i]:before {
   content: "Crystal";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=csp i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=csp i]:before {
   content: "CSP";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=css i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=css i]:before {
   content: "CSS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=d i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=d i]:before {
   content: "D";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=dart i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=dart i]:before {
   content: "Dart";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=dpr i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=dfm i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=delphi i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=dpr i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=dfm i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=delphi i]:before {
   content: "Delphi (Object Pascal)";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=patch i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=diff i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=patch i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=diff i]:before {
   content: "Diff";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=django i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=django i]:before {
   content: "Django";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=zone i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=bind i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=dns i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=zone i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=bind i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=dns i]:before {
   content: "DNS Zone File";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=docker i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=dockerfile i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=docker i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=dockerfile i]:before {
   content: "Dockerfile";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=dsconfig i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=dsconfig i]:before {
   content: "dsconfig";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=dts i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=dts i]:before {
   content: "Device Tree";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=dst i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=dust i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=dst i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=dust i]:before {
   content: "Dust";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ebnf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ebnf i]:before {
   content: "EBNF";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=elixir i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=elixir i]:before {
   content: "Elixir";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=elm i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=elm i]:before {
   content: "Elm";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=erb i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=erb i]:before {
   content: "eRuby";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=erl i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=erlang i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=erl i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=erlang i]:before {
   content: "Erlang";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=erlang-repl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=erlang-repl i]:before {
   content: "Erlang REPL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xlsx i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=xls i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=excel i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xlsx i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=xls i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=excel i]:before {
   content: "Excel";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=fsharp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=fs i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=fsharp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=fs i]:before {
   content: "F#";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=fix i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=fix i]:before {
   content: "Fix";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=flix i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=flix i]:before {
   content: "Flix";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=f95 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=f90 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=fortran i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=f95 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=f90 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=fortran i]:before {
   content: "Fortran";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=gms i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=gams i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=gms i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=gams i]:before {
   content: "GAMS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=gss i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=gauss i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=gss i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=gauss i]:before {
   content: "GAUSS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=nc i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=gcode i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=nc i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=gcode i]:before {
   content: "G-code";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=feature i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=gherkin i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=feature i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=gherkin i]:before {
   content: "Gherkin";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=glsl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=glsl i]:before {
   content: "GLSL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=golang i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=go i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=golang i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=go i]:before {
   content: "Go";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=golo i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=golo i]:before {
   content: "Golo";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=gradle i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=gradle i]:before {
   content: "Gradle";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=groovy i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=groovy i]:before {
   content: "Groovy";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=haml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=haml i]:before {
   content: "Haml";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=hbs i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=handlebars i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=hbs i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=handlebars i]:before {
   content: "Handlebars";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=hs i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=haskell i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=hs i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=haskell i]:before {
   content: "Haskell";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=hx i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=haxe i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=hx i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=haxe i]:before {
   content: "Haxe";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=hsp i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=hsp i]:before {
   content: "HSP";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=html i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=html i]:before {
   content: "HTML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=htmlbars i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=htmlbars i]:before {
   content: "HTMLBars";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=http i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=http i]:before {
   content: "HTTP";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=https i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=https i]:before {
   content: "HTTPS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=hylang i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=hy i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=hylang i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=hy i]:before {
   content: "Hy";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=i7 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=inform7 i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=i7 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=inform7 i]:before {
   content: "Inform7";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ini i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ini i]:before {
   content: "INI";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=irb i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=irb i]:before {
   content: "IRB";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=irpf90 i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=irpf90 i]:before {
   content: "IRPF90";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=jsp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=java i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=jsp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=java i]:before {
   content: "Java";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=jsx i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=js i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=javascript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=jsx i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=js i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=javascript i]:before {
   content: "JavaScript/JSX";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xjb i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xjb i]:before {
   content: "JAXB (XML)";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=wildfly-cli i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=jboss-cli i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=wildfly-cli i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=jboss-cli i]:before {
   content: "JBoss CLI";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=jinja i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=jinja i]:before {
   content: "Jinja";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=json i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=json i]:before {
   content: "JSON";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=julia i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=julia i]:before {
   content: "Julia";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=julia-repl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=julia-repl i]:before {
   content: "Julia REPL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=kotlin i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=kotlin i]:before {
   content: "Kotlin";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ls i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=lassoscript i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=lasso i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ls i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=lassoscript i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=lasso i]:before {
   content: "Lasso";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ldif i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ldif i]:before {
   content: "LDIF";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=leaf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=leaf i]:before {
   content: "Leaf";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=less i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=less i]:before {
   content: "Less";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=lisp i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=lisp i]:before {
   content: "Lisp";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=livecodeserver i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=livecodeserver i]:before {
   content: "LiveCode Server";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ls i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=livescript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ls i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=livescript i]:before {
   content: "LiveScript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=llvm i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=llvm i]:before {
   content: "LLVM IR";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=lsl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=lsl i]:before {
   content: "LSL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=lua i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=lua i]:before {
   content: "Lua";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mak i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=mk i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=makefile i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mak i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=mk i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=makefile i]:before {
   content: "Makefile";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mkdown i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=mkd i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=md i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=markdown i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mkdown i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=mkd i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=md i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=markdown i]:before {
   content: "Markdown";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mma i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=mathematica i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mma i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=mathematica i]:before {
   content: "Mathematica";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=matlab i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=matlab i]:before {
   content: "MatLab";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=maxima i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=maxima i]:before {
   content: "Maxima";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mel i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mel i]:before {
   content: "MEL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=moo i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=m i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=mercury i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=moo i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=m i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=mercury i]:before {
   content: "Mercury";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mips i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=mipsasm i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mips i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=mipsasm i]:before {
   content: "MIPS Assembly";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mikrotik i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=routeros i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mikrotik i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=routeros i]:before {
   content: "Mikrotik RouterOS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mizar i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mizar i]:before {
   content: "Mizar";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mojolicious i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mojolicious i]:before {
   content: "Mojolicious";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=monkey i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=monkey i]:before {
   content: "Monkey";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=moon i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=moonscript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=moon i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=moonscript i]:before {
   content: "MoonScript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=n1ql i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=n1ql i]:before {
   content: "N1QL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=nginxconf i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=nginx i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=nginxconf i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=nginx i]:before {
   content: "Nginx";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=nim i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=nimrod i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=nim i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=nimrod i]:before {
   content: "Nimrod";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=nixos i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=nix i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=nixos i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=nix i]:before {
   content: "Nix";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=nsis i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=nsis i]:before {
   content: "NSIS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=mm i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=obj-c i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=objc i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=objectivec i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=mm i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=obj-c i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=objc i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=objectivec i]:before {
   content: "Objective-C";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ml i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=ocaml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ml i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=ocaml i]:before {
   content: "OCaml";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=scad i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=openscad i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=scad i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=openscad i]:before {
   content: "OpenSCAD";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ruleslanguage i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ruleslanguage i]:before {
   content: "Oracle Rules Language";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=oxygene i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=oxygene i]:before {
   content: "Oxygene";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=parser3 i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=parser3 i]:before {
   content: "Parser3";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=lpr i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=lfm i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=lazarus i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=freepascal i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=pas i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=pascal i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=lpr i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=lfm i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=lazarus i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=freepascal i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=pas i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=pascal i]:before {
   content: "Pascal/Object Pascal";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=pm i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=pl i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=perl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=pm i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=pl i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=perl i]:before {
   content: "Perl";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=pf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=pf i]:before {
   content: "OpenBSD PF";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=php6 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=php5 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=php4 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=php3 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=php i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=php6 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=php5 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=php4 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=php3 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=php i]:before {
   content: "PHP";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=pony i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=pony i]:before {
   content: "Pony";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ps i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=powershell i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ps i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=powershell i]:before {
   content: "PowerShell";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=processing i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=processing i]:before {
   content: "Processing";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=prolog i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=prolog i]:before {
   content: "Prolog";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=plist i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=plist i]:before {
   content: "Property List";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=protobuf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=protobuf i]:before {
   content: "Protocol Buffers";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=pp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=puppet i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=pp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=puppet i]:before {
   content: "Puppet";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=pbi i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=pb i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=purebasic i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=pbi i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=pb i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=purebasic i]:before {
   content: "PureBASIC";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=gyp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=py i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=python i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=gyp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=py i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=python i]:before {
   content: "Python";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=profile i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=profile i]:before {
   content: "Python profile";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=kdb i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=k i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=q i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=kdb i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=k i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=q i]:before {
   content: "Q";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=qt i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=qml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=qt i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=qml i]:before {
   content: "QML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=r i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=r i]:before {
   content: "R";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=rib i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=rib i]:before {
   content: "RenderMan RIB";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=rsl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=rsl i]:before {
   content: "RenderMan RSL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=instances i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=graph i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=roboconf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=instances i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=graph i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=roboconf i]:before {
   content: "Roboconf";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=rss i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=rss i]:before {
   content: "RSS Feed (XML)";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=rb i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=ruby i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=rb i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=ruby i]:before {
   content: "Ruby";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=thor i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=thor i]:before {
   content: "Thor (Ruby)";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=gemspec i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=gemspec i]:before {
   content: "Ruby Gem";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=rs i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=rust i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=rs i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=rust i]:before {
   content: "Rust";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=scala i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=scala i]:before {
   content: "Scala";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=scheme i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=scheme i]:before {
   content: "Scheme";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=sci i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=scilab i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=sci i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=scilab i]:before {
   content: "Scilab";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=scss i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=scss i]:before {
   content: "SCSS";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=console i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=shell i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=console i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=shell i]:before {
   content: "Shell";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=smali i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=smali i]:before {
   content: "Smali";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=st i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=smalltalk i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=st i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=smalltalk i]:before {
   content: "Smalltalk";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ml i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=sml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ml i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=sml i]:before {
   content: "SML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=sqf i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=sqf i]:before {
   content: "SQF";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=sql i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=sql i]:before {
   content: "SQL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=stan i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=stan i]:before {
   content: "Stan";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ado i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=do i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=stata i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ado i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=do i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=stata i]:before {
   content: "Stata";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=p21 i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=stp i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=step i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=step21 i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=p21 i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=stp i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=step i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=step21 i]:before {
   content: "STEP Part 21";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=styl i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=stylus i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=styl i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=stylus i]:before {
   content: "Stylus";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=subunit i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=subunit i]:before {
   content: "SubUnit";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=swift i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=swift i]:before {
   content: "Swift";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=taggerscript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=taggerscript i]:before {
   content: "Tagger Script";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=tap i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=tap i]:before {
   content: "TAP";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=tk i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=tcl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=tk i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=tcl i]:before {
   content: "Tcl";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=tex i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=tex i]:before {
   content: "TeX";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=thrift i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=thrift i]:before {
   content: "Thrift";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=toml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=toml i]:before {
   content: "TOML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=tp i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=tp i]:before {
   content: "TP";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=craftcms i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=twig i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=craftcms i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=twig i]:before {
   content: "Twig";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=ts i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=typescript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=ts i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=typescript i]:before {
   content: "TypeScript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=vala i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=vala i]:before {
   content: "Vala";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=vb i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=vbnet i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=vb i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=vbnet i]:before {
   content: "VB.NET";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=vbs i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=vbscript i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=vbs i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=vbscript i]:before {
   content: "VBScript";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=vbscript-html i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=vbscript-html i]:before {
   content: "VBScript HTML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=svh i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=sv i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=v i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=verilog i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=svh i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=sv i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=v i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=verilog i]:before {
   content: "Verilog";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=vhdl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=vhdl i]:before {
   content: "VHDL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=vim i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=vim i]:before {
   content: "Vim Script";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=x86asm i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=x86asm i]:before {
   content: "x86 Assembly";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=tao i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=xl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=tao i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=xl i]:before {
   content: "XL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xpath i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=xq i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=xquery i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xpath i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=xq i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=xquery i]:before {
   content: "XQuery";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=yml i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=yaml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=yml i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=yaml i]:before {
   content: "YAML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xhtml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xhtml i]:before {
   content: "XHTML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xml i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xml i]:before {
   content: "XML";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xsd i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xsd i]:before {
   content: "XML Schema";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=xsl i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=xsl i]:before {
   content: "XSL";
 }
-.appMount-2yBXZl .markup-eYLPri .hljs[class~=zep i]:before, .appMount-2yBXZl .markup-eYLPri .hljs[class~=zephir i]:before {
+.appMount-2yBXZl .message-2CShn3 .hljs[class~=zep i]:before, .appMount-2yBXZl .message-2CShn3 .hljs[class~=zephir i]:before {
   content: "Zephir";
 }
 /* MENTIONS */
@@ -3037,26 +3044,26 @@ code {
 }
 
 /* MESSAGE SPOILER */
-.content-3dzVd8 .spoilerText-27bIiA {
+.messageContent-2t3eCI .spoilerText-27bIiA {
   background: rgba(255, 255, 255, 0.04);
   transition: all 0.15s ease-in-out;
 }
-.content-3dzVd8 .spoilerText-27bIiA > .inlineContent-2YnoDy {
+.messageContent-2t3eCI .spoilerText-27bIiA > .inlineContent-2YnoDy {
   opacity: 1;
   transition: inherit;
 }
-.content-3dzVd8 .spoilerText-27bIiA.hidden-3B-Rum {
+.messageContent-2t3eCI .spoilerText-27bIiA.hidden-3B-Rum {
   background: rgba(0, 0, 0, 0.5);
 }
-.content-3dzVd8 .spoilerText-27bIiA.hidden-3B-Rum:hover {
+.messageContent-2t3eCI .spoilerText-27bIiA.hidden-3B-Rum:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-.content-3dzVd8 .spoilerText-27bIiA.hidden-3B-Rum:hover > .inlineContent-2YnoDy {
+.messageContent-2t3eCI .spoilerText-27bIiA.hidden-3B-Rum:hover > .inlineContent-2YnoDy {
   opacity: 0.3;
   transition-duration: 0.3s;
   transition-delay: 0.3s;
 }
-.content-3dzVd8 .spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
+.messageContent-2t3eCI .spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
   opacity: 0;
 }
 
@@ -3092,7 +3099,7 @@ code {
 }
 
 /* MESSAGE ATTACHMENT */
-.container-1YxwTf .attachment-1PZZB2 {
+.wrapper-30-Nkg .attachment-1PZZB2 {
   background: rgba(255, 255, 255, 0.04);
   border-color: transparent;
 }
@@ -3108,7 +3115,7 @@ code {
   background-repeat: no-repeat;
   opacity: 0.5;
 }
-:not(.embedWrapper-3AbfJJ) > [title=unknown].icon-1KCy88 {
+:not(.embedWrapper-1MtIDg) > [title=unknown].icon-1KCy88 {
   background-image: url(https://clearvision.gitlab.io/icons/file_upload.svg);
 }
 [title=document].icon-1KCy88 {
@@ -3170,6 +3177,53 @@ code {
 
 .progressBar-1T6LYX {
   background: var(--main-color) !important;
+}
+
+.anchor-1MIwyf.downloadSection-20OayS {
+  color: #fff;
+  opacity: 0.5;
+  transition: all 0.15s ease-in-out;
+}
+.anchor-1MIwyf.downloadSection-20OayS:hover {
+  opacity: 1;
+}
+
+.messageAttachment-CZp8Iv .embedWrapper-1MtIDg {
+  background: rgba(0, 0, 0, 0.42);
+  border-radius: 5px;
+  max-width: 93%;
+}
+.messageAttachment-CZp8Iv .embedWrapper-1MtIDg .textContainer-36wgKK,
+.messageAttachment-CZp8Iv .embedWrapper-1MtIDg .footer-GXWBBp {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+.messageAttachment-CZp8Iv .embedWrapper-1MtIDg .footer-GXWBBp:before {
+  content: "";
+  width: 93%;
+  background: rgba(255, 255, 255, 0.07);
+  top: 0;
+  right: 50%;
+  position: absolute;
+  height: 1px;
+  transform: translateX(50%);
+}
+.messageAttachment-CZp8Iv .embedWrapper-1MtIDg pre > .hljs {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--code-font);
+}
+.messageAttachment-CZp8Iv .embedWrapper-1MtIDg pre > .hljs:before {
+  height: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 10px;
+  opacity: 1;
+}
+
+.gifFavoriteButton-3ZomyF {
+  transition: all 0.15s ease-in-out;
+  transform: none !important;
 }
 
 /* BLOCKED MESSAGE */
@@ -3261,7 +3315,6 @@ code {
   margin-left: 5px;
 }
 .members-3WRCEx .member-2gU6Ar {
-  background: transparent !important;
   backface-visibility: hidden;
 }
 .members-3WRCEx .member-2gU6Ar.offline-22aM7E .avatar-6qzftW {
@@ -3271,13 +3324,13 @@ code {
 .members-3WRCEx .member-2gU6Ar.offline-22aM7E:hover .avatar-6qzftW {
   filter: none;
 }
-.members-3WRCEx .member-2gU6Ar .layout-1LjVue {
+.members-3WRCEx .member-2gU6Ar .layout-1qmrhw {
   position: relative;
   background: transparent;
   transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
   z-index: 1;
 }
-.members-3WRCEx .member-2gU6Ar .layout-1LjVue:active {
+.members-3WRCEx .member-2gU6Ar .layout-1qmrhw:active {
   transform: scale(0.9);
 }
 .members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX {
@@ -3316,17 +3369,17 @@ code {
 .members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX[style*="color:"]:after {
   background: linear-gradient(to right, currentColor 90%, transparent);
 }
-.members-3WRCEx .member-2gU6Ar:hover .roleColor-nA7BqX:before, .members-3WRCEx .member-2gU6Ar.selected-3veCBZ .roleColor-nA7BqX:before {
+.members-3WRCEx .member-2gU6Ar:hover .roleColor-nA7BqX:before, .members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX:before {
   opacity: 1;
 }
-.members-3WRCEx .member-2gU6Ar:hover .roleColor-nA7BqX[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar.selected-3veCBZ .roleColor-nA7BqX[style*="color:"]:before {
+.members-3WRCEx .member-2gU6Ar:hover .roleColor-nA7BqX[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX[style*="color:"]:before {
   opacity: 0.07;
 }
-.members-3WRCEx .member-2gU6Ar.selected-3veCBZ .roleColor-nA7BqX {
+.members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX {
   -webkit-text-fill-color: #fff;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
 }
-.members-3WRCEx .member-2gU6Ar.selected-3veCBZ .roleColor-nA7BqX:after {
+.members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX:after {
   right: 0;
 }
 .members-3WRCEx .memberGroupsPlaceholder-9tqX9V {
@@ -4643,6 +4696,10 @@ textarea::-webkit-scrollbar {
   line-height: 12px;
 }
 
+.iconBadge-1D5-9X.base-3IDx3L {
+  background-color: transparent;
+}
+
 .icon-2Ug6UV {
   padding: 1px;
   color: var(--main-color);
@@ -4838,41 +4895,71 @@ textarea::-webkit-scrollbar {
   overflow: hidden;
 }
 .container-1oeRFJ .subText-OGOWMj,
-.container-1oeRFJ .activityText-1rR-8O,
-.container-1oeRFJ .activityText-ev7Z1T {
+.container-1oeRFJ .activityText-1rR-8O {
   color: rgba(255, 255, 255, 0.4);
   transition: all 0.15s ease-in-out;
 }
 .container-1oeRFJ .subText-OGOWMj > strong,
-.container-1oeRFJ .activityText-1rR-8O > strong,
-.container-1oeRFJ .activityText-ev7Z1T > strong {
+.container-1oeRFJ .activityText-1rR-8O > strong {
   color: var(--main-color);
   font-weight: 700;
   transition: all 0.15s ease-in-out;
 }
-.container-1oeRFJ.selected-3veCBZ .name-3Vmqxm {
+.container-1oeRFJ.selected-1-Z6gm .name-3Vmqxm {
   color: #fff;
 }
-.container-1oeRFJ.selected-3veCBZ .subText-OGOWMj,
-.container-1oeRFJ.selected-3veCBZ .activityText-1rR-8O,
-.container-1oeRFJ.selected-3veCBZ .activityText-ev7Z1T {
+.container-1oeRFJ.selected-1-Z6gm .subText-OGOWMj,
+.container-1oeRFJ.selected-1-Z6gm .activityText-1rR-8O {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
   color: rgba(255, 255, 255, 0.7);
 }
-.container-1oeRFJ.selected-3veCBZ .subText-OGOWMj > strong,
-.container-1oeRFJ.selected-3veCBZ .activityText-1rR-8O > strong,
-.container-1oeRFJ.selected-3veCBZ .activityText-ev7Z1T > strong {
+.container-1oeRFJ.selected-1-Z6gm .subText-OGOWMj > strong,
+.container-1oeRFJ.selected-1-Z6gm .activityText-1rR-8O > strong {
   color: #fff;
 }
-.container-1oeRFJ.selected-3veCBZ .ownerIcon-255uKo.icon-1dGlZy {
+.container-1oeRFJ.selected-1-Z6gm .ownerIcon-255uKo.icon-1dGlZy {
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
   opacity: 0.7;
 }
-.container-1oeRFJ.selected-3veCBZ .icon-Lupfh-,
-.container-1oeRFJ.selected-3veCBZ .emoji-V71N2V {
+.container-1oeRFJ.selected-1-Z6gm .icon-Lupfh-,
+.container-1oeRFJ.selected-1-Z6gm .emoji-V71N2V {
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
 }
-.container-1oeRFJ.selected-3veCBZ .icon-Lupfh- {
+.container-1oeRFJ.selected-1-Z6gm .icon-Lupfh- {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.15s ease-in-out;
+}
+
+.container-32HW5s .name-2m3Cms {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+}
+.container-32HW5s .activityText-ev7Z1T {
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.15s ease-in-out;
+}
+.container-32HW5s .activityText-ev7Z1T > strong {
+  color: var(--main-color);
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+}
+.container-32HW5s .selected-3veCBZ .name-2m3Cms {
+  color: #fff;
+}
+.container-32HW5s .selected-3veCBZ .activityText-ev7Z1T {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
+.container-32HW5s .selected-3veCBZ .activityText-ev7Z1T > strong {
+  color: #fff;
+}
+.container-32HW5s .selected-3veCBZ .icon-Lupfh-,
+.container-32HW5s .selected-3veCBZ .emoji-V71N2V {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+}
+.container-32HW5s .selected-3veCBZ .icon-Lupfh- {
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.15s ease-in-out;
 }
@@ -4887,10 +4974,6 @@ textarea::-webkit-scrollbar {
 .layer-2aCOJ3 header {
   background: var(--main-color);
   border-radius: 3px 3px 0 0;
-}
-.layer-2aCOJ3 section {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 0 0 3px 3px;
 }
 
 .popouts-2bnG9Z > .popoutTop-3WSJtH:after,
@@ -4934,7 +5017,6 @@ textarea::-webkit-scrollbar {
 }
 .animatorLeft-3yvG13 > .userPopout-2j1gM4 {
   margin-right: -16px;
-  transform-origin: 100% 50%;
 }
 .userPopout-2j1gM4 .popoutBanner-3cqRD9,
 .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
@@ -6019,12 +6101,6 @@ textarea::-webkit-scrollbar {
 }
 .headerFill-39azRn > .activityProfile-1712BN .headerText-3g1XK9 {
   color: rgba(255, 255, 255, 0.7);
-}
-
-.nameTag-2Nlmsy {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 
 .profileBadge24-sH1efV {
@@ -7220,6 +7296,7 @@ html[lang] body #app-mount.appMount-2yBXZl .messagesWrapper-RpOMA3 .message-2CSh
   background-color: var(--main-color);
 }
 .bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button {
+  transition: all 0.3s ease-in-out;
   background-color: var(--main-color);
 }
 .bd-addon-list .bd-addon-card .bd-footer .bd-controls .bd-button:hover {
