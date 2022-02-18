@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ClearVision v6-beta.2.0 by Zerthox */
 /*! Powered by DiscordSelectors v0.3.2 */
+/*! ClearVision v6-dev.1.0 by Zerthox */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -241,7 +241,7 @@ textarea,
   text-shadow: 0 0 3px #000;
 }
 .typeWindows-2-g3UY > .wordmark-2u86JB:after {
-  content: "v6-beta.2.0";
+  content: "v6-dev.1.0";
   color: rgba(255, 255, 255, 0.3);
   font-family: var(--code-font);
   font-size: 10px;
@@ -1205,7 +1205,7 @@ textarea,
   transform: translateX(50%);
 }
 .container-YkUktl:after {
-  content: "v6-beta.2.0";
+  content: "v6-dev.1.0";
   left: 50%;
   text-align: left;
   opacity: 0;
@@ -1451,6 +1451,10 @@ textarea,
 }
 .privateChannels-oVe7HL .channel-1Shao0 .selected-3veCBZ .linkButtonIcon-7rsZcu {
   color: #fff;
+}
+.privateChannels-oVe7HL .channel-1Shao0 .interactive-iyXY_x:not(.selected-3veCBZ) .highlighted-Q8Nll- .name-2m3Cms {
+  color: var(--main-color);
+  text-shadow: 0 0 3px;
 }
 
 .searchBar-3TnChZ {
@@ -5132,10 +5136,10 @@ textarea::-webkit-scrollbar {
   color: #fff;
 }
 .menu-1QACrS .item-1OdjEX.colorDefault-CDqZdO {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
 }
 .menu-1QACrS .item-1OdjEX.colorDefault-CDqZdO:hover {
-  color: #fff !important;
+  color: #fff;
 }
 .menu-1QACrS .item-1OdjEX.colorDanger-3n-KnP {
   position: relative;
@@ -6519,9 +6523,16 @@ textarea::-webkit-scrollbar {
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG[style*="color: rgb(240, 71, 71)"]:hover:after {
   opacity: 0.7;
 }
-.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG .premiumLabel-V52REm > svg,
-.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG .background-3iPORX {
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG .premiumLabel-3HPvdB > svg,
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG .background-Gjdjzm {
   display: none;
+}
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
+  content: "Danielle's ClearVision v6-dev.1.0\a DiscordSelectors v0.3.2";
+  color: var(--main-color);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: pre;
 }
 
 /* SETTINGS SIDEBAR ICONS */
