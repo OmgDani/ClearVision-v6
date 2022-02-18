@@ -4,6 +4,7 @@
 // #{cn("Divider@7732" divider)} {
 // 	position: relative;
 // 	margin: 10px 6px 10px 20px;
+
 // 	&:before {
 // 		content: "";
 // 		position: absolute;
@@ -12,6 +13,7 @@
 // 		border-radius: 3px;
 // 		z-index: -1;
 // 	}
+
 // 	#{cn("Divider@7732" dividerContent)} {
 // 		padding: 5px 15px;
 // 		display: block;
@@ -20,24 +22,29 @@
 // 		text-align: center;
 // 		border-radius: 3px;
 // 		opacity: .9;
+
 // 		&:before,
 // 		&:after {
 // 			display: none;
 // 		}
 // 	}
+
 // 	&:not(#{cn("Divider@7732" dividerUnread)}) {
 // 		#{cn("Divider@7732" dividerContent)} {
 // 			color: hsla(0, 0%, 100%, .7);
 // 		}
 // 	}
+
 // 	&#{cn("Divider@7732" dividerUnread)} {
 // 		&:before {
 // 			background: $main-color;
 // 			opacity: .8;
 // 		}
-// 		+ #{cn("Divider@7732" divider)} {
+
+// 		+#{cn("Divider@7732" divider)} {
 // 			margin-top: 40px;
 // 		}
+
 // 		#{cn("Divider@7732" dividerContent)} {
 // 			position: relative;
 // 			color: hsla(0, 0%, 100%, .8);
@@ -45,7 +52,7 @@
 // 	}
 // }
 
-
+// New
 #{cn("Divider@7732" divider)} {
 	border-color: $main-color;
 

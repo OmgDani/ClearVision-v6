@@ -1,7 +1,8 @@
 @use "sass:map";
+@use "lib/discordselectors" as *;
 
 // VERSION
-$version: "6-beta.2.0";
+$version: "6-dev.1.0";
 
 /*! ClearVision v#{$version} by Zerthox */
 
@@ -23,6 +24,12 @@ $constants: (
 		account: (
 			main: "ClearVision",
 			version: "v#{$version}"
+		),
+		settings: (
+			main: "Danielle's ClearVision",
+			version: "v#{$version}",
+			selectors: "DiscordSelectors",
+			selectors-version: "v#{$selectors-version}"
 		)
 	)
 );

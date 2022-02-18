@@ -1,9 +1,10 @@
-@use "cv" as *;
+@use "cv"as *;
 
 /* SETTINGS SIDEBAR */
 #{cn(StandardSidebarView standardSidebarView)} {
 	#{cn(StandardSidebarView sidebarRegion)} {
-		background:transparent;
+		background: transparent;
+
 		#{cn(StandardSidebarView sidebar)} {
 			height: 100%;
 			padding: 0px 6px 0px 20px;
@@ -17,6 +18,7 @@
 		background: transparent;
 		-webkit-mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
 		mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+
 		&::-webkit-scrollbar {
 			width: 0 !important;
 		}
@@ -25,10 +27,12 @@
 
 #{cn(TabBar side)} {
 	padding: 30px 0;
+
 	#{cn(TabBar header)} {
 		color: $main-color;
 		font-weight: 700;
 	}
+
 	#{cn(TabBar separator)} {
 		background: hsla(0, 0%, 100%, .07);
 	}
@@ -40,6 +44,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 		&:before {
 			content: "";
 			height: 2px;
@@ -47,6 +52,7 @@
 			background: linear-gradient(to left, var(--main-color) 50%, transparent);
 			margin-right: 5px;
 		}
+
 		&:after {
 			content: "";
 			height: 2px;
@@ -54,17 +60,19 @@
 			background: linear-gradient(to right, var(--main-color) 50%, transparent);
 			margin-left: 5px;
 		}
-		> span {
+
+		>span {
 			max-width: 100%;
 			overflow: hidden;
 			text-overflow: ellipsis;
 		}
 	}
+
 	[aria-label="USER_SETTINGS"] & #{cn(TabBar item)} {
-		&:nth-child(9) + #{cn(TabBar separator)} {
+		&:nth-child(9)+#{cn(TabBar separator)} {
 			display: none;
 		}
-	}	
+	}
 }
 
 #{cn(ConnectedLayers layer)} {
@@ -78,17 +86,21 @@
 				backface-visibility: hidden;
 				transition: all .15s ease-in-out;
 				cursor: pointer;
+
 				&:hover {
 					background-color: hsla(0, 0%, 100%, .07);
 					color: hsla(0, 0%, 100%, .7);
 				}
+
 				&#{cn(TabBar selected)} {
+
 					&,
 					&:hover {
 						background-color: $main-color;
 						color: #fff;
 					}
 				}
+
 				&#{cn(GuildRole role)} {
 					background-size: 0;
 					animation: none;
@@ -105,10 +117,12 @@
 				position: relative;
 				background: transparent;
 				transition: all .15s ease-in-out;
+
 				&:before {
 					opacity: .3;
 					transition: inherit;
 				}
+
 				&:after {
 					content: "";
 					position: absolute;
@@ -123,6 +137,7 @@
 				&[style*="color: rgb(114, 137, 218)"] {
 					background-color: transparent !important;
 					color: hsla(0, 0%, 100%, .3) !important;
+
 					&:hover {
 						background: hsla(0, 0%, 100%, .07) !important;
 						color: hsla(0, 0%, 100%, .7) !important;
@@ -133,6 +148,7 @@
 				&:hover {
 					background: hsla(0, 0%, 100%, .07);
 					color: hsla(0, 0%, 100%, .7);
+
 					&:before {
 						opacity: .7;
 					}
@@ -144,18 +160,22 @@
 					&:before {
 						opacity: 1;
 					}
+
 					&:after {
 						right: 0;
 						background: $main-color;
 						animation: cv-channel-select .3s ease-in-out;
 					}
 				}
+
 				&#{cn(TabBar selected)} {
 					background: transparent !important;
 					color: #fff !important;
 					transition: all .15s ease-in-out, background .3s .2s;
 				}
+
 				&[style*="color: rgb(255, 255, 255)"] {
+
 					&,
 					&:hover {
 						background: transparent !important;
@@ -163,14 +183,16 @@
 						transition: all .15s ease-in-out, background .3s .2s;
 					}
 				}
-				
+
 				// DANGER
 				&[style*="color: rgb(240, 71, 71)"] {
 					background: transparent !important;
 					color: hsla(0, 0%, 100%, .5) !important;
+
 					&:before {
 						opacity: .5;
 					}
+
 					&:after {
 						content: "";
 						position: absolute;
@@ -180,12 +202,15 @@
 						transition: inherit;
 						z-index: -1;
 					}
+
 					&:hover {
 						color: #fff !important;
+
 						&:before {
 							opacity: 1;
 							transform: rotateY(180deg);
 						}
+
 						&:after {
 							opacity: .7;
 						}
@@ -193,9 +218,20 @@
 				}
 
 				// NITRO TAB
-				#{cn(StandardSidebarView premiumLabel)} > svg,
+				#{cn(StandardSidebarView premiumLabel)}>svg,
 				#{cn(StandardSidebarView nitroBackground)} {
 					display: none;
+				}
+			}
+
+			// INFO SECTION
+			#{cn(StandardSidebarView info)} {
+				&:after {
+					content: "#{cv("const:text.settings.main") cv("const:text.settings.version")}\A#{cv("const:text.settings.selectors")cv("const:text.settings.selectors-version")}";
+					color: $main-color;
+					font-size: 12px;
+					line-height: 16px;
+					white-space: pre;
 				}
 			}
 		}

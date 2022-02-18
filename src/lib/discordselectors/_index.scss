@@ -1,11 +1,11 @@
-$_version: "0.3.2";
+$selectors-version: "0.3.2";
 
 @use "sass:string";
 @use "sass:list";
 @use "sass:map";
 @use "map" as *;
 
-/*! Powered by DiscordSelectors v#{$_version} */
+/*! Powered by DiscordSelectors v#{$selectors-version} */
 
 @function class($query) {
 	$class: $map;

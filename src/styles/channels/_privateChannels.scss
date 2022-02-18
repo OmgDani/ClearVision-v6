@@ -116,6 +116,7 @@
 			#{cn(PrivateChannel activityText)} {
 				color: hsla(0, 0%, 100%, .7);
 			}
+
 			#{cn(PrivateChannel name)} {
 				color: #fff;
 			}
@@ -138,6 +139,12 @@
 			#{cn(PrivateChannel linkButtonIcon)} {
 				color: #fff;
 			}
+		}
+
+		// HIGHLIGHTED
+		#{cn(PrivateChannel interactive)}:not(#{cn(PrivateChannel selected)}) #{cn(PrivateChannel highlighted)} #{cn(PrivateChannel name)} {
+			color: var(--main-color);
+			text-shadow: 0 0 3px;
 		}
 	}
 }
