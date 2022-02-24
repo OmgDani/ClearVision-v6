@@ -19,7 +19,8 @@
 	}
 	%statusMask,
 	%avatarMask > svg {
-		> rect[fill="#{map-get($color, rgba)}"] {
+		> rect[fill="#{map-get($color, rgba)}"],
+		> rect[fill="#{map-get($color, hsl)}"] {
 			@extend %#{$id};
 		}
 	}

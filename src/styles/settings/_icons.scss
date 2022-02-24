@@ -3,12 +3,10 @@
 
 /* SETTINGS SIDEBAR ICONS */
 %settingsSidebar {
-
-	// USER SETTINGS
-	[aria-label="USER_SETTINGS"] & {
-
-		// ICON MAP
-		$icons: ("my-account": "https://omgdani.github.io/ClearVision-v6/icons/manage_accounts.svg",
+	// ICON MAP
+	$icons: (
+			"[aria-label="USER_SETTINGS"]": (
+				"my-account": "https://omgdani.github.io/ClearVision-v6/icons/manage_accounts.svg",
 				"profile-customization": "https://clearvision.gitlab.io/icons/person.svg",
 				"privacy-&-safety": "https://clearvision.gitlab.io/icons/security.svg",
 				"authorized-apps": "https://clearvision.gitlab.io/icons/apps.svg",
@@ -39,35 +37,81 @@
 				"hypesquad-online": "https://clearvision.gitlab.io/icons/hypesquad.svg",
 				"experiments": "https://clearvision.gitlab.io/icons/flask.svg",
 				"developer-options": "https://clearvision.gitlab.io/icons/bug.svg",
+				"hotspot-options": "",
+				"dismissible-content-options": "",
+				"payment-flow-modals": "",
 
-				"settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
-				"emotes": "https://clearvision.gitlab.io/icons/emote.svg",
-				"plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
-				"themes": "https://clearvision.gitlab.io/icons/palette.svg",
-				"customcss": "https://clearvision.gitlab.io/icons/code_braces.svg",
+				"bd-settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
+				"bd-emotes": "https://clearvision.gitlab.io/icons/emote.svg",
+				"bd-plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
+				"bd-themes": "https://clearvision.gitlab.io/icons/palette.svg",
+				"bd-customcss": "https://clearvision.gitlab.io/icons/code_braces.svg",
 
 				"logout": "https://clearvision.gitlab.io/icons/exit.svg"
-			);
+			),
+			"[aria-label="GUILD_SETTINGS"]": (
+				"overview":"https://clearvision.gitlab.io/icons/info.svg",
+				"roles": "https://clearvision.gitlab.io/icons/assignment.svg",
+				"emoji": "https://clearvision.gitlab.io/icons/emote.svg",
+				"stickers": "https://omgdani.github.io/ClearVision-v6/icons/image.svg",
+				"moderation": "https://clearvision.gitlab.io/icons/security.svg",
+				"audit_log": "https://clearvision.gitlab.io/icons/history.svg",
+				"integrations": "https://clearvision.gitlab.io/icons/link.svg",
+				"widget": "https://omgdani.github.io/ClearVision-v6/icons/widgets.svg",
+				"guild_templates": "https://omgdani.github.io/ClearVision-v6/icons/copy.svg",
 
-		// GENERAL STYLES
-		%tabBarItem {
-			padding-left: 50px !important;
+				"community": "https://clearvision.gitlab.io/icons/people.svg",
 
-			&::before {
-				content: "";
-				position: absolute;
-				width: 24px;
-				height: 24px;
-				left: 15px;
-				margin-top: -2px;
+				"guild_premium": "https://clearvision.gitlab.io/icons/server_boost.svg",
+
+				"members": "https://clearvision.gitlab.io/icons/group.svg",
+				"instant_invites": "https://clearvision.gitlab.io/icons/share.svg",
+				"bans": "https://clearvision.gitlab.io/icons/block.svg",
+
+				"delete": "https://clearvision.gitlab.io/icons/delete.svg"
+			),
+			"[aria-label="CHANNEL_SETTINGS"]": (
+				"overview": "https://clearvision.gitlab.io/icons/info.svg",
+				"permissions": "https://clearvision.gitlab.io/icons/lock.svg",
+				"instant_invites": "https://clearvision.gitlab.io/icons/share.svg",
+				"integrations": "https://clearvision.gitlab.io/icons/link.svg",
+
+				"delete": "https://clearvision.gitlab.io/icons/delete.svg"
+			)
+		);
+
+	@each $s,
+	$settings in $icons {
+		#{$s} & {
+
+			@each $tab,
+			$url in $settings {
+				@if str-index($tab, "bd-") {
+					%tabBarItem.#{$tab}-tab:before {
+						background-image:url(#{$url});
+					}
+				}
+
+				@else {
+					%tabBarItem[aria-controls="#{$tab}-tab"]:before {
+						background-image:url(#{$url});
+					}
+				}
 			}
 		}
+	}
 
-		@each $tab,
-		$url in $icons {
-			%tabBarItem[aria-controls="#{$tab}-tab"]:before {
-				background-image:url(#{$url});
-			}
+	// GENERAL STYLES
+	%tabBarItem {
+		padding-left: 50px !important;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			left: 15px;
+			margin-top: -2px;
 		}
 	}
 }

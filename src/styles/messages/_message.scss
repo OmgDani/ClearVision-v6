@@ -56,6 +56,8 @@
 
 	#{cn(MessageContent 5757 markup)} {
 		color: hsla(0, 0%, 100%, .8);
+		// for inline blocks
+		overflow: visible;
 	}
 
 	// LINKS
@@ -78,6 +80,7 @@
 			border-radius: 2px 0 0 2px;
 		}
 
+		&#{cn(MessageContent selected)},
 		&:hover {
 			background: hsla(0, 0%, 100%, .12) !important;
 		}
@@ -134,5 +137,30 @@
 
 		border-radius: 3px !important;
 		animation: cv-message-jump 2s ease-in-out;
+	}
+
+	// REPLYING
+	#{cn(Message replying)} {
+		background-color: transparent;
+		&:before {
+			background: transparent;
+			border-left: 4px solid var(--main-color);
+			border-radius: 2px 0 0 2px;
+		}
+		&:after {
+			content: "";
+			background: var(--main-color);
+			position: absolute;
+			@include stretch;
+			z-index: -1;
+			opacity: 0.1;
+		}
+	}
+
+	// REPLIED
+	#{cn(Message replied)} {
+		&:before{
+			border-color: hsla(0, 0%, 100%, 0.2);
+		}
 	}
 }

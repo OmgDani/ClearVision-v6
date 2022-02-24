@@ -2,9 +2,9 @@
 @use "lib/discordselectors" as *;
 
 // VERSION
-$version: "6-dev.1.0";
+$version: "6-dev.1.1";
 
-/*! ClearVision v#{$version} by Zerthox */
+/*! ClearVision v#{$version} by Danielle. Based on ClearVision by Zerthox */
 
 // CONSTANTS
 $constants: (
@@ -148,23 +148,28 @@ $discord: (
 	status: (
 		online: (
 			hex: #43b581,
-			rgba: "rgba(67, 181, 129, 1)"
+			rgba: "rgba(67, 181, 129, 1)",
+			hsl: "hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"
 		),
 		idle: (
 			hex: #faa61a,
-			rgba: "rgba(250, 166, 26, 1)"
+			rgba: "rgba(250, 166, 26, 1)",
+			hsl: "hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)"
 		),
 		dnd: (
 			hex: #f04747,
-			rgba: "rgba(240, 71, 71, 1)"
+			rgba: "rgba(240, 71, 71, 1)",
+			hsl: "hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"
 		),
 		streaming: (
 			hex: #593695,
-			rgba: "rgba(89, 54, 149, 1)"
+			rgba: "rgba(89, 54, 149, 1)",
+			hsl: "hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)"
 		),
 		offline: (
 			hex: #747f8d,
-			rgba: "rgba(116, 127, 141, 1)"
+			rgba: "rgba(116, 127, 141, 1)",
+			hsl: "hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%)"
 		)
 	),
 	settings: (

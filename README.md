@@ -1,13 +1,11 @@
-[release-badge]: https://img.shields.io/github/release-pre/ClearVision/v6.svg?style=flat-square
-[release-link]: https://github.com/ClearVision/v6/releases
-[license-badge]: https://img.shields.io/github/license/ClearVision/v6.svg?style=flat-square
-[license-link]: https://github.com/ClearVision/v6/blob/master/LICENSE
-[discord-badge]: https://img.shields.io/discord/212324635356692500.svg?style=flat-square
-[discord-link]: https://clearvision.gitlab.io/join
-[issues-badge]: https://img.shields.io/github/issues/ClearVision/v6.svg?style=flat-square
-[issues-link]: https://github.com/ClearVision/v6/issues
-[prs-badge]: https://img.shields.io/github/issues-pr/ClearVision/v6.svg?style=flat-square
-[prs-link]: https://github.com/ClearVision/v6/pulls
+[release-badge]: https://img.shields.io/github/release-pre/OmgDani/ClearVision-v6.svg?style=flat-square
+[release-link]: https://github.com/OmgDani/ClearVision-v6/releases
+[license-badge]: https://img.shields.io/github/license/OmgDani/ClearVision-v6.svg?style=flat-square
+[license-link]: https://github.com/OmgDani/ClearVision-v6/blob/master/LICENSE
+[issues-badge]: https://img.shields.io/github/issues/OmgDani/ClearVision-v6.svg?style=flat-square
+[issues-link]: https://github.com/OmgDani/ClearVision-v6/issues
+[prs-badge]: https://img.shields.io/github/issues-pr/OmgDani/ClearVision-v6.svg?style=flat-square
+[prs-link]: https://github.com/OmgDani/ClearVision-v6/pulls
 
 <div align="center">
 
@@ -15,13 +13,17 @@
 
 [![Releases][release-badge]][release-link]
 [![License][license-badge]][license-link]
-[![Discord Server][discord-badge]][discord-link]
 [![Issues][issues-badge]][issues-link]
 [![Pull Requests][prs-badge]][prs-link]
 
 ![v6 Sapphire](https://github.com/Zerthox/ClearVision/raw/master/screenshots/v6.png)
 
 </div>
+
+## About
+This fork of ClearVision aims to preserve and bring back some older features and styles of ClearVision and Discord.
+
+Any issues with this fork should be reported [here][issues-link] and not ClearVison's repository or Discord.
 
 ## Installing
 Download the theme file and move it into your [BetterDiscord](https://betterdiscord.net) themes folder:

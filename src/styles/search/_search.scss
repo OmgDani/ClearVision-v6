@@ -1,78 +1,108 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* SEARCH */
 %chatContentWrapper %searchResultsWrap {
-	background-color: rgba(0, 0, 0, .6);
+	background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
 }
+
 %searchResultsWrap {
 
 	// HEADER
-	> %searchHeader {
-		background-color: rgba(0, 0, 0, .3);
-		box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-		> %searchTotalResults {
-			color: hsla(0, 0%, 100%, .5);
-			opacity: 1;
-		}
-		> %searchTab {
-			position: relative;
-			padding: 10px;
-			margin: 10px 0 0;
-			border: none !important;
-			color: hsla(0, 0%, 100%, .5);
-			opacity: 1;
-			transition: all .15s ease-in-out;
-			+ %searchTab {
-				margin-left: 5px;
-			}
-			&:before {
-				content: "";
-				position: absolute;
-				@include stretch;
-				background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, .07) 50%);
-				border-radius: 3px 3px 0 0;
-				opacity: 0;
-				transition: all .15s ease-in-out, bottom .2s ease-in-out;
-				z-index: -1;
-			}
-			&:after {
-				content: "";
-				position: absolute;
-				@include pos(100%, 0, 0, 0);
-				background: $main-color;
-				box-shadow: inset 0 -2px rgba(0, 0, 0, .3);
-				border-radius: 3px 3px 0 0;
-				transition: all .2s ease-in-out;
-				z-index: -1;
-			}
-			&:hover {
+	>%searchHeader {
+		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+		box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+
+		>%searchTotalResults {
+			#{cn("Text@683" colorHeaderPrimary)} {
 				color: hsla(0, 0%, 100%, .7);
-				&:before {
-					opacity: 1;
-				}
-			}
-			&%searchTabSelected {
-				color: #fff;
-				background-color: transparent;
-				&:after {
-					top: 0;
-					animation: cv-slide-top .2s ease-in-out;
-				}
-				&:before {
-					bottom: 100%;
-					opacity: 1;
-					animation: cv-slide-bottom .2s ease-in-out reverse;
-				}
 			}
 		}
+
+		#{cn("Header@6441" item)} {
+			transition: all 0.3s ease-in-out;
+			&#{cn("Header@6441" selected)} {
+				background: hsla(0, 0%, 100%, .1);
+				color: hsla(0, 0%, 100%, .7);
+			}
+
+			&:hover {
+				background: hsla(0, 0%, 100%, .2) !important;
+				color: #fff;
+			}
+
+			&#{cn("Header@6441" disabled)} {
+				color: hsla(0, 0%, 100%, .5);
+			}
+		}
+
+		// >%searchTab {
+		// 	position: relative;
+		// 	padding: 10px;
+		// 	margin: 10px 0 0;
+		// 	border: none !important;
+		// 	color: hsla(0, 0%, 100%, .5);
+		// 	opacity: 1;
+		// 	transition: all .15s ease-in-out;
+
+		// 	+%searchTab {
+		// 		margin-left: 5px;
+		// 	}
+
+		// 	&:before {
+		// 		content: "";
+		// 		position: absolute;
+		// 		@include stretch;
+		// 		background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, .07) 50%);
+		// 		border-radius: 3px 3px 0 0;
+		// 		opacity: 0;
+		// 		transition: all .15s ease-in-out, bottom .2s ease-in-out;
+		// 		z-index: -1;
+		// 	}
+
+		// 	&:after {
+		// 		content: "";
+		// 		position: absolute;
+		// 		@include pos(100%, 0, 0, 0);
+		// 		background: $main-color;
+		// 		box-shadow: inset 0 -2px rgba(0, 0, 0, .3);
+		// 		border-radius: 3px 3px 0 0;
+		// 		transition: all .2s ease-in-out;
+		// 		z-index: -1;
+		// 	}
+
+		// 	&:hover {
+		// 		color: hsla(0, 0%, 100%, .7);
+
+		// 		&:before {
+		// 			opacity: 1;
+		// 		}
+		// 	}
+
+		// 	&%searchTabSelected {
+		// 		color: #fff;
+		// 		background-color: transparent;
+
+		// 		&:after {
+		// 			top: 0;
+		// 			animation: cv-slide-top .2s ease-in-out;
+		// 		}
+
+		// 		&:before {
+		// 			bottom: 100%;
+		// 			opacity: 1;
+		// 			animation: cv-slide-bottom .2s ease-in-out reverse;
+		// 		}
+		// 	}
+		// }
 	}
 
 	// SEPARATOR
 	%searchResultGroup {
-		&:before {
-			display: none;
-		}
+		// &:before {
+		// 	display: none;
+		// }
+
 		%searchChannelName {
 			display: flex;
 			align-items: center;
@@ -81,6 +111,7 @@
 			color: $main-color;
 			text-shadow: 0 0 1px;
 			transition: all .15s ease-in-out;
+
 			&:before {
 				content: "";
 				height: 2px;
@@ -91,6 +122,7 @@
 				margin-right: 5px;
 				background: linear-gradient(to left, $main-color 50%, transparent);
 			}
+
 			&:after {
 				content: "";
 				height: 2px;
@@ -101,9 +133,11 @@
 				margin-left: 5px;
 				background: linear-gradient(to right, $main-color 50%, transparent);
 			}
+
 			&:hover {
 				text-shadow: 0 0 3px;
 				text-decoration: none;
+
 				&:before,
 				&:after {
 					opacity: 1;
@@ -113,89 +147,109 @@
 	}
 
 	// RESULT
+	%searchResultContainer:last-child %searchResult {
+		border-bottom: none;
+	}
+
 	%searchResult {
 		background-color: transparent;
 		margin-bottom: 0;
 		padding-bottom: 10px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-		&:before,
-		&:after {
-			display: none;
-		}
-		+ %searchResult {
-			margin-top: -1px;
-		}
-		> %searchResultMessage {
+
+		// &:before,
+		// &:after {
+		// 	display: none;
+		// }
+
+		// +%searchResult {
+		// 	margin-top: -1px;
+		// }
+
+		>%searchResultMessage {
 			background-color: transparent;
 			border: 2px solid transparent;
 			transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity .3s ease-in-out;
-			&%searchResultMessageHit {
-				background-color: rgba(0, 0, 0, .3);
-				border: 2px solid transparent;
-				border-radius: 5px;
-				box-shadow: none;
-			}
-			&%searchResultMessageBefore,
-			&%searchResultMessageAfter {
-				opacity: 0;
-				transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity 0s;
-			}
-			&%searchResultMessageSibling {
-				opacity: .3;
-				transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity .3s ease-in-out;
-			}
+
+			// &%searchResultMessageHit {
+			// 	background-color: rgba(0, 0, 0, .3);
+			// 	border: 2px solid transparent;
+			// 	border-radius: 5px;
+			// 	box-shadow: none;
+			// }
+
+			// &%searchResultMessageBefore,
+			// &%searchResultMessageAfter {
+			// 	opacity: 0;
+			// 	transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity 0s;
+			// }
+
+			// &%searchResultMessageSibling {
+			// 	opacity: .3;
+			// 	transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity .3s ease-in-out;
+			// }
 		}
-		&:not(%searchResultExpanded) > %searchResultMessageSibling {
-			-webkit-mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
-			mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
-		}
-		&%searchResultExpanded {
-			background-color: hsla(0, 0%, 100%, .04);
-			border: none;
-			border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-			border-radius: 0;
-			> %searchResultMessage {
-				&%searchResultMessageHit {
-					background-color: hsla(0, 0%, 100%, .1);
-					border: 2px solid transparent;
-					border-radius: 5px;
-				}
-				&%searchResultMessageBefore,
-				&%searchResultMessageAfter {
-					opacity: 1;
-				}
-			}
-		}
+
+		// &:not(%searchResultExpanded)>%searchResultMessageSibling {
+		// 	-webkit-mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
+		// 	mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
+		// }
+
+		// &%searchResultExpanded {
+		// 	background-color: hsla(0, 0%, 100%, .04);
+		// 	border: none;
+		// 	border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+		// 	border-radius: 0;
+
+		// 	>%searchResultMessage {
+		// 		&%searchResultMessageHit {
+		// 			background-color: hsla(0, 0%, 100%, .1);
+		// 			border: 2px solid transparent;
+		// 			border-radius: 5px;
+		// 		}
+
+		// 		&%searchResultMessageBefore,
+		// 		&%searchResultMessageAfter {
+		// 			opacity: 1;
+		// 		}
+		// 	}
+		// }
 	}
+
 	%searchResultMessage {
 		%messageHeaderCozyMeta {
 			-webkit-mask-image: linear-gradient(to right, #000 290px, transparent 305px);
 			mask-image: linear-gradient(to right, #000 290px, transparent 305px);
 		}
 	}
+
 	%searchResultActionButtons {
 		background-color: transparent;
 		box-shadow: none;
 		// opacity: 0;
 		transition: all .15s ease-in-out;
 	}
-	%searchResultMessageHit {
-		&:hover {
-			%messageHeaderCozyMeta {
-				-webkit-mask-image: linear-gradient(to right, #000 245px, transparent 260px);
-				mask-image: linear-gradient(to right, #000 245px, transparent 260px);
-			}
-			// > %searchResultActionButtons {
-			// 	opacity: 1;
-			// }
-		}
-	}
-	%searchResult {
+
+	// %searchResultMessageHit {
+	// 	&:hover {
+	// 		%messageHeaderCozyMeta {
+	// 			-webkit-mask-image: linear-gradient(to right, #000 245px, transparent 260px);
+	// 			mask-image: linear-gradient(to right, #000 245px, transparent 260px);
+	// 		}
+
+	// 		// > %searchResultActionButtons {
+	// 		// 	opacity: 1;
+	// 		// }
+	// 	}
+	// }
+
+	%searchResultContainer {
 		%searchResultJumpButton {
 			background-color: hsla(0, 0%, 100%, .04);
 			color: hsla(0, 0%, 100%, .5);
 			border-radius: 3px;
 			transition: all .3s ease-in-out;
+
 			&:hover {
 				background-color: $main-color;
 				color: #fff;
@@ -203,11 +257,13 @@
 			}
 		}
 	}
-	%searchResultExpanded {
-		%searchResultJumpButton {
-			background-color: rgba(0, 0, 0, .3);
-		}
-	}
+
+	// %searchResultExpanded {
+	// 	%searchResultJumpButton {
+	// 		background-color: rgba(0, 0, 0, .3);
+	// 	}
+	// }
+
 	%searchResultHighlight {
 		position: relative;
 		padding: 0 2px;
@@ -218,20 +274,52 @@
 	}
 
 	// PAGINATION
-	%searchPagination {
+	#{cn(Paginator roundButton)} {
 		color: hsla(0, 0%, 100%, .5);
-		> %searchPaginationPrevious,
-		> %searchPaginationNext {
-			background-color: hsla(0, 0%, 100%, .1);
-			border: 1px solid transparent;
-			opacity: .7;
-			transition: all .15s ease-in-out;
-			&:hover {
-				background-color: $main-color;
-				opacity: 1;
-			}
+	}
+
+	#{cn(Paginator pageButton)} {
+		&:hover {
+			color: hsla(0, 0%, 100%, 0.7);
+			background-color: hsla(0, 0%, 100%, .2);
 		}
-		> %searchPaginationDisabled {
+	}
+
+	#{cn(Paginator activeButton)} {
+		background-color: $main-color;
+		color: #fff;
+
+		&:hover {
+			background-color: $hover-color;
+			color: #fff;
+		}
+	}
+
+	#{cn(Paginator pageControl)} #{cn(TextInput inputMini)} {
+		background: rgba(0, 0, 0, .3);
+		border-color: transparent;
+		color: #fff;
+		transition: all .3s ease-in-out;
+
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .5);
+		}
+
+		&:focus {
+			border-color: $main-color;
+			box-shadow: 0 0 1px $main-color;
+		}
+	}
+
+	#{cn(Paginator endButton)} {
+		opacity: .7;
+		transition: all .15s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&:disabled {
 			opacity: .3;
 			pointer-events: none;
 		}

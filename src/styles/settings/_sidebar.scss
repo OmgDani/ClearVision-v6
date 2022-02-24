@@ -3,7 +3,7 @@
 /* SETTINGS SIDEBAR */
 #{cn(StandardSidebarView standardSidebarView)} {
 	#{cn(StandardSidebarView sidebarRegion)} {
-		background: transparent;
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 
 		#{cn(StandardSidebarView sidebar)} {
 			height: 100%;
@@ -217,9 +217,13 @@
 					}
 				}
 
-				// NITRO TAB
+				// USER SETTINGS NITRO TAB
 				#{cn(StandardSidebarView premiumLabel)}>svg,
 				#{cn(StandardSidebarView nitroBackground)} {
+					display: none;
+				}
+				// SERVER SETTINGS SERVER BOOST TAB
+				#{cn(TabBar icon)} {
 					display: none;
 				}
 			}
@@ -232,6 +236,7 @@
 					font-size: 12px;
 					line-height: 16px;
 					white-space: pre;
+					text-transform: none;
 				}
 			}
 		}

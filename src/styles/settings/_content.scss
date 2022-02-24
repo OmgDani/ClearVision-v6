@@ -1,15 +1,36 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* SETTINGS CONTENT */
 %standardSidebarView {
-	> %settingsContentRegion {
-		background: transparent;
+	>%settingsContentRegion {
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
 }
+
 %settingsContentRegion {
+
 	%settingsContentScroller,
 	%settingsContentSidebarScroller {
+		background: transparent;
+	}
+	// fix for sidebar shrinking on boost and text and video tabs on certain width screens
+	#{cn(StandardSidebarView contentTransitionWrap)} {
+		width: 0;
+	}
+}
+
+// MY ACCOUNT
+#{cn(FormSection accountProfileCard)} {
+	background: rgba(0, 0, 0, 0.3);
+	#{cn(FormSection avatar)} {
+		background: transparent;
+		border-color: transparent;
+	}
+	#{cn(FormSection background)} {
+		background: rgba(0, 0, 0, 0.3);
+	}
+	#{cn(FormSection fieldList)} {
 		background: transparent;
 	}
 }

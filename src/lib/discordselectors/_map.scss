@@ -1422,7 +1422,8 @@ $map: (
 		"icon": ".icon-3zI3d2",
 		"muted": ".muted-19J0ih",
 		"name": ".name-3BUDLf",
-		"wrapper": ".wrapper-1S43wv"
+		"wrapper": ".wrapper-1S43wv",
+		"mainContent": ".mainContent-uDGa6R"
 	),
 	"ChannelEditorContainer": (
 		"button": ".button-3BaQ4X",
@@ -5810,7 +5811,21 @@ $map: (
 		"width75": ".width75-2ZxVBg.section-1bCz6u"
 	),
 	"FormSection": (
-		"children": ".children-1xdcWE"
+		"children": ".children-1xdcWE",
+		"accountProfileCard": ".accountProfileCard-lbN7n-",
+		"banner": ".settingsBanner-1eDJ5w",
+		"bannerPremium": ".bannerPremium-kkSkPv",
+		"userInfo": ".userInfo-regn9W",
+		"avatar": ".avatar-3mTjvZ",
+		"profileCardUsernameRow": ".profileCardUsernameRow-1bb6fi",
+		"userTag": ".userTag-2qPxEZ",
+		"username": ".username-3JLfHz",
+		"discriminator": ".discriminator-2m-MqL",
+		"overflowMenuButton": ".overflowMenuButton-1I3Jz1",
+		"overflowMenuIcon": ".overflowMenuIcon-2Bjb5_",
+		"background": ".background-3d_SjE",
+		"fieldList": ".fieldList-in8WkP",
+		"field": ".field-21XZwa"
 	),
 	"FormText": (
 		"default": ".default-_FzbTF.formText-2ngGjI",
@@ -8036,7 +8051,9 @@ $map: (
 		"timestampVisibleOnHover": ".timestampVisibleOnHover-9PEuZS",
 		"username": ".username-h_Y3Us",
 		"message": ".message-2CShn3",
-		"wrapper": ".wrapper-30-Nkg"
+		"wrapper": ".wrapper-30-Nkg",
+		"replying": ".replying-eZ7p5z",
+		"replied": ".repliedMessage-3Z6XBG"
 	),
 	"MessageAccessories": (
 		"container": ".container-1e22Ot",
@@ -8122,7 +8139,8 @@ $map: (
 		"mediumBackgroundOpacity": ".mediumBackgroundOpacity-1OHNeb",
 		"sizeEmoji": "1.375em",
 		"mentioned": ".mentioned-Tre-dv",
-		"message": ".message-2CShn3"
+		"message": ".message-2CShn3",
+		"selected": ".selected-2LX7Jy"
 	),
 	"MessageEditor": (
 		"operations": ".operations-3q3u6E"
@@ -8734,12 +8752,16 @@ $map: (
 		"title": ".title-iQAIhu"
 	),
 	"Paginator": (
-		"disabled": ".disabled-29cfPA",
-		"pageActions": ".pageActions-1crTQL",
-		"pageButtonNext": ".pageButtonNext-2_bbdk",
-		"pageButtonPrev": ".pageButtonPrev-3q9rh8",
-		"pageIndicator": ".pageIndicator-cOEPV8",
-		"paginator": ".paginator-2CA79G"
+		"container": ".container-1-h9mY",
+		"pageControlContainer": ".pageControlContainer-6nt7kY",
+		"pageControl": ".pageControl-1XvHg0",
+		"iconCaret": ".iconCaret-SHvQdG",
+		"endButton": ".endButton-oUxeLG",
+		"endButtonInner": ".endButtonInner-3u90nF",
+		"roundButton": ".roundButton-2_R5PN",
+		"pageButton": ".pageButton-1GMGeJ",
+		"activeButton": ".activeButton-LRWFC_",
+		"gap": ".gap-35QmZH"
 	),
 	"PanelButton": (
 		"button": ".button-12Fmur",
@@ -9097,51 +9119,51 @@ $map: (
 		"icon": ".icon-2doZ3q",
 		"iconContainer": ".iconContainer-2ZxvJk",
 		"invite": ".invite-271nFU",
-		"item": ".item-1GzJrl.itemBase-1Qj4z6",
+		"item": ".item-1OdjEX",
 		"itemActive": ".itemActive-2V2HNc",
 		"itemBase": ".itemBase-1Qj4z6",
 		"itemHighlighted": ".itemHighlighted-1DpT7C",
 		"label": ".label-1Y-LW5",
 		"leave": ".leave-1DRJfn",
-		"menu": ".menu-Sp6bN1",
-		"separator": ".separator-2zcjq8",
-		"status": ".status-3Kz6VS",
-		"statusIconText": ".statusIconText-3b4TkH",
-		"statusItem": ".statusItem-2uzPIV.itemBase-1Qj4z6"
+		"menu": ".menu-1AgizY",
+		"separator": ".separator-1So4YB",
+		"status": ".status-3TYC5W",
+		"statusItem": ".statusItem-2hiCNB",
+		"focused": ".focused-3qFvc8"
 	),
 	"PopoutMenuItemLabel": (
 		"helper": ".helper-2c73HK",
 		"icon": ".icon-2doZ3q",
 		"iconContainer": ".iconContainer-2ZxvJk",
 		"invite": ".invite-271nFU",
-		"item": ".item-1GzJrl.itemBase-1Qj4z6",
+		"item": ".item-1OdjEX",
 		"itemActive": ".itemActive-2V2HNc",
 		"itemBase": ".itemBase-1Qj4z6",
 		"itemHighlighted": ".itemHighlighted-1DpT7C",
 		"label": ".label-1Y-LW5",
 		"leave": ".leave-1DRJfn",
-		"menu": ".menu-Sp6bN1",
-		"separator": ".separator-2zcjq8",
-		"status": ".status-3Kz6VS",
-		"statusIconText": ".statusIconText-3b4TkH",
-		"statusItem": ".statusItem-2uzPIV.itemBase-1Qj4z6"
+		"menu": ".menu-1AgizY",
+		"separator": ".separator-1So4YB",
+		"status": ".status-3TYC5W",
+		"statusItem": ".statusItem-2hiCNB",
+		"focused": ".focused-3qFvc8"
 	),
 	"PopoutMenuSeparator": (
 		"helper": ".helper-2c73HK",
 		"icon": ".icon-2doZ3q",
 		"iconContainer": ".iconContainer-2ZxvJk",
 		"invite": ".invite-271nFU",
-		"item": ".item-1GzJrl.itemBase-1Qj4z6",
+		"item": ".item-1OdjEX",
 		"itemActive": ".itemActive-2V2HNc",
 		"itemBase": ".itemBase-1Qj4z6",
 		"itemHighlighted": ".itemHighlighted-1DpT7C",
 		"label": ".label-1Y-LW5",
 		"leave": ".leave-1DRJfn",
-		"menu": ".menu-Sp6bN1",
-		"separator": ".separator-2zcjq8",
-		"status": ".status-3Kz6VS",
-		"statusIconText": ".statusIconText-3b4TkH",
-		"statusItem": ".statusItem-2uzPIV.itemBase-1Qj4z6"
+		"menu": ".menu-1AgizY",
+		"separator": ".separator-1So4YB",
+		"status": ".status-3TYC5W",
+		"statusItem": ".statusItem-2hiCNB",
+		"focused": ".focused-3qFvc8"
 	),
 	"PrefixInput": (
 		"marginBottom20": ".marginBottom20-315RVT",
@@ -11337,7 +11359,9 @@ $map: (
 		"side": ".side-2ur1Qk",
 		"themed": ".themed-2-lozF",
 		"top": ".top-K_jibn",
-		"topPill": ".topPill-3DJJNV"
+		"topPill": ".topPill-3DJJNV",
+		"tabBarItemContainer": ".tabBarItemContainer-2HdIlr",
+		"icon": ".icon-3FU6Ir"
 	),
 	"Table": (
 		"clickable": ".clickable-1D3Gs1",

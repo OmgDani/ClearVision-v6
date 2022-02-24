@@ -58,7 +58,7 @@
 	}
 }
 
-%fileNameLink {
+%fileNameLinkWrapper {
 	color: $main-color;
 	@include hover-shadow;
 }
@@ -107,7 +107,7 @@
 }
 
 // MESSAGE ATTACHMENT CODE EMBED
-%messageAttachment %attachmentEmbedWrapper {
+%messageAttachment %attachmentContainer {
 	background: rgba(0, 0, 0, .42);
 	border-radius: 5px;
 	max-width: 93%;

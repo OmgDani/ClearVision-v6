@@ -2701,6 +2701,9 @@
 .messageAttachment-CZp8Iv {
 	@extend %messageAttachment !optional;
 }
+.container-rr3Ruk {
+	@extend %attachmentContainer !optional;
+}
 .embedWrapper-1MtIDg {
 	@extend %attachmentEmbedWrapper !optional;
 }
@@ -4081,20 +4084,35 @@ pre {
 .optionNormal-12VR9V {
 	@extend %selectPopoutOptionNormal !optional;
 }
-.statusItem-2uzPIV {
+#status-picker {
+	@extend %statusPicker !optional;
+}
+#status-picker-online {
+	@extend %statusPickerOnline !optional;
+}
+#status-picker-idle {
+	@extend %statusPickerIdle !optional;
+}
+#status-picker-dnd {
+	@extend %statusPickerDnd !optional;
+}
+#status-picker-invisible {
+	@extend %statusPickerOffline !optional;
+}
+#status-picker-custom-status {
+	@extend %statusPickerCustomStatus !optional;
+}
+.statusItem-2hiCNB {
 	@extend %statusPickerItem !optional;
 }
-.statusIconText-3b4TkH {
-	@extend %statusPickerText !optional;
-}
-.status-3Kz6VS {
+.status-3TYC5W {
 	@extend %statusPickerStatus !optional;
 }
 .status-2DiCMd {
-	@extend %statusPickerStatusInner !optional;
+	@extend %statusPickerStatusIcon !optional;
 }
-.helper-2c73HK {
-	@extend %statusPickerHelper !optional;
+.description-3Cwkxk {
+	@extend %statusPickerDescription !optional;
 }
 .userPopout-2j1gM4 {
 	@extend %userPopout !optional;
@@ -4239,6 +4257,9 @@ pre {
 }
 .searchResult-O9NDji {
 	@extend %searchResult !optional;
+}
+.container-rZM65Y {
+	@extend %searchResultContainer !optional;
 }
 .searchResultGroup-1lU_-i {
 	@extend %searchResultGroup !optional;
@@ -4407,4 +4428,7 @@ pre {
 }
 .cursorDefault--wfhy5 {
 	@extend %statusCursorDefault !optional;
+}
+.container-3g_96n {
+	@extend %captchaScreen !optional
 }

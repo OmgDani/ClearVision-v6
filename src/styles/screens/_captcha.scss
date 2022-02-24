@@ -1,0 +1,7 @@
+@use "cv" as *;
+@import "lib/legacy-selectors";
+
+/* CAPTCHA SCREEN */
+%captchaScreen {
+    background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+}

@@ -36,55 +36,54 @@
 			}
 		}
 	}
-}
 
-#{cn(ButtonLink lookFilled)} {
 
-	&#{cn(ButtonLink colorWhite)},
-	&#{cn(ButtonLink colorGrey)} {
-		background: hsla(0, 0%, 100%, .1);
+	#{cn(ButtonLink lookFilled)} {
 
-		#{cn(ButtonLink contents)} {
-			color: hsla(0, 0%, 100%, .7);
-			transition: inherit;
-		}
-
-		&:hover {
-			background: hsla(0, 0%, 100%, .2) !important;
+		&#{cn(ButtonLink colorWhite)},
+		&#{cn(ButtonLink colorGrey)} {
+			background: hsla(0, 0%, 100%, .1);
 
 			#{cn(ButtonLink contents)} {
+				color: hsla(0, 0%, 100%, .7);
+				transition: inherit;
+			}
+
+			&:hover {
+				background: hsla(0, 0%, 100%, .2) !important;
+
+				#{cn(ButtonLink contents)} {
+					color: #fff;
+				}
+			}
+
+			&:disabled {
+				background: hsla(0, 0%, 100%, .1) !important;
+
+				#{cn(ButtonLink contents)} {
+					color: hsla(0, 0%, 100%, .5);
+				}
+			}
+		}
+	}
+
+	// BUTTON INVERTED
+	#{cn(ButtonLink lookInverted)} {
+
+		&,
+		&#{cn(ButtonLink colorBrand)},
+		&#{cn(ButtonLink colorGreen)} {
+			background: hsla(0, 0%, 100%, .1);
+			color: hsla(0, 0%, 100%, .7);
+
+			&:hover {
+				background: hsla(0, 0%, 100%, .2);
 				color: #fff;
 			}
 		}
-
-		&:disabled {
-			background: hsla(0, 0%, 100%, .1) !important;
-
-			#{cn(ButtonLink contents)} {
-				color: hsla(0, 0%, 100%, .5);
-			}
-		}
 	}
-}
 
-// BUTTON INVERTED
-#{cn(ButtonLink lookInverted)} {
-
-	&,
-	&#{cn(ButtonLink colorBrand)},
-	&#{cn(ButtonLink colorGreen)} {
-		background: hsla(0, 0%, 100%, .1);
-		color: hsla(0, 0%, 100%, .7);
-
-		&:hover {
-			background: hsla(0, 0%, 100%, .2);
-			color: #fff;
-		}
-	}
-}
-
-// BUTTON OUTLINED
-#app-mount {
+	// BUTTON OUTLINED
 	#{cn(ButtonLink lookOutlined)} {
 
 		&#{cn(ButtonLink colorPrimary)},
@@ -120,6 +119,15 @@
 			>#{cn(ButtonLink contents)} {
 				background-image: none;
 			}
+		}
+	}
+
+	&#{cn(ButtonLink colorLink)} {
+		color: $main-color;
+		@include hover-shadow;
+
+		>#{cn(ButtonLink contents)} {
+			background-image: none;
 		}
 	}
 }
