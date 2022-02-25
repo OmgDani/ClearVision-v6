@@ -1537,6 +1537,9 @@ textarea,
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
 }
+.chat-2ZfjoI .scrollerSpacer-3AqkT9 {
+  height: 22px;
+}
 
 .content-1jQy2l > .scrollerWrap-6LjisI {
   background: rgba(0, 0, 0, 0.5);
@@ -1598,6 +1601,31 @@ textarea,
   color: rgba(255, 255, 255, 0.3);
 }
 
+.role-23oyrw {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 3px;
+  transition: all 0.1s ease-in-out;
+  cursor: default;
+  background: transparent;
+}
+.role-23oyrw .roleColor-3cA0as {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  background: inherit;
+  opacity: 0.15;
+  transition: all 0.1s ease-in-out;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
 /* CHAT DIVIDER */
 .divider-IqmEqJ {
   border: none;
@@ -1652,6 +1680,7 @@ textarea,
 .newMessagesBar-1hF-9G {
   background: transparent;
   transition: all 0.15s ease-in-out;
+  z-index: 3;
 }
 .newMessagesBar-1hF-9G:before {
   content: "";
@@ -1716,6 +1745,7 @@ textarea,
 
 /* CHAT CHANNEL TEXT AREA */
 .form-3gdLxP {
+  margin-top: 0;
   border-color: rgba(255, 255, 255, 0.07);
 }
 .form-3gdLxP:before {
@@ -3309,15 +3339,15 @@ code {
 
 /* MEMBERS */
 .container-2o3qEW {
-  background: transparent;
+  background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 }
 .container-2o3qEW .membersWrap-3NUR2t {
   min-width: auto;
   flex-basis: var(--members-width);
 }
 .container-2o3qEW .membersWrap-3NUR2t .members-3WRCEx {
+  background: transparent;
   width: var(--members-width);
-  background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 }
 
 .members-3WRCEx .membersGroup-2eiWxl {
@@ -5002,8 +5032,7 @@ textarea::-webkit-scrollbar {
 .animatorLeft-3yvG13 > .userPopout-2j1gM4 {
   margin-right: -16px;
 }
-.userPopout-2j1gM4 .popoutBanner-3cqRD9,
-.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+.userPopout-2j1gM4 .popoutBanner-3cqRD9 {
   background-color: transparent !important;
 }
 .userPopout-2j1gM4 .headerNormal-3Zn_yu {
@@ -5041,6 +5070,9 @@ textarea::-webkit-scrollbar {
 }
 .userPopout-2j1gM4 .body-2wLx-E .button-f2h6uQ {
   margin-top: 16px;
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+  background-color: transparent;
 }
 .userPopout-2j1gM4 .customStatus-3XAoF9 {
   padding: 12px 12px 12px 16px;
@@ -7498,6 +7530,13 @@ html[lang] body #app-mount.appMount-2yBXZl .messagesWrapper-RpOMA3 .message-2CSh
   overflow: hidden;
   vertical-align: top;
   user-select: none;
+}
+
+.menu-1QACrS [id^=guild-context-Role-Members][style*="color:"].item-1OdjEX:hover {
+  background-color: currentColor;
+}
+.menu-1QACrS [id^=guild-context-Role-Members][style*="color:"].item-1OdjEX:hover .label-2gNW3x {
+  color: #fff;
 }
 
 /* KEYFRAMES */
