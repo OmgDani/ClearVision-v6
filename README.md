@@ -44,11 +44,6 @@ With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install`
 ## Contributing
 In order to contribute you need to be able to compile [Sass](https://sass-lang.com).
 
-If you use [Node Sass](https://github.com/sass/node-sass) via CLI, you can run:
-```
-node-sass main.scss public/main.css --watch
-```
-
 If you use [Dart Sass](https://github.com/sass/dart-sass) via CLI, you can run:
 ```
 sass main.scss:public/main.css --watch
