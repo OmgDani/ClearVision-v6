@@ -1,0 +1,39 @@
+/*! Powered by DiscordSelectors v0.4.1 */
+/*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
+.avatarWrapper-eenWra {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.headerText-2sdzFM {
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.profileBadges-2pItdR {
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 0;
+  position: initial;
+  order: 1;
+}
+
+.headerTop-3GPUSF {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
+}
+
+.avatarHint-k7pYop {
+  position: relative;
+  left: 0;
+}
+
+.avatarHoverTarget-1zzfRL {
+  position: absolute;
+}
+
+.avatar-2Vndt_ {
+  border: none !important;
+  margin-top: 6px;
+}
