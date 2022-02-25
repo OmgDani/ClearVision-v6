@@ -1,0 +1,41 @@
+@use "cv"as *;
+@import "lib/legacy-selectors";
+
+// CENTER USER POPOUT HEADER
+%userPopoutAvatarWrapper {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+%userPopoutHeaderText {
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+%userPopoutProfileBadges {
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 0;
+    position: initial;
+    order: 1;
+}
+
+%userPopoutHeaderTop {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+}
+
+%userPopoutAvatarHint {
+    position: relative;
+    left: 0;
+}
+
+%userPopoutAvatarHoverTarget {
+    position: absolute;
+}
+
+%userPopoutAvatar {
+    border: none !important;
+    margin-top: 6px;
+}

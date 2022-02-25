@@ -33,6 +33,9 @@
 			}
 		}
 	}
+	#{cn(FluxContainer(Messages) scrollerSpacer)} {
+		height: 22px;
+	}
 }
 
 // GATED CHANNEL
@@ -95,5 +98,28 @@
 	}
 	%noChannelText {
 		color: hsla(0, 0%, 100%, .3);
+	}
+}
+
+// CHANNEL PERMISSIONS
+%channelRole {
+	position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+    cursor: default;
+    background: transparent;
+	%channelRoleColor {
+		content: "";
+		position: absolute;
+		@include stretch;
+		border-radius: 3px;
+		background: inherit;
+		opacity: 0.15;
+		transition: all 0.1s ease-in-out;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
 	}
 }

@@ -27,8 +27,7 @@
 	}
 
 	// BANNER
-	%userPopoutProfileBanner,
-	%userPopoutBodyInnerWrapper {
+	%userPopoutProfileBanner {
 		background-color: transparent !important;
 	}
 
@@ -102,6 +101,10 @@
 		#{cn(ButtonLink button)} {
 			margin-top: 16px;
 		}
+	}
+	
+	%userPopoutBodyInnerWrapper {
+		background-color: transparent;
 	}
 
 	%userPopoutCustomStatus {

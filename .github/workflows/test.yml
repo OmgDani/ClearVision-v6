@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -19,15 +19,14 @@ jobs:
           name: test-${{github.sha}}
           path: test
       - name: move to dir
-        run: cp -rf ./test/main.css ./main.css
+        run: |
+          cp -rf ./test/main.css ./main.css
+          cp -rf ./test/cv/styles/mods/*.css ./mods/
       - name: Commit files
         run: |
-          git config --local user.name "OmgDani"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add ./main.css
-          git commit -m "Upload main.css"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: master
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: true
+          git add ./test/*
+          git commit -m "Upload compiled"
+          git push

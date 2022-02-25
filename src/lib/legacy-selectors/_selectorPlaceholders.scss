@@ -3532,6 +3532,9 @@ pre {
 .item-1OdjEX {
 	@extend %contextMenuItem !optional;
 }
+.label-2gNW3x {
+	@extend %contextMenuLabel !optional;
+}
 .colorDanger-3n-KnP {
 	@extend %contextMenuItemDanger !optional;
 }
@@ -4144,6 +4147,18 @@ pre {
 .avatar-2Vndt_ {
 	@extend %userPopoutAvatar !optional;
 }
+.avatarWrapper-eenWra {
+	@extend %userPopoutAvatarWrapper !optional;
+}
+.avatarHint-k7pYop {
+	@extend %userPopoutAvatarHint !optional;
+}
+.avatarHoverTarget-1zzfRL {
+	@extend %userPopoutAvatarHoverTarget !optional;
+}
+.profileBadges-2pItdR {
+	@extend %userPopoutProfileBadges !optional;
+}
 .mobileIndicator-29f8Xh {
 	@extend %userPopoutMobileIndicator !optional;
 }
@@ -4430,5 +4445,11 @@ pre {
 	@extend %statusCursorDefault !optional;
 }
 .container-3g_96n {
-	@extend %captchaScreen !optional
+	@extend %captchaScreen !optional;
+}
+.role-23oyrw {
+	@extend %channelRole !optional;
+}
+.roleColor-3cA0as {
+	@extend %channelRoleColor !optional;
 }

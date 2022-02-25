@@ -5,6 +5,7 @@
 #{cn(NewMessagesBar newMessagesBar)} {
 	background: transparent;
 	transition: all .15s ease-in-out;
+	z-index: 3;
 	&:before {
 		content: "";
 		position: absolute;

@@ -1,0 +1,19 @@
+@use "cv"as *;
+@import "lib/legacy-selectors";
+
+// ROLE MEMBERS
+%contextMenu {
+    %contextMenuItem {
+        &[id^="guild-context-Role-Members"] {
+            &[style*="color:"] {
+                &:hover {
+                    background-color: currentColor;
+
+                    %contextMenuLabel {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
