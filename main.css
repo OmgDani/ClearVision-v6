@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! Powered by DiscordSelectors v0.4.1 */
-/*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
+/*! ClearVision v6-dev.1.1(u0ftvn3) by Danielle. Based on ClearVision by Zerthox */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -2039,6 +2039,8 @@ textarea,
 }
 .messagesWrapper-RpOMA3 .markup-eYLPri {
   color: rgba(255, 255, 255, 0.8);
+}
+.messagesWrapper-RpOMA3 .markup-eYLPri:not(.repliedTextContent-2hOYMB) {
   overflow: visible;
 }
 .messagesWrapper-RpOMA3 .messageContent-2t3eCI a,
@@ -2114,6 +2116,12 @@ textarea,
 }
 .messagesWrapper-RpOMA3 .repliedMessage-3Z6XBG:before {
   border-color: rgba(255, 255, 255, 0.2);
+}
+.messagesWrapper-RpOMA3 .wrapper-3HVHpV {
+  background-color: transparent;
+}
+.messagesWrapper-RpOMA3 .wrapper-3HVHpV .wrapper-15CKyy {
+  background-color: transparent;
 }
 
 /* MESSAGE REACTION */
@@ -6513,7 +6521,7 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
-  content: "Danielle's ClearVision v6-dev.1.1\a DiscordSelectors v0.4.1";
+  content: "Danielle's ClearVision v6-dev.1.1\a Build u0ftvn3\a DiscordSelectors v0.4.1";
   color: var(--main-color);
   font-size: 12px;
   line-height: 16px;
@@ -6659,6 +6667,21 @@ textarea::-webkit-scrollbar {
 }
 [aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=community-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/people.svg);
+}
+[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=analytics-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/analytics.svg);
+}
+[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=partner-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/discord/serverPartner.svg);
+}
+[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=discovery-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/explore.svg);
+}
+[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=member_verification-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/memberVerification.svg);
+}
+[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=community_welcome-tab].item-3XjbnG:before {
+  background-image: url(https://omgdani.github.io/ClearVision-v6/icons/wysiwyg.svg);
 }
 [aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=guild_premium-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/server_boost.svg);
