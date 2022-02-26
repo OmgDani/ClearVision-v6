@@ -231,7 +231,7 @@
 			// INFO SECTION
 			#{cn(StandardSidebarView info)} {
 				&:after {
-					content: "#{cv("const:text.settings.main") cv("const:text.settings.version")}\A#{cv("const:text.settings.selectors")cv("const:text.settings.selectors-version")}";
+					content: "#{cv("const:text.settings.main") cv("const:text.settings.version")}\A#{cv("const:text.settings.build")}\A#{cv("const:text.settings.selectors")cv("const:text.settings.selectors-version")}";
 					color: $main-color;
 					font-size: 12px;
 					line-height: 16px;

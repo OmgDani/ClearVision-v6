@@ -23,7 +23,7 @@
 ## About
 This fork of ClearVision aims to preserve and bring back some older features and styles of ClearVision and Discord.
 
-Any issues with this fork should be reported [here][issues-link] and not ClearVison's repository or Discord.
+Any issues with this fork should be reported [here][issues-link] and not ClearVision's repository or Discord.
 
 ## Installing
 Download the theme file and move it into your [BetterDiscord](https://betterdiscord.net) themes folder:

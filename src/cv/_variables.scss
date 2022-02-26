@@ -3,8 +3,9 @@
 
 // VERSION
 $version: "6-dev.1.1";
+$build: unique-id();
 
-/*! ClearVision v#{$version} by Danielle. Based on ClearVision by Zerthox */
+/*! ClearVision v#{$version}(#{$build}) by Danielle. Based on ClearVision by Zerthox */
 
 // CONSTANTS
 $constants: (
@@ -29,7 +30,8 @@ $constants: (
 			main: "Danielle's ClearVision",
 			version: "v#{$version}",
 			selectors: "DiscordSelectors",
-			selectors-version: "v#{$selectors-version}"
+			selectors-version: "v#{$selectors-version}",
+			build: "Build #{$build}"
 		)
 	)
 );
