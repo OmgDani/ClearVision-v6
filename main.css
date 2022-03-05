@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*! Powered by DiscordSelectors v0.4.1 */
-/*! ClearVision v6-dev.1.1(u0ftvn3) by Danielle. Based on ClearVision by Zerthox */
+/*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
+/* BUILD uxrmgk9 */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -1967,6 +1968,9 @@ textarea,
 .chat-2ZfjoI .wrapper-1gVUIN .border-2BJQjd.speaking-3RWJBr {
   box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-floating);
 }
+.chat-2ZfjoI .wrapper-1gVUIN .wrapper-3mYmFS.ringingIncoming-fibTw-:after, .chat-2ZfjoI .wrapper-1gVUIN .wrapper-3mYmFS.ringingOutgoing-1NjfRn:after {
+  border-color: var(--main-color);
+}
 .chat-2ZfjoI .border-2Vy6FN.speaking-7QZEkv {
   box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-floating);
 }
@@ -3347,13 +3351,15 @@ code {
 
 /* MEMBERS */
 .container-2o3qEW {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+  background: transparent;
 }
-.container-2o3qEW .membersWrap-3NUR2t {
+
+.membersWrap-3NUR2t {
   min-width: auto;
   flex-basis: var(--members-width);
+  background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 }
-.container-2o3qEW .membersWrap-3NUR2t .members-3WRCEx {
+.membersWrap-3NUR2t .members-3WRCEx {
   background: transparent;
   width: var(--members-width);
 }
@@ -3979,8 +3985,15 @@ code {
 .container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN {
   background-color: transparent;
 }
+.container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN .container-1oAagU {
+  background: transparent;
+}
+.container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN .outer-2JOHae {
+  background: transparent;
+}
 .container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN .itemCard-3Etziu {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * .5));
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN .itemCard-3Etziu:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -3988,6 +4001,9 @@ code {
 .container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN .itemCard-3Etziu .inset-SbsSFp {
   border: 1px solid var(--main-color);
   background-color: transparent;
+}
+.container-2cd8Mz .tabBody-2dgbAs .nowPlayingColumn-1eCBCN .itemCard-3Etziu .section-3G9aLW {
+  background: transparent;
 }
 
 /* GAME LIBRARY */
@@ -6521,7 +6537,7 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
-  content: "Danielle's ClearVision v6-dev.1.1\a Build u0ftvn3\a DiscordSelectors v0.4.1";
+  content: "Danielle's ClearVision v6-dev.1.1\a Build uxrmgk9\a DiscordSelectors v0.4.1";
   color: var(--main-color);
   font-size: 12px;
   line-height: 16px;
