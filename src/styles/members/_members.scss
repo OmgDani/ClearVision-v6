@@ -1,18 +1,18 @@
 @use "cv"as *;
 
 /* MEMBERS */
-
-
 #{cn("FluxContainer(ChannelMembers)" container)} {
-	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
-	#{cn("FluxContainer(ChannelMembers)" membersWrap)} {
-		min-width: auto;
-		flex-basis: cv("members-width");
+	background: transparent;
+}
 
-		#{cn("FluxContainer(ChannelMembers)" members)} {
-			background: transparent;
-			width: cv("members-width");
-		}
+#{cn("FluxContainer(ChannelMembers)" membersWrap)} {
+	min-width: auto;
+	flex-basis: cv("members-width");
+	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
+
+	#{cn("FluxContainer(ChannelMembers)" members)} {
+		background: transparent;
+		width: cv("members-width");
 	}
 }
 

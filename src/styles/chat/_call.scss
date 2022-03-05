@@ -25,9 +25,11 @@
 				&:hover {
 					background: rgba(0, 0, 0, .5);
 					color: hsla(0, 0%, 100%, .9);
+
 					#{cn("FluxContainer(PrivateChannelCall)" controlIcon)} {
-					color: hsla(0, 0%, 100%, .9);
-				}}
+						color: hsla(0, 0%, 100%, .9);
+					}
+				}
 			}
 
 
@@ -39,6 +41,17 @@
 				box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px var(--background-floating);
 			}
 		}
+
+		#{cn("FluxContainer(PrivateChannelCall)" avatarWrapper)} {
+
+			&#{cn("FluxContainer(PrivateChannelCall)" ringingIncoming)},
+			&#{cn("FluxContainer(PrivateChannelCall)" ringingOutgoing)} {
+				&:after{
+					border-color: $main-color;
+				}
+			}
+		}
+
 	}
 
 	#{cn("FluxContainer(PrivateChannelCall)" borderSharing)} {

@@ -98,11 +98,12 @@
 	// BODY
 	%userPopoutBody {
 		background: rgba(0, 0, 0, .65);
+
 		#{cn(ButtonLink button)} {
 			margin-top: 16px;
 		}
 	}
-	
+
 	%userPopoutBodyInnerWrapper {
 		background-color: transparent;
 	}
