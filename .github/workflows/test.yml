@@ -1,9 +1,11 @@
 name: Test
 
-on: push
-  branches: [ master ]
-  paths:
-    - 'src/**'
+on: 
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'src/**'
 
 jobs:
   test:
