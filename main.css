@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! Powered by DiscordSelectors v0.4.1 */
 /*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
-/* BUILD uxrmgk9 */
+/* BUILD u1mbm1v */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -1971,6 +1971,9 @@ textarea,
 .chat-2ZfjoI .wrapper-1gVUIN .wrapper-3mYmFS.ringingIncoming-fibTw-:after, .chat-2ZfjoI .wrapper-1gVUIN .wrapper-3mYmFS.ringingOutgoing-1NjfRn:after {
   border-color: var(--main-color);
 }
+.chat-2ZfjoI .wrapper-1gVUIN .status-1ZXjSF {
+  background-color: var(--main-color);
+}
 .chat-2ZfjoI .border-2Vy6FN.speaking-7QZEkv {
   box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-floating);
 }
@@ -2453,7 +2456,7 @@ textarea,
 }
 
 /* CODEBLOCK */
-.markup-eYLPri.messageContent-2t3eCI code.inline {
+.markup-eYLPri code.inline {
   padding: 3.5px 7.5px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
@@ -2461,17 +2464,20 @@ textarea,
   font-family: var(--code-font);
   line-height: 22px;
 }
-.markup-eYLPri.messageContent-2t3eCI code.inline + pre {
+.markup-eYLPri code.inline + pre {
   margin-top: -1px;
 }
-.markup-eYLPri.messageContent-2t3eCI pre {
-  max-width: 93%;
+.markup-eYLPri pre {
   padding: 0;
   background: transparent;
   border: 2px solid transparent;
   font-family: var(--code-font);
 }
-.markup-eYLPri.messageContent-2t3eCI pre > .hljs {
+.messageContent-2t3eCI.markup-eYLPri pre {
+  max-width: 93%;
+}
+
+.markup-eYLPri pre > .hljs {
   position: relative;
   padding: 6px;
   background: rgba(0, 0, 0, 0.42);
@@ -2479,7 +2485,7 @@ textarea,
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
-.markup-eYLPri.messageContent-2t3eCI pre > .hljs:before {
+.markup-eYLPri pre > .hljs:before {
   height: 10px;
   color: rgba(255, 255, 255, 0.3);
   line-height: 10px;
@@ -5052,9 +5058,11 @@ textarea::-webkit-scrollbar {
   background: var(--user-popout-image) var(--user-popout-position)/var(--user-popout-size) var(--user-popout-repeat) var(--user-popout-attachment);
   filter: grayscale(var(--user-popout-grayscale)) sepia(var(--user-popout-sepia)) invert(var(--user-popout-invert)) brightness(var(--user-popout-brightness)) contrast(var(--user-popout-contrast)) saturate(var(--user-popout-saturation)) blur(var(--user-popout-blur));
   z-index: -1;
+  animation: cv-userpopout-fix 1ms;
 }
 .animatorLeft-3yvG13 > .userPopout-2j1gM4 {
   margin-right: -16px;
+  transform-origin: 100% 50%;
 }
 .userPopout-2j1gM4 .popoutBanner-3cqRD9 {
   background-color: transparent !important;
@@ -5169,6 +5177,9 @@ textarea::-webkit-scrollbar {
   color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   transition: all 0.15s ease-in-out;
+}
+.menu-1QACrS .item-1OdjEX:active {
+  background-color: var(--hover-color);
 }
 .menu-1QACrS .item-1OdjEX:hover {
   background-color: var(--main-color);
@@ -6537,7 +6548,7 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
-  content: "Danielle's ClearVision v6-dev.1.1\a Build uxrmgk9\a DiscordSelectors v0.4.1";
+  content: "Danielle's ClearVision v6-dev.1.1\a Build u1mbm1v\a DiscordSelectors v0.4.1";
   color: var(--main-color);
   font-size: 12px;
   line-height: 16px;
@@ -6546,188 +6557,176 @@ textarea::-webkit-scrollbar {
 }
 
 /* SETTINGS SIDEBAR ICONS */
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=my-account-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=my-account-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/manage_accounts.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=profile-customization-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=profile-customization-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/person.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="privacy-&-safety-tab"].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls="privacy-&-safety-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/security.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=authorized-apps-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=authorized-apps-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/apps.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=connections-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=connections-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/link.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=discord-nitro-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=discord-nitro-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/nitro.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=nitro-server-boost-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=nitro-server-boost-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/server_boost.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=subscriptions-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=subscriptions-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/autorenew.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=library-inventory-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=library-inventory-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/gift.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=billing-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=billing-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/payment.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=appearance-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=appearance-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/camera.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=accessibility-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=accessibility-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/settings_accessibility.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="voice-&-video-tab"].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls="voice-&-video-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/mic.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="text-&-images-tab"].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls="text-&-images-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/chat.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=notifications-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=notifications-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/notifications.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=keybinds-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=keybinds-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/keyboard.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=language-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=language-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/language.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=windows-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=windows-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/windows.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=linux-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=linux-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/linux.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=streamer-mode-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=streamer-mode-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/videocam.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=advanced-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=advanced-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/settings.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=game-activity-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=game-activity-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/games.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=overlay-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=overlay-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/aspect_ratio.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=changelog-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=changelog-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/history.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=hypesquad-online-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=hypesquad-online-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/hypesquad.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=experiments-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=experiments-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/flask.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=developer-options-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=developer-options-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/bug.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=hotspot-options-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=hotspot-options-tab].item-3XjbnG:before {
   background-image: url();
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=dismissible-content-options-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=dismissible-content-options-tab].item-3XjbnG:before {
   background-image: url();
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=payment-flow-modals-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=payment-flow-modals-tab].item-3XjbnG:before {
   background-image: url();
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN .bd-settings-tab.item-3XjbnG:before {
+.sidebar-nqHbhN .bd-settings-tab.item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/betterdiscord.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN .bd-emotes-tab.item-3XjbnG:before {
+.sidebar-nqHbhN .bd-emotes-tab.item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/emote.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN .bd-plugins-tab.item-3XjbnG:before {
+.sidebar-nqHbhN .bd-plugins-tab.item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/puzzle.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN .bd-themes-tab.item-3XjbnG:before {
+.sidebar-nqHbhN .bd-themes-tab.item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/palette.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN .bd-customcss-tab.item-3XjbnG:before {
+.sidebar-nqHbhN .bd-customcss-tab.item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/code_braces.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls=logout-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=logout-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/exit.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=overview-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=overview-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/info.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=roles-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=roles-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/assignment.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=emoji-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=emoji-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/emote.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=stickers-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=stickers-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/image.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=moderation-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=moderation-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/security.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=audit_log-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=audit_log-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/history.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=integrations-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=integrations-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/link.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=widget-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=widget-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/widgets.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=guild_templates-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=guild_templates-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/copy.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=community-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=community-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/people.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=analytics-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=analytics-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/analytics.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=partner-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=partner-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/discord/serverPartner.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=discovery-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=discovery-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/explore.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=member_verification-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=member_verification-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/memberVerification.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=community_welcome-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=community_welcome-tab].item-3XjbnG:before {
   background-image: url(https://omgdani.github.io/ClearVision-v6/icons/wysiwyg.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=guild_premium-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=guild_premium-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/server_boost.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=members-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=members-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/group.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=instant_invites-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=instant_invites-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/share.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=bans-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=bans-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/block.svg);
 }
-[aria-label=GUILD_SETTINGS] .sidebar-nqHbhN [aria-controls=delete-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=delete-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/delete.svg);
 }
-[aria-label=CHANNEL_SETTINGS] .sidebar-nqHbhN [aria-controls=overview-tab].item-3XjbnG:before {
-  background-image: url(https://clearvision.gitlab.io/icons/info.svg);
-}
-[aria-label=CHANNEL_SETTINGS] .sidebar-nqHbhN [aria-controls=permissions-tab].item-3XjbnG:before {
+.sidebar-nqHbhN [aria-controls=permissions-tab].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/lock.svg);
-}
-[aria-label=CHANNEL_SETTINGS] .sidebar-nqHbhN [aria-controls=instant_invites-tab].item-3XjbnG:before {
-  background-image: url(https://clearvision.gitlab.io/icons/share.svg);
-}
-[aria-label=CHANNEL_SETTINGS] .sidebar-nqHbhN [aria-controls=integrations-tab].item-3XjbnG:before {
-  background-image: url(https://clearvision.gitlab.io/icons/link.svg);
-}
-[aria-label=CHANNEL_SETTINGS] .sidebar-nqHbhN [aria-controls=delete-tab].item-3XjbnG:before {
-  background-image: url(https://clearvision.gitlab.io/icons/delete.svg);
 }
 .sidebar-nqHbhN .item-3XjbnG {
   padding-left: 50px !important;
@@ -7814,5 +7813,10 @@ html[lang] body #app-mount.appMount-2yBXZl .messagesWrapper-RpOMA3 .message-2CSh
   to {
     transform: none;
     opacity: 1;
+  }
+}
+@keyframes cv-userpopout-fix {
+  from {
+    margin: 0;
   }
 }
