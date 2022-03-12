@@ -19,11 +19,12 @@
 		background: cv("bg.popout.img") cv("bg.popout.pos")/cv("bg.popout.size") cv("bg.popout.repeat") cv("bg.popout.attach");
 		@include filters(cv("bg.popout"));
 		z-index: -1;
+		animation: cv-userpopout-fix 1ms;
 	}
 
 	%popoutAnimatorLeft>& {
 		margin-right: -16px;
-		// transform-origin: 100% 50%;
+		transform-origin: 100% 50%;
 	}
 
 	// BANNER

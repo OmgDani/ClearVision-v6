@@ -1,4 +1,4 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* CONTEXT MENU */
@@ -12,31 +12,42 @@
 		// z-index: 3003;
 	}
 }
+
 %contextMenu {
 	%contextMenuSeparator {
 		border-bottom-color: hsla(0, 0%, 100%, .04);
 	}
+
 	%contextMenuItem {
 		background-color: transparent;
 		color: hsla(0, 0%, 100%, .6);
 		border-radius: 3px;
 		transition: all .15s ease-in-out;
+
+		&:active {
+			background-color: $hover-color;
+		}
+
 		&:hover {
 			background-color: $main-color;
 			color: #fff;
 		}
+
 		&%contextMenuItemBrand {
 			color: hsla(0, 0%, 100%, .6);
+
 			&:hover {
 				color: #fff;
 			}
 		}
+
 		&%contextMenuItemDanger {
 			position: relative;
 			background-color: transparent;
 			color: hsla(0, 0%, 100%, .6) !important;
 			width: calc(100% - 4px);
 			margin: 2px;
+
 			&:after {
 				content: "";
 				position: absolute;
@@ -47,8 +58,10 @@
 				transition: inherit;
 				z-index: -1;
 			}
+
 			&:hover {
 				color: #fff !important;
+
 				&:after {
 					opacity: .7;
 				}
@@ -56,6 +69,7 @@
 		}
 	}
 }
+
 // %subContextMenu {
 // 	margin: 0 -5px;
 // 	%contextMenu {

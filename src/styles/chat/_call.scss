@@ -46,10 +46,14 @@
 
 			&#{cn("FluxContainer(PrivateChannelCall)" ringingIncoming)},
 			&#{cn("FluxContainer(PrivateChannelCall)" ringingOutgoing)} {
-				&:after{
+				&:after {
 					border-color: $main-color;
 				}
 			}
+		}
+
+		#{cn("FluxContainer(PrivateChannelCall)" status)} {
+			background-color: $main-color;
 		}
 
 	}
