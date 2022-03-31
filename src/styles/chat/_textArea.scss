@@ -38,6 +38,10 @@
 		padding-left: 10px;
 	}
 
+	#{cn(SlateChannelTextArea fakeLink)} {
+		color: $main-color;
+	}
+
 	// TODO: god damn anonymous memo
 	// %channelTextAreaAttachWrapper {
 	// 	border-right: 1px solid hsla(0, 0%, 100%, .07);
