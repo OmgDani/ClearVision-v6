@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! Powered by DiscordSelectors v0.4.1 */
 /*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
-/* BUILD u1mbm1v */
+/* BUILD uo759xk */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -1767,13 +1767,16 @@ textarea,
   border-color: var(--main-color);
   color: var(--main-color);
 }
-.channelTextArea-1VQBuV .placeholder-1_mJY1,
+.channelTextArea-1VQBuV .placeholder-1rCBhr,
 .channelTextArea-1VQBuV .textArea-2CLwUE::placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
 .channelTextArea-1VQBuV .slateTextArea-27tjG0,
-.channelTextArea-1VQBuV .placeholder-1_mJY1 {
+.channelTextArea-1VQBuV .placeholder-1rCBhr {
   padding-left: 10px;
+}
+.channelTextArea-1VQBuV .fakeLink-1wGafz {
+  color: var(--main-color);
 }
 .channelTextArea-1VQBuV .button-f2h6uQ {
   opacity: 0.3;
@@ -6548,7 +6551,7 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
-  content: "Danielle's ClearVision v6-dev.1.1\a Build u1mbm1v\a DiscordSelectors v0.4.1";
+  content: "Danielle's ClearVision v6-dev.1.1\a Build uo759xk\a DiscordSelectors v0.4.1";
   color: var(--main-color);
   font-size: 12px;
   line-height: 16px;
