@@ -66,16 +66,6 @@
 		}
 	}
 
-	// LINKS
-	#{cn(Message content)} {
-
-		a,
-		#{cn(Anchor anchor)} {
-			color: $main-color;
-			@include hover-shadow;
-		}
-	}
-
 	// MENTIONED
 	#{cn(MessageContent mentioned)} {
 		background: hsla(0, 0%, 100%, .1);
@@ -180,5 +170,14 @@
 		#{cn(Message loadingWrapper)} {
 			background-color: transparent;
 		}
+	}
+}
+
+// LINKS
+#{cn(MessageContent 5757 markup)} {
+	a,
+	#{cn(Anchor anchor)} {
+		color: $main-color;
+		@include hover-shadow;
 	}
 }

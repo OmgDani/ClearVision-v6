@@ -1,4 +1,4 @@
-@use "cv" as *;
+@use "cv"as *;
 
 /* GUILDS */
 #{cn(Guilds wrapper)} {
@@ -6,10 +6,12 @@
 	background-color: transparent;
 	width: calc(#{cv("server-columns")} * 72px);
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+
 	#{cn(Guilds tree)} {
 		outline: none;
 	}
 }
+
 #{cn(Guilds scrollerWrap)} {
 	width: auto;
 }
@@ -23,7 +25,9 @@
 	margin-right: -18px;
 	padding-right: 18px;
 	background: transparent;
-	> %guild {
+
+	>%guild {
+
 		&:first-child,
 		&:nth-child(2),
 		&.bd-guild-separator {
@@ -32,6 +36,7 @@
 			grid-column: 1 / span cv("server-columns");
 		}
 	}
+
 	> :not(#{cn(CircleIconButton listItem)}):nth-child(2) {
 		height: auto !important;
 		display: flex;
@@ -39,7 +44,8 @@
 		grid-column: 1 / span cv("server-columns");
 		align-items: center;
 		justify-content: center;
-		+ #{cn(CircleIconButton listItem)} {
+
+		+#{cn(CircleIconButton listItem)} {
 			margin-right: auto;
 			margin-left: auto;
 			grid-column: 1 / span cv("server-columns");
@@ -52,7 +58,8 @@
 	width: 100%;
 	height: 100%;
 	background: cv("bg.home.icon") cv("bg.home.pos")/cv("bg.home.size") no-repeat;
-	> path {
+
+	>path {
 		display: none;
 	}
 }
@@ -65,6 +72,7 @@
 	border-radius: 25px;
 	transition: all .3s ease-in-out;
 	cursor: default;
+
 	&:hover {
 		color: #fff;
 	}
@@ -74,12 +82,14 @@
 #{cn(NavItem icon)} {
 	background-color: rgba(0, 0, 0, .3);
 }
+
 #{cn(NavItem wrapper)} {
 	#{cn(NavItem childWrapper)} {
 		background: rgba(0, 0, 0, .3);
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .3s ease-in-out;
 	}
+
 	&:hover,
 	&#{cn(NavItem selected)} {
 		#{cn(NavItem childWrapper)} {
@@ -97,15 +107,19 @@
 
 // PILL
 // TODO: anonymous ref...
-#{cn(GuildFolder pill)} {
-	overflow: visible;
+#{cn(FluxContainer(AppView) guilds)} {
+	#{cn(GuildFolder pill)}, #{cn(DefaultHomeButton pill)} {
+		overflow: visible;
+	}
 }
+
 #{cn(GuildFolder item)} {
 	width: 12px;
 	margin-left: -6px;
 	border-radius: 20px;
 	background: $main-color;
 	box-shadow: 0 0 20px -1px $main-color;
+
 	&[style*="height: 8px"] {
 		height: 10px !important;
 	}
@@ -117,20 +131,24 @@
 		background: hsla(0, 0%, 100%, .04);
 		border-radius: 16px 16px 24px 24px;
 		transition: background-color .3s ease-in-out;
+
 		&#{cn(GuildFolder collapsed)} {
 			background: transparent;
 		}
 	}
 }
+
 #{cn(GuildFolder folder)} {
 	background: hsla(0, 0%, 100%, .07);
 	transition: all .3s ease-in-out;
+
 	&#{cn(GuildFolder hover)} {
 		background: hsla(0, 0%, 100%, .1);
 	}
 }
+
 #{cn(GuildFolder expandedGuilds)} {
-	> #{cn(CircleIconButton listItem)} {
+	>#{cn(CircleIconButton listItem)} {
 		animation: cv-fade-in .3s ease-in-out;
 	}
 }
@@ -151,6 +169,7 @@
 	background: rgba(0, 0, 0, .3);
 	color: hsla(0, 0%, 100%, .3);
 	transition: all .3s ease-in-out;
+
 	&:hover,
 	&#{cn(CircleIconButton selected)} {
 		background: $main-color;
@@ -164,6 +183,7 @@
 	border: 2px solid cv("colors.danger");
 	color: #fff;
 	transition: all .3s ease-in-out;
+
 	&:hover {
 		background: cv("colors.danger");
 		border-color: cv("colors.danger");

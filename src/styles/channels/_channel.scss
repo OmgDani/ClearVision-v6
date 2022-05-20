@@ -251,6 +251,10 @@
 // VOICE USER LIST
 #{cn(VoiceUser listDefault)} {
 	padding-left: 24px;
+
+	#{cn(VoiceUser clickable)}:hover #{cn(VoiceUser content)} {
+		background-color: hsla(0, 0%, 100%, .1)
+	}
 }
 
 #{cn(VoiceUser voiceUser)} {

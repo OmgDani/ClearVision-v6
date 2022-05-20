@@ -2,27 +2,27 @@
 @import "lib/legacy-selectors";
 
 /* MESSAGE REACTION */
-%reactions %reaction {
+#{cn(Reactions reactions)} #{cn(Reactions reaction)} {
 	position: relative;
 	background: hsla(0, 0%, 100%, .04);
 	border-radius: 3px;
 	border: none;
 	transition: all .15s ease-in-out;
-	%reactionInner {
+	#{cn(Reactions reactionInner)} {
 		padding: 0 5px;
 	}
-	%reactionCount {
+	#{cn(Reactions reactionCount)} {
 		margin-left: 5px;
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .15s ease-in-out;
 	}
 	&:hover {
 		background: hsla(0, 0%, 100%, .1);
-		%reactionCount {
+		#{cn(Reactions reactionCount)} {
 			color: hsla(0, 0%, 100%, .5);
 		}
 	}
-	&%reactionMe {
+	&#{cn(Reactions reactionMe)} {
 		background: transparent;
 		&:after {
 			content: "";
@@ -34,14 +34,14 @@
 			z-index: -1;
 			transition: all .15s ease-in-out;
 		}
-		%reactionCount {
+		#{cn(Reactions reactionCount)} {
 			color: hsla(0, 0%, 100%, .7);
 		}
 		&:hover {
 			&:after {
 				opacity: .7;
 			}
-			%reactionCount {
+			#{cn(Reactions reactionCount)} {
 				color: #fff;
 			}
 		}
