@@ -82,9 +82,9 @@
 			color: hsla(0, 0%, 100%, .7);
 			transition: all .15s ease-in-out;
 		}
-		
 		// SELECTED
-		&[aria-selected=true] {
+		&[aria-selected=true],
+		&:hover {
 			background-color: hsla(0, 0%, 100%, .1);
 			%searchPopoutPlusIcon {
 				opacity: .3;

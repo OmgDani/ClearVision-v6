@@ -1,4 +1,4 @@
-@use "cv" as *;
+@use "cv"as *;
 @import "lib/legacy-selectors";
 
 /* USER ROLE */
@@ -10,21 +10,30 @@
 	transition: all .1s ease-in-out;
 	cursor: default;
 	background: transparent;
+
 	&[style] {
 		&:not(:hover) {
 			border-color: transparent !important;
 		}
 	}
+
 	&:not([style]) {
 		background: hsla(0, 0%, 100%, .1);
 		border-color: transparent;
 	}
-	> %roleCircle {
+
+	>%roleRemoveButton {
+		position: initial;
+	}
+
+	%roleCircle {
 		width: 0;
 		height: 0;
+
 		&:not(:empty) {
 			margin-left: 6px;
 		}
+
 		&:after {
 			content: "";
 			position: absolute;
@@ -35,56 +44,70 @@
 			transition: all .1s ease-in-out;
 			pointer-events: none;
 		}
-		> %roleRemoveIcon {
-			position: absolute;
-			display: block;
-			opacity: 0;
-			transition: all .1s ease-in-out;
-			.fill {
-				fill: #fff;
-			}
+	}
+
+	%roleRemoveIcon {
+		position: absolute;
+		display: block;
+		opacity: 0;
+		transition: all .1s ease-in-out;
+		right: 1px;
+		left: auto;
+
+		path {
+			fill: #fff;
 		}
 	}
-	> %roleName {
+
+	%roleName {
 		margin-right: 0;
 		margin-left: 4px;
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .1s ease-in-out;
 	}
-	&:hover  {
-		> %roleCircle {
+
+	&:hover {
+		%roleCircle {
 			&:after {
 				opacity: .3;
 			}
-			> %roleRemoveIcon {
-				opacity: 1;
-			}
 		}
-		> %roleName {
+
+		%roleRemoveIcon {
+			opacity: 1;
+		}
+
+		%roleName {
 			color: #fff;
 		}
 	}
 }
+
 %roleAddButton {
 	background: hsla(0, 0%, 100%, .1);
 	transition: all .1s ease-in-out;
 	cursor: pointer;
-	> svg {
+
+	>svg {
 		width: 7px;
 		height: 7px;
 		color: hsla(0, 0%, 100%, .5);
 		transition: inherit;
 	}
+
 	&:hover,
 	&%roleAddButtonPopoutOpen {
 		background: hsla(0, 0%, 100%, .2);
-		> svg {
+
+		>svg {
 			color: #fff;
 		}
 	}
+
 	&:hover {
 		background: hsla(0, 0%, 100%, .2);
 	}
+
 	&%roleAddButtonPopoutOpen {
 		background: $main-color;
 	}

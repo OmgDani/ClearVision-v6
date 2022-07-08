@@ -108,7 +108,7 @@
 			align-items: center;
 			justify-content: center;
 			background-color: transparent;
-			color: $main-color;
+			color: $main-color !important;
 			text-shadow: 0 0 1px;
 			transition: all .15s ease-in-out;
 
