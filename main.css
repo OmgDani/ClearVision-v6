@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! Powered by DiscordSelectors v0.4.1 */
 /*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
-/* BUILD uetr166 */
+/* BUILD u1zupxs */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -3425,12 +3425,12 @@ code {
 .members-3WRCEx .member-2gU6Ar .layout-1qmrhw:active {
   transform: scale(0.9);
 }
-.members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX {
+.members-3WRCEx .member-2gU6Ar .username-i5-wv- span {
   max-width: 100%;
   overflow: visible;
   transition: all 0.15s ease-in-out;
 }
-.members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX:before {
+.members-3WRCEx .member-2gU6Ar .username-i5-wv- span:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3444,7 +3444,7 @@ code {
   z-index: -1;
   pointer-events: none;
 }
-.members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX:after {
+.members-3WRCEx .member-2gU6Ar .username-i5-wv- span:after {
   content: "";
   position: absolute;
   top: 0;
@@ -3458,20 +3458,20 @@ code {
   z-index: -1;
   pointer-events: none;
 }
-.members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar .roleColor-nA7BqX[style*="color:"]:after {
+.members-3WRCEx .member-2gU6Ar .username-i5-wv- span[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar .username-i5-wv- span[style*="color:"]:after {
   background: linear-gradient(to right, currentColor 90%, transparent);
 }
-.members-3WRCEx .member-2gU6Ar:hover .roleColor-nA7BqX:before, .members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX:before {
+.members-3WRCEx .member-2gU6Ar:hover .username-i5-wv- span:before, .members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .username-i5-wv- span:before {
   opacity: 1;
 }
-.members-3WRCEx .member-2gU6Ar:hover .roleColor-nA7BqX[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX[style*="color:"]:before {
+.members-3WRCEx .member-2gU6Ar:hover .username-i5-wv- span[style*="color:"]:before, .members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .username-i5-wv- span[style*="color:"]:before {
   opacity: 0.07;
 }
-.members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX {
+.members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .username-i5-wv- span {
   -webkit-text-fill-color: #fff;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
 }
-.members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .roleColor-nA7BqX:after {
+.members-3WRCEx .member-2gU6Ar.selected-1-Z6gm .username-i5-wv- span:after {
   right: 0;
 }
 .members-3WRCEx .memberGroupsPlaceholder-9tqX9V {
@@ -3594,14 +3594,17 @@ code {
   background: rgba(255, 255, 255, 0.1);
   border-color: transparent;
 }
-.role-2TIOKu > .roleCircle-1EgnFN {
+.role-2TIOKu > .roleRemoveButton-17oXnT {
+  position: initial;
+}
+.role-2TIOKu .roleCircle-1EgnFN {
   width: 0;
   height: 0;
 }
-.role-2TIOKu > .roleCircle-1EgnFN:not(:empty) {
+.role-2TIOKu .roleCircle-1EgnFN:not(:empty) {
   margin-left: 6px;
 }
-.role-2TIOKu > .roleCircle-1EgnFN:after {
+.role-2TIOKu .roleCircle-1EgnFN:after {
   content: "";
   position: absolute;
   top: -1px;
@@ -3614,28 +3617,30 @@ code {
   transition: all 0.1s ease-in-out;
   pointer-events: none;
 }
-.role-2TIOKu > .roleCircle-1EgnFN > .roleRemoveIcon-387wKV {
+.role-2TIOKu .roleRemoveIcon-387wKV {
   position: absolute;
   display: block;
   opacity: 0;
   transition: all 0.1s ease-in-out;
+  right: 1px;
+  left: auto;
 }
-.role-2TIOKu > .roleCircle-1EgnFN > .roleRemoveIcon-387wKV .fill {
+.role-2TIOKu .roleRemoveIcon-387wKV path {
   fill: #fff;
 }
-.role-2TIOKu > .roleName-2ZJJYR {
+.role-2TIOKu .roleName-2ZJJYR {
   margin-right: 0;
   margin-left: 4px;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.1s ease-in-out;
 }
-.role-2TIOKu:hover > .roleCircle-1EgnFN:after {
+.role-2TIOKu:hover .roleCircle-1EgnFN:after {
   opacity: 0.3;
 }
-.role-2TIOKu:hover > .roleCircle-1EgnFN > .roleRemoveIcon-387wKV {
+.role-2TIOKu:hover .roleRemoveIcon-387wKV {
   opacity: 1;
 }
-.role-2TIOKu:hover > .roleName-2ZJJYR {
+.role-2TIOKu:hover .roleName-2ZJJYR {
   color: #fff;
 }
 
@@ -3720,7 +3725,7 @@ code {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  color: var(--main-color);
+  color: var(--main-color) !important;
   text-shadow: 0 0 1px;
   transition: all 0.15s ease-in-out;
 }
@@ -5683,23 +5688,24 @@ textarea::-webkit-scrollbar {
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.15s ease-in-out;
 }
-.container-2McqkF [aria-selected=true].option-ayUoaq {
+.container-2McqkF [aria-selected=true].option-ayUoaq, .container-2McqkF .option-ayUoaq:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.container-2McqkF [aria-selected=true].option-ayUoaq .plusIcon-1RVszG {
+.container-2McqkF [aria-selected=true].option-ayUoaq .plusIcon-1RVszG, .container-2McqkF .option-ayUoaq:hover .plusIcon-1RVszG {
   opacity: 0.3;
 }
-.container-2McqkF [aria-selected=true].option-ayUoaq .plusIcon-1RVszG:hover {
+.container-2McqkF [aria-selected=true].option-ayUoaq .plusIcon-1RVszG:hover, .container-2McqkF .option-ayUoaq:hover .plusIcon-1RVszG:hover {
   opacity: 0.7;
 }
-.container-2McqkF [aria-selected=true].option-ayUoaq .filter-2QaH9y {
+.container-2McqkF [aria-selected=true].option-ayUoaq .filter-2QaH9y, .container-2McqkF .option-ayUoaq:hover .filter-2QaH9y {
   color: rgba(255, 255, 255, 0.5);
 }
 .container-2McqkF [aria-selected=true].option-ayUoaq .answer-14OVbQ,
-.container-2McqkF [aria-selected=true].option-ayUoaq .nonText-28q_Ot {
+.container-2McqkF [aria-selected=true].option-ayUoaq .nonText-28q_Ot, .container-2McqkF .option-ayUoaq:hover .answer-14OVbQ,
+.container-2McqkF .option-ayUoaq:hover .nonText-28q_Ot {
   color: rgba(255, 255, 255, 0.7);
 }
-.container-2McqkF [aria-selected=true].option-ayUoaq > strong {
+.container-2McqkF [aria-selected=true].option-ayUoaq > strong, .container-2McqkF .option-ayUoaq:hover > strong {
   color: #fff;
 }
 .container-2McqkF .option-ayUoaq.user-1dKxvu .displayedNick-1atSpT {
@@ -6555,7 +6561,7 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
-  content: "Danielle's ClearVision v6-dev.1.1\a Build uetr166\a DiscordSelectors v0.4.1";
+  content: "Danielle's ClearVision v6-dev.1.1\a Build u1zupxs\a DiscordSelectors v0.4.1";
   color: var(--main-color);
   font-size: 12px;
   line-height: 16px;
