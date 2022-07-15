@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! Powered by DiscordSelectors v0.4.1 */
 /*! ClearVision v6-dev.1.1 by Danielle. Based on ClearVision by Zerthox */
-/* BUILD u1zupxs */
+/* BUILD uioc9r0 */
 /* DEFAULT SETTINGS */
 :root {
   --main-color: #2780e6;
@@ -3597,14 +3597,14 @@ code {
 .role-2TIOKu > .roleRemoveButton-17oXnT {
   position: initial;
 }
-.role-2TIOKu .roleCircle-1EgnFN {
+.role-2TIOKu .roleCircle-3K9O3d {
   width: 0;
   height: 0;
 }
-.role-2TIOKu .roleCircle-1EgnFN:not(:empty) {
+.role-2TIOKu .roleCircle-3K9O3d:not(:empty) {
   margin-left: 6px;
 }
-.role-2TIOKu .roleCircle-1EgnFN:after {
+.role-2TIOKu .roleCircle-3K9O3d:after {
   content: "";
   position: absolute;
   top: -1px;
@@ -3634,7 +3634,7 @@ code {
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.1s ease-in-out;
 }
-.role-2TIOKu:hover .roleCircle-1EgnFN:after {
+.role-2TIOKu:hover .roleCircle-3K9O3d:after {
   opacity: 0.3;
 }
 .role-2TIOKu:hover .roleRemoveIcon-387wKV {
@@ -6561,7 +6561,7 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .info-3pQQBb:after {
-  content: "Danielle's ClearVision v6-dev.1.1\a Build u1zupxs\a DiscordSelectors v0.4.1";
+  content: "Danielle's ClearVision v6-dev.1.1\a Build uioc9r0\a DiscordSelectors v0.4.1";
   color: var(--main-color);
   font-size: 12px;
   line-height: 16px;
