@@ -37,6 +37,10 @@
 			background: linear-gradient(to right, $main-color 50%, transparent);
 			margin-left: 5px;
 		}
+
+		#{cn(PrivateChannelsConnected headerText)} {
+			overflow: visible;
+		}
 	}
 
 	// PRIVATE CHANNEL
@@ -88,7 +92,7 @@
 
 		#{cn(PrivateChannel closeButton)} {
 			display: block;
-			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
+			background: url(https://clearvision.github.io/icons/close.svg) center/18px no-repeat;
 			opacity: 0;
 			transition: all .15s ease-in-out;
 

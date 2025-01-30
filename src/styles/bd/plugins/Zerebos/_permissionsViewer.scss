@@ -1,0 +1,8 @@
+@use "cv"as *;
+@import "lib/legacy-selectors";
+
+// PERMISSIONS VIEWER
+.member-perms .member-perm .perm-circle {
+    width: 0;
+    height: 0;
+}

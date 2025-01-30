@@ -31,6 +31,9 @@
 		&:hover {
 			background-color: $main-color;
 			color: #fff;
+			#{cn(Slider barFill)} {
+				background: $hover-color;
+			}
 		}
 
 		&%contextMenuItemBrand {

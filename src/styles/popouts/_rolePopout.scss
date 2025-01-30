@@ -1,0 +1,64 @@
+@use "cv"as *;
+@import "lib/legacy-selectors";
+
+
+%rolePopout {
+    padding: 2px 3px;
+    background: rgba(0, 0, 0, .7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1);
+    transform-origin: 50% 0;
+
+    #{cn(MemberListItem member)} {
+        #{cn(MemberListItem memberInner)} {
+            background-color: transparent;
+        }
+
+        #{cn(MemberListItem username)} span {
+            max-width: 100%;
+            overflow: visible;
+            transition: all .15s ease-in-out;
+
+            &:before {
+                content: "";
+                position: absolute;
+                @include stretch;
+                background: linear-gradient(to right, hsla(0, 0%, 100%, .07) 90%, transparent);
+                border-radius: 3px;
+                opacity: 0;
+                transition: all .15s ease-in-out;
+                z-index: -1;
+                pointer-events: none;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                @include pos(0, 100%, 0, 0);
+                background: linear-gradient(to right, $main-color 90%, transparent);
+                border-radius: 3px;
+                opacity: .8;
+                transition: all .3s ease-in-out;
+                z-index: -1;
+                pointer-events: none;
+            }
+
+            &[style*="color:"] {
+
+                &:before,
+                &:after {
+                    background: currentColor;
+                }
+            }
+        }
+
+        &:hover,
+        &#{cn(ListItem selected)} {
+            #{cn(MemberListItem username)} span {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

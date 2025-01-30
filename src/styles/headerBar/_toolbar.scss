@@ -34,8 +34,8 @@
 			transition: filter .3s ease-in-out;
 		}
 		[mask] {
-			-webkit-mask: url(https://clearvision.gitlab.io/icons/pin.svg);
-			mask: url(https://clearvision.gitlab.io/icons/pin.svg);
+			-webkit-mask: url(https://clearvision.github.io/icons/pin.svg);
+			mask: url(https://clearvision.github.io/icons/pin.svg);
 			> %headerBarIcon {
 				background: $main-color;
 				opacity: 1;
@@ -70,42 +70,42 @@
 			}
 		}
 		&[name=Nova_Bell] {
-			background: url(https://clearvision.gitlab.io/icons/notifications.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/notifications.svg) center/24px no-repeat;
 		}
 		&[name=Nova_BellOff] {
-			background: url(https://clearvision.gitlab.io/icons/notifications_off.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/notifications_off.svg) center/24px no-repeat;
 		}
 		&[name=Nova_Pin] {
-			background: url(https://clearvision.gitlab.io/icons/pin.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/pin.svg) center/24px no-repeat;
 		}
 		&[name=Nova_People] {
-			background: url(https://clearvision.gitlab.io/icons/people.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/people.svg) center/24px no-repeat;
 		}
 		&[name=Nova_At] {
-			background: url(https://clearvision.gitlab.io/icons/mail.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/mail.svg) center/24px no-repeat;
 		}
 		&[name=Nova_Help] {
-			background: url(https://clearvision.gitlab.io/icons/help.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/help.svg) center/24px no-repeat;
 		}
 		&[name=Nova_ChatNew] {
-			background: url(https://clearvision.gitlab.io/icons/group_add.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/group_add.svg) center/24px no-repeat;
 		}
 		&[name=Nova_CallJoin] {
-			background: url(https://clearvision.gitlab.io/icons/call.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/call.svg) center/24px no-repeat;
 		}
 		&[name=Nova_CallVideo] {
-			background: url(https://clearvision.gitlab.io/icons/videocam.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/videocam.svg) center/24px no-repeat;
 		}
 		&[name=Nova_UserAdd] {
-			background: url(https://clearvision.gitlab.io/icons/person_add.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/person_add.svg) center/24px no-repeat;
 		}
 		&%headerBarIconUpdateAvailable {
-			background: url(https://clearvision.gitlab.io/icons/sync.svg) center/24px no-repeat;
+			background: url(https://clearvision.github.io/icons/sync.svg) center/24px no-repeat;
 			animation: cv-update-spin 2s linear infinite;
 		}
 		&[name=Nova_Downloading] {
 			position: relative;
-			background: url(https://clearvision.gitlab.io/icons/cloud_download.svg) center/24px no-repeat,
+			background: url(https://clearvision.github.io/icons/cloud_download.svg) center/24px no-repeat,
 				linear-gradient(to bottom, $main-color, $main-color) 50% 10px/10px 10px no-repeat;
 			animation: cv-update-downloading 2.5s ease-in-out infinite;
 		}
@@ -136,7 +136,7 @@
 		}
 	}
 	%headerBarLinkIcon {
-		background: url(https://clearvision.gitlab.io/icons/share.svg) center/24px no-repeat;
+		background: url(https://clearvision.github.io/icons/share.svg) center/24px no-repeat;
 		> g {
 			display: none;
 		}

@@ -1,8 +1,8 @@
-@use "cv"as *;
+@use "cv" as *;
 @import "lib/legacy-selectors";
 
 /* CHANNEL */
-#{cn(ChannelItem content)} {
+#{cn(ChannelItem link)} {
 	position: relative;
 	background: transparent !important;
 	transition: all .15s ease-in-out;
@@ -32,10 +32,10 @@
 		margin-right: 3px;
 		color: hsla(0, 0%, 100%, .3);
 		opacity: 1;
-		transition: all .15s ease-in-out;
 
 		>path {
 			opacity: .7;
+			transition: all .15s ease-in-out;
 		}
 
 		>path:last-of-type {
@@ -68,7 +68,7 @@
 
 	// HOVER
 	&:hover {
-		#{cn(ChannelItem content)} {
+		#{cn(ChannelItem link)} {
 			&:before {
 				background: hsla(0, 0%, 100%, .1);
 				border-radius: 5px;
@@ -85,8 +85,9 @@
 	}
 
 	// UNREAD
-	&#{cn(ChannelItem modeUnread)} {
-		#{cn(ChannelItem content)} {
+	&#{cn(ChannelItem modeUnread)},
+	&#{cn(ChannelItem modeUnreadImportant)} {
+		#{cn(ChannelItem link)} {
 			#{cn(ChannelItem name)} {
 				color: $main-color;
 				text-shadow: 0 0 3px;
@@ -100,7 +101,7 @@
 		}
 
 		&:hover {
-			#{cn(ChannelItem content)} {
+			#{cn(ChannelItem link)} {
 				#{cn(ChannelItem name)} {
 					color: #fff;
 				}
@@ -114,7 +115,7 @@
 
 	// SELECTED
 	&#{cn(ChannelItem modeSelected)} {
-		#{cn(ChannelItem content)} {
+		#{cn(ChannelItem link)} {
 
 			// &:before {
 			// 	background: hsla(0, 0%, 100%, .1);
@@ -147,7 +148,7 @@
 
 	// CONNECTED
 	&#{cn(ChannelItem modeConnected)} {
-		#{cn(ChannelItem content)} {
+		#{cn(ChannelItem link)} {
 			#{cn(ChannelItem name)} {
 				color: $main-color;
 				text-shadow: 0 0 3px;
@@ -162,7 +163,7 @@
 
 	// MUTED
 	&#{cn(ChannelItem modeMuted)} {
-		#{cn(ChannelItem content)} {
+		#{cn(ChannelItem link)} {
 
 			#{cn(ChannelItem icon)},
 			#{cn(ChannelItem name)} {
@@ -171,7 +172,7 @@
 		}
 
 		&:hover {
-			#{cn(ChannelItem content)} {
+			#{cn(ChannelItem link)} {
 				&:before {
 					background: hsla(0, 0%, 100%, .07);
 				}
@@ -196,7 +197,7 @@
 // ICONS
 #{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" actionIcon)} {
 	&[name=Gear] {
-		background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
+		background: url(https://clearvision.github.io/icons/settings.svg) no-repeat center/18px;
 
 		&:hover {
 			animation: cv-spin 2.5s linear infinite;
@@ -208,7 +209,7 @@
 	}
 
 	&[name=Invite] {
-		background: url(https://clearvision.gitlab.io/icons/person_add.svg) no-repeat center/18px;
+		background: url(https://clearvision.github.io/icons/person_add.svg) no-repeat center/18px;
 
 		>path {
 			display: none;
@@ -265,7 +266,7 @@
 		transition: all .15s ease-in-out;
 	}
 
-	#{cn(VoiceUser avatarContainer)} {
+	#{cn(VoiceUser avatarSpeaking)} {
 		position: relative;
 		transition: all .1s ease-in-out;
 

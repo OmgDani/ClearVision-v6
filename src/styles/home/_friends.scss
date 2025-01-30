@@ -107,7 +107,7 @@
 			%friendsColumnStatus {
 				color: hsla(0, 0%, 100%, .5);
 
-				%friendActivityText {
+				#{cn(MemberListItem activityText)} {
 					>strong {
 						color: $main-color;
 						font-weight: 600;

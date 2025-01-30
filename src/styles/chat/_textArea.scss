@@ -67,7 +67,7 @@
 			border-right: 1px solid hsla(0, 0%, 100%, .07);
 			position: absolute;
 			top: 50%;
-			height: 65%;
+			height: calc(100% - 16px);
 			right: 0;
 			transform: translateY(-50%);
 		}

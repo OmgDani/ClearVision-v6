@@ -10,6 +10,10 @@
 	#{cn(Guilds tree)} {
 		outline: none;
 	}
+
+	#{cn(Guilds footer)} {
+		background: transparent;
+	}
 }
 
 #{cn(Guilds scrollerWrap)} {
@@ -51,6 +55,7 @@
 			grid-column: 1 / span cv("server-columns");
 		}
 	}
+
 }
 
 // HOME BUTTON

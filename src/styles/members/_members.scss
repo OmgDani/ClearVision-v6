@@ -55,6 +55,7 @@
 	// MEMBER
 	#{cn(MemberListItem member)} {
 		backface-visibility: hidden;
+		background: transparent;
 
 		&#{cn(MemberListItem offline)} {
 			#{cn(ListItem avatar)} {
@@ -185,7 +186,7 @@
 }
 
 #{cn(MemberListItem ownerIcon)} {
-	background: url(https://clearvision.gitlab.io/icons/crown.svg) center/contain no-repeat;
+	background: url(https://clearvision.github.io/icons/crown.svg) center/contain no-repeat;
 	opacity: .4;
 	transition: all .15s ease-in-out;
 

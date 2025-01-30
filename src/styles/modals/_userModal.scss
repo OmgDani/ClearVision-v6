@@ -49,7 +49,7 @@
 %userModalAdditionalActionsIcon {
 	width: 24px;
 	height: 24px;
-	background: url(https://clearvision.gitlab.io/icons/expand_more.svg) center/36px no-repeat;
+	background: url(https://clearvision.github.io/icons/expand_more.svg) center/36px no-repeat;
 	opacity: .3;
 	transition: all .15s ease-in-out;
 
@@ -92,73 +92,73 @@
 *,
 %userModalTopSection * {
 	&%profileBadgeStaff {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeStaff.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeStaff.svg);
 	}
 
 	&%profileBadgePartner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgePartner.svg);
 	}
 
 	&%profileBadgeHypeSquad {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquad.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquad.svg);
 	}
 
 	&%profileBadgeHypeSquadHouse1 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBravery.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquadBravery.svg);
 	}
 
 	&%profileBadgeHypeSquadHouse2 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrilliance.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquadBrilliance.svg);
 	}
 
 	&%profileBadgeHypeSquadHouse3 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalance.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquadBalance.svg);
 	}
 
 	&%profileBadgeHypeSquadHouse1Winner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBraveryWinner.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquadBraveryWinner.svg);
 	}
 
 	&%profileBadgeHypeSquadHouse2Winner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrillianceWinner.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquadBrillianceWinner.svg);
 	}
 
 	&%profileBadgeHypeSquadHouse3Winner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalanceWinner.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeHypeSquadBalanceWinner.svg);
 	}
 
 	&%profileBadgeEarlySupporter {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeEarlySupporter.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeEarlySupporter.svg);
 	}
 
 	&%profileBadgePremium {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeNitro.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeNitro.svg);
 	}
 
 	&%profileBadgeBugHunter {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeBugHunter.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeBugHunter.svg);
 	}
 
 	&%profileBadgeGuildSubscriber1 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber1.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeGuildSubscriber1.svg);
 	}
 
 	&%profileBadgeGuildSubscriber2 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber2.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeGuildSubscriber2.svg);
 	}
 
 	&%profileBadgeGuildSubscriber3 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber3.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeGuildSubscriber3.svg);
 	}
 
 	&%profileBadgeGuildSubscriber4 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber4.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgeGuildSubscriber4.svg);
 	}
 }
 
 %userModalTopSectionPlaying {
 	%profileBadgePartner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
+		background-image: url(https://clearvision.github.io/icons/discord/badgePartner.svg);
 	}
 }
 
@@ -299,7 +299,7 @@
 }
 
 %userModalConnectedAccountVerifiedIcon {
-	background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
+	background: url(https://clearvision.github.io/icons/verified.svg) center/18px no-repeat;
 	opacity: .5;
 	z-index: 1;
 
@@ -313,7 +313,7 @@
 }
 
 %userModalConnectedAccountOpenIcon {
-	background: url(https://clearvision.gitlab.io/icons/popout.svg) center/18px no-repeat;
+	background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
 	opacity: .3;
 	transition: all .15s ease-in-out;
 

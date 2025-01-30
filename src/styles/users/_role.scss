@@ -10,6 +10,7 @@
 	transition: all .1s ease-in-out;
 	cursor: default;
 	background: transparent;
+	border: none;
 
 	&[style] {
 		&:not(:hover) {
@@ -17,10 +18,10 @@
 		}
 	}
 
-	&:not([style]) {
-		background: hsla(0, 0%, 100%, .1);
-		border-color: transparent;
-	}
+	// &:not([style]) {
+	// 	background: hsla(0, 0%, 100%, .1);
+	// 	border-color: transparent;
+	// }
 
 	>%roleRemoveButton {
 		position: initial;
